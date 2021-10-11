@@ -10,7 +10,7 @@ public class DeskInteractive : MonoBehaviour
     private Vector3 player_pos;    //用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
     public GameObject[] ObjectOnDesk = new GameObject [8];  //此陣列存放存放桌子上的物件
     private int index=0;
-    private Color OriginColor;
+    private Color OriginColor,OriginIndexZero;
     void Start()
     {
         focus_table.SetActive(false);
@@ -25,18 +25,12 @@ public class DeskInteractive : MonoBehaviour
             butt_t.text = "F";
             butt_and_text_open();
 
-            OriginColor = ObjectOnDesk[0].GetComponent<Renderer>().material.color;
-            
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                
-                Debug.Log(index);
-            }
-
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-               
-                Debug.Log(index);
+                index++;
+                ObjectOnDesk[index - 1].GetComponent<Renderer>().material.color = OriginIndexZero;
+                OriginColor = ObjectOnDesk[index].GetComponent<Renderer>().material.color;
+                ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;
             }
             if (Input.GetKey(KeyCode.F))
             {
@@ -64,6 +58,8 @@ public class DeskInteractive : MonoBehaviour
                 people.SetActive(false);
                 Cursor.lockState = CursorLockMode.Confined;
                 E_use = true;
+                OriginIndexZero = ObjectOnDesk[0].GetComponent<Renderer>().material.color;
+                ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow;
             }
         }
     }
