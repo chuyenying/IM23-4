@@ -10,11 +10,15 @@ public class DeskInteractive : MonoBehaviour
     private Vector3 player_pos;    //用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
     public GameObject[] ObjectOnDesk = new GameObject [8];  //此陣列存放存放桌子上的物件
     private int index=0;
-    private Color OriginColor,OriginIndexZero;
+    private Color[] ObjectOnDesk_Color= new Color[8];
     void Start()
     {
         focus_table.SetActive(false);
         butt_and_text_close();
+        for(int i = 0; i < ObjectOnDesk.Length; i++)
+        {
+            ObjectOnDesk_Color[i] = ObjectOnDesk[i].GetComponent<Renderer>().material.color;
+        }
     }
     void Update()
     {
@@ -27,11 +31,38 @@ public class DeskInteractive : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                index++;
-                ObjectOnDesk[index - 1].GetComponent<Renderer>().material.color = OriginIndexZero;
-                OriginColor = ObjectOnDesk[index].GetComponent<Renderer>().material.color;
-                ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;
+                
+                if (index == ObjectOnDesk.Length-1)
+                {
+                    ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow;
+                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index];
+                    index = 0;
+                }
+                else
+                {
+                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index];
+                    ObjectOnDesk[index + 1].GetComponent<Renderer>().material.color = Color.yellow;
+                    index++;
+                }
+             }
+
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+
+                if (index == 0)
+                {
+                    ObjectOnDesk[ObjectOnDesk.Length-1].GetComponent<Renderer>().material.color = Color.yellow;
+                    ObjectOnDesk[0].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[0];
+                    index = ObjectOnDesk.Length-1;
+                }
+                else
+                {
+                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index];
+                    ObjectOnDesk[index - 1].GetComponent<Renderer>().material.color = Color.yellow;
+                    index--;
+                }
             }
+
             if (Input.GetKey(KeyCode.F))
             {
                 focus_table.SetActive(false);
@@ -58,7 +89,6 @@ public class DeskInteractive : MonoBehaviour
                 people.SetActive(false);
                 Cursor.lockState = CursorLockMode.Confined;
                 E_use = true;
-                OriginIndexZero = ObjectOnDesk[0].GetComponent<Renderer>().material.color;
                 ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow;
             }
         }
