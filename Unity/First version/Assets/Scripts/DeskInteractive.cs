@@ -4,17 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DeskInteractive : MonoBehaviour
 {
-    public GameObject focus_people,focus_table,focus_pencilbox,butt,firstperson_object,butt2;  //focus_people為跟隨人的攝影機,focus_table拍桌面的攝影機,butt為button
-    public Text butt_t,t,butt_t2,t2;   //butt_t為button的文字, t為button旁邊的文字
-    private bool E_use = false,LookAtPB=false;     //紀錄是否按下了E鍵，如果按下了E鍵才可以按F退出桌面。LookAtPB紀錄是否正在看鉛筆盒
+    public GameObject focus_people, focus_table, focus_pencilbox, butt, firstperson_object, butt2;  //focus_people為跟隨人的攝影機,focus_table拍桌面的攝影機,butt為button
+    public GameObject focus_card, cardpic, focus_mamori,focus_flower;
+    public Text butt_t, t, butt_t2, t2;   //butt_t為button的文字, t為button旁邊的文字
+    private bool E_use = false, LookAt = false;     //紀錄是否按下了E鍵，如果按下了E鍵才可以按F退出桌面。LookAt紀錄是否正在看鉛筆盒
     private Vector3 player_pos;    //用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
-    public GameObject[] ObjectOnDesk = new GameObject [8];  //此陣列存放存放桌子上的物件
-    private int index=0;        //ObjectOnDesk的索引值
-    private Color[] ObjectOnDesk_Color= new Color[8];   //儲存物件原本的顏色
+    public GameObject[] ObjectOnDesk = new GameObject[8];  //此陣列存放存放桌子上的物件
+    private int index = 0;        //ObjectOnDesk的索引值
+    private Color[] ObjectOnDesk_Color = new Color[8];   //儲存物件原本的顏色
     void Start()
     {
+        focus_people.SetActive(true);
         focus_table.SetActive(false);   //一開始桌子跟鉛筆盒的相機都先關閉
         focus_pencilbox.SetActive(false);
+        cardpic.SetActive(false);
+        focus_card.SetActive(false);
+        focus_mamori.SetActive(false);
+        focus_flower.SetActive(false);
         butt_and_text_close();          //上下button也全關閉
         butt_and_text_close2();
 
@@ -29,21 +35,23 @@ public class DeskInteractive : MonoBehaviour
         {
             firstperson_object.gameObject.transform.position = player_pos;  //把剛剛存起來的位置給角色，讓角色無法移動
             butt_t.text = "F";
-            if (LookAtPB == false)
+            if (LookAt == false)
             {
                 t.text = "離開桌面";
                 butt_and_text_open();
             }
 
-            Choose_Table();
-
-            if (Input.GetKeyDown(KeyCode.RightArrow) && LookAtPB==false)    //查看鉛筆盒的時候就不能選物件
+            Choose_PB();
+            Choose_card();
+            Choose_mamori();
+            Choose_flower();
+            if (Input.GetKeyDown(KeyCode.RightArrow) && LookAt == false)    //查看鉛筆盒的時候就不能選物件
             {
-                
-                if (index == ObjectOnDesk.Length-1) //已經選到最右邊的物件仍然按右鍵
+
+                if (index == ObjectOnDesk.Length - 1) //已經選到最右邊的物件仍然按右鍵
                 {
                     ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow; //則把最左邊的物體變成黃色(看起來像選最左邊的物件)
-                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index];    
+                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index];
                     //把上一個物件變回原來的顏色,ObjectOnDesk_Color[]用來儲存物件原本的顏色
                     index = 0;
                 }
@@ -53,16 +61,16 @@ public class DeskInteractive : MonoBehaviour
                     ObjectOnDesk[index + 1].GetComponent<Renderer>().material.color = Color.yellow;
                     index++;
                 }
-             }
+            }
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow) && LookAtPB == false)   //正在看鉛筆盒就不能選物件
+            if (Input.GetKeyDown(KeyCode.LeftArrow) && LookAt == false)   //正在看鉛筆盒就不能選物件
             {
 
                 if (index == 0)
                 {
-                    ObjectOnDesk[ObjectOnDesk.Length-1].GetComponent<Renderer>().material.color = Color.yellow;
+                    ObjectOnDesk[ObjectOnDesk.Length - 1].GetComponent<Renderer>().material.color = Color.yellow;
                     ObjectOnDesk[0].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[0];
-                    index = ObjectOnDesk.Length-1;
+                    index = ObjectOnDesk.Length - 1;
                 }
                 else
                 {
@@ -72,7 +80,7 @@ public class DeskInteractive : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.F) && LookAtPB==false )    //沒有查看鉛筆盒的情況按F才可以離開桌面
+            if (Input.GetKeyDown(KeyCode.F) && LookAt == false)    //沒有查看鉛筆盒的情況按F才可以離開桌面
             {
                 index = 0;
                 firstperson_object.gameObject.SetActive(true);
@@ -84,23 +92,23 @@ public class DeskInteractive : MonoBehaviour
                 {
                     ObjectOnDesk[i].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[i];
                 }
-            }   
+            }
         }
     }
-    void OnCollisionStay(Collision other) 
+    void OnCollisionStay(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
-         {
+        {
             t.text = "查看桌面";
             butt_t.text = "E";
             butt_and_text_open();
 
-            if (Input.GetKey(KeyCode.E) && E_use==false)    //沒按過E鍵才可以開啟桌面
+            if (Input.GetKey(KeyCode.E) && E_use == false)    //沒按過E鍵才可以開啟桌面
             {
                 firstperson_object.gameObject.SetActive(false); //打開桌面後，角色就暫時看不到
                 player_pos = firstperson_object.gameObject.transform.position;  //把角色按下E當下的位置記錄起來。
                 butt_and_text_close();                         //把BUTTON跟文字關閉
-                People_SwitchTo_Table();                       
+                People_SwitchTo_Table();
                 E_use = true;
                 ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow; //剛進到桌面的時候會自動先選鉛筆盒。
             }
@@ -160,19 +168,54 @@ public class DeskInteractive : MonoBehaviour
         focus_pencilbox.SetActive(false);
         focus_table.SetActive(true);
     }
+    void Table_SwitchTo_Card()
+    {
+        focus_table.SetActive(false);
+        focus_card.SetActive(true);
+        cardpic.SetActive(true);
+    }
+    void Card_SwitchTo_Table()
+    {
+        focus_card.SetActive(false);
+        focus_table.SetActive(true);
+        cardpic.SetActive(false);
+    }
+    void Table_SwitchTo_mamori()
+    {
+        focus_table.SetActive(false);
+        focus_mamori.SetActive(true);
+    }
+    void Mamori_SwitchTo_Table()
+    {
+        focus_mamori.SetActive(false);
+        focus_table.SetActive(true);
+    }
+    void Table_SwitchTo_flower()
+    {
+        focus_table.SetActive(false);
+        focus_flower.SetActive(true);
+    }
+    void Flower_SwitchTo_Table()
+    {
+        focus_flower.SetActive(false);
+        focus_table.SetActive(true);
+    }
 
     //--------------------------------------------------------
 
     // **** 與選擇物件相關****
-    void Choose_Table()     //跟鉛筆盒有關的
+    void Choose_PB()     //跟鉛筆盒有關的
     {
         if (index == 0)
+
         {
+            butt_t2.text = "Enter↲";
+            t2.text = "查看鉛筆盒";
             butt_and_text_open2();
 
             if (Input.GetKey(KeyCode.Return))
             {
-                LookAtPB = true;
+                LookAt = true;
                 ObjectOnDesk[0].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[0];
                 Table_SwitchTo_PB();
                 butt_and_text_close();
@@ -185,7 +228,7 @@ public class DeskInteractive : MonoBehaviour
                 PB_SwitchTo_Table();
                 butt_t2.text = "Enter\n↵";
                 t2.text = "查看鉛筆盒";
-                LookAtPB = false;
+                LookAt = false;
             }
         }
         else
@@ -195,4 +238,108 @@ public class DeskInteractive : MonoBehaviour
         }
     }
     // ----------------------------------------------------------------
+
+    //**** 選卡片
+    void Choose_card()
+    {
+        if (index == 2)
+        {
+            butt_t2.text = "Enter↲";
+            t2.text = "查看卡片";
+
+            butt_and_text_open2();
+
+            if (Input.GetKey(KeyCode.Return))
+            {
+                LookAt = true;
+                ObjectOnDesk[2].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[2];
+                Table_SwitchTo_Card();
+                butt_and_text_close();
+                butt_t2.text = "Back\nSpace";
+                t2.text = "離開卡片";
+            }
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
+                ObjectOnDesk[2].GetComponent<Renderer>().material.color = Color.yellow;
+                Card_SwitchTo_Table();
+                butt_t2.text = "Enter\n↵";
+                t2.text = "查看卡片";
+                LookAt = false;
+            }
+        }
+        else
+        {
+            Card_SwitchTo_Table();
+            butt_and_text_close2();
+        }
+    }
+
+    //****選御守
+    void Choose_mamori()
+    {
+        if (index == 1)
+        {
+            butt_t2.text = "Enter↲";
+            t2.text = "查看御守";
+
+            butt_and_text_open2();
+
+            if (Input.GetKey(KeyCode.Return))
+            {
+                LookAt = true;
+                ObjectOnDesk[1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[1];
+                Table_SwitchTo_mamori();
+                butt_and_text_close();
+                butt_t2.text = "Back\nSpace";
+                t2.text = "離開御守";
+            }
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
+                ObjectOnDesk[1].GetComponent<Renderer>().material.color = Color.yellow;
+                Mamori_SwitchTo_Table();
+                butt_t2.text = "Enter\n↵";
+                t2.text = "查看御守";
+                LookAt = false;
+            }
+        }
+        else
+        {
+            Mamori_SwitchTo_Table();
+            butt_and_text_close2();
+        }
+    }
+    void Choose_flower()
+    {
+        if (index == 4)
+        {
+            butt_t2.text = "Enter↲";
+            t2.text = "查看天堂鳥";
+
+            butt_and_text_open2();
+
+            if (Input.GetKey(KeyCode.Return))
+            {
+                LookAt = true;
+                ObjectOnDesk[4].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[4];
+                Table_SwitchTo_flower();
+                butt_and_text_close();
+                butt_t2.text = "Back\nSpace";
+                t2.text = "離開天堂鳥";
+            }
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
+                ObjectOnDesk[4].GetComponent<Renderer>().material.color = Color.yellow;
+                Flower_SwitchTo_Table();
+                butt_t2.text = "Enter\n↵";
+                t2.text = "查看天堂鳥";
+                LookAt = false;
+            }
+        }
+        else
+        {
+            Flower_SwitchTo_Table();
+            butt_and_text_close2();
+        }
+    }
+    
 }
