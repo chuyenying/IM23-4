@@ -18,7 +18,7 @@ public class DeskInteractive : MonoBehaviour
     }
     void Update()
     {
-        if (E_use == true)
+        if (E_use == true)  //如果有按E
         {
             firstperson_object.gameObject.transform.position = player_pos;
             t.text = "離開桌面";
