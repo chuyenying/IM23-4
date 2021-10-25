@@ -25,7 +25,7 @@ public class DeskInteractive : MonoBehaviour
     }
     void Update()
     {
-        if (E_use == true)
+        if (E_use == true)  //如果有按E
         {
             firstperson_object.gameObject.transform.position = player_pos;  //把剛剛存起來的位置給角色，讓角色無法移動
             butt_t.text = "F";
