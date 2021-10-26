@@ -209,10 +209,13 @@ public class DeskInteractive : MonoBehaviour
         if (index == 0)
 
         {
-            butt_t2.text = "Enter↲";
-            t2.text = "查看鉛筆盒";
-            butt_and_text_open2();
-
+            if (LookAt == false)
+            {
+                butt_t2.text = "Enter↲";
+                t2.text = "查看鉛筆盒";
+                butt_and_text_open2();
+            }
+            
             if (Input.GetKey(KeyCode.Return))
             {
                 LookAt = true;
@@ -231,11 +234,7 @@ public class DeskInteractive : MonoBehaviour
                 LookAt = false;
             }
         }
-        else
-        {
-            PB_SwitchTo_Table();
-            butt_and_text_close2();
-        }
+        
     }
     // ----------------------------------------------------------------
 
@@ -244,11 +243,12 @@ public class DeskInteractive : MonoBehaviour
     {
         if (index == 2)
         {
-            butt_t2.text = "Enter↲";
-            t2.text = "查看卡片";
-
-            butt_and_text_open2();
-
+            if (LookAt == false)
+            {
+                butt_t2.text = "Enter↲";
+                t2.text = "查看卡片";
+                butt_and_text_open2();
+            }
             if (Input.GetKey(KeyCode.Return))
             {
                 LookAt = true;
@@ -267,11 +267,7 @@ public class DeskInteractive : MonoBehaviour
                 LookAt = false;
             }
         }
-        else
-        {
-            Card_SwitchTo_Table();
-            butt_and_text_close2();
-        }
+     
     }
 
     //****選御守
@@ -279,10 +275,13 @@ public class DeskInteractive : MonoBehaviour
     {
         if (index == 1)
         {
-            butt_t2.text = "Enter↲";
-            t2.text = "查看御守";
-
-            butt_and_text_open2();
+            if (LookAt == false)
+            {
+                butt_t2.text = "Enter↲";
+                t2.text = "查看御守";
+                butt_and_text_open2();
+            }
+            
 
             if (Input.GetKey(KeyCode.Return))
             {
@@ -302,25 +301,21 @@ public class DeskInteractive : MonoBehaviour
                 LookAt = false;
             }
         }
-        else
-        {
-            Mamori_SwitchTo_Table();
-            butt_and_text_close2();
-        }
     }
     void Choose_flower()
     {
-        if (index == 4)
+        if (index == 3)
         {
-            butt_t2.text = "Enter↲";
-            t2.text = "查看天堂鳥";
-
-            butt_and_text_open2();
-
+            if (LookAt == false)
+            {
+                butt_t2.text = "Enter↲";
+                t2.text = "查看天堂鳥";
+                butt_and_text_open2();
+            }
             if (Input.GetKey(KeyCode.Return))
             {
                 LookAt = true;
-                ObjectOnDesk[4].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[4];
+                ObjectOnDesk[3].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[3];
                 Table_SwitchTo_flower();
                 butt_and_text_close();
                 butt_t2.text = "Back\nSpace";
@@ -328,17 +323,12 @@ public class DeskInteractive : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.Backspace))
             {
-                ObjectOnDesk[4].GetComponent<Renderer>().material.color = Color.yellow;
+                ObjectOnDesk[3].GetComponent<Renderer>().material.color = Color.yellow;
                 Flower_SwitchTo_Table();
                 butt_t2.text = "Enter\n↵";
                 t2.text = "查看天堂鳥";
                 LookAt = false;
             }
-        }
-        else
-        {
-            Flower_SwitchTo_Table();
-            butt_and_text_close2();
         }
     }
     
