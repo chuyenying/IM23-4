@@ -5,15 +5,15 @@ using UnityEngine;
 public class controlpeople : MonoBehaviour
 {
     public CharacterController controller;
-    public float speed = 0.3f;    //角色移動速度
+    public float speed;    //角色移動速度
     Animator anim;
 
     void Update()
     {
-        speed = 0.3f;
+        speed = 1f;
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 5;    //按shift可加速
+            speed = 3;    //按shift可加速
         }
 
         //利用Input.GetAxis("Horizontal")、("Vertical")
