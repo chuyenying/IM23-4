@@ -225,7 +225,7 @@ public class DeskInteractive : MonoBehaviour
                 butt_t2.text = "Back\nSpace";
                 t2.text = "離開鉛筆盒";
             }
-            if (Input.GetKeyDown(KeyCode.Backspace))
+            if (Input.GetKeyDown(KeyCode.Backspace) && LookAt==true)
             {
                 ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow;
                 PB_SwitchTo_Table();
@@ -258,7 +258,7 @@ public class DeskInteractive : MonoBehaviour
                 butt_t2.text = "Back\nSpace";
                 t2.text = "離開卡片";
             }
-            if (Input.GetKeyDown(KeyCode.Backspace))
+            if (Input.GetKeyDown(KeyCode.Backspace) && LookAt == true)
             {
                 ObjectOnDesk[2].GetComponent<Renderer>().material.color = Color.yellow;
                 Card_SwitchTo_Table();
@@ -292,7 +292,7 @@ public class DeskInteractive : MonoBehaviour
                 butt_t2.text = "Back\nSpace";
                 t2.text = "離開御守";
             }
-            if (Input.GetKeyDown(KeyCode.Backspace))
+            if (Input.GetKeyDown(KeyCode.Backspace) && LookAt == true)
             {
                 ObjectOnDesk[1].GetComponent<Renderer>().material.color = Color.yellow;
                 Mamori_SwitchTo_Table();
@@ -321,7 +321,7 @@ public class DeskInteractive : MonoBehaviour
                 butt_t2.text = "Back\nSpace";
                 t2.text = "離開天堂鳥";
             }
-            if (Input.GetKeyDown(KeyCode.Backspace))
+            if (Input.GetKeyDown(KeyCode.Backspace) && LookAt == true)
             {
                 ObjectOnDesk[3].GetComponent<Renderer>().material.color = Color.yellow;
                 Flower_SwitchTo_Table();
