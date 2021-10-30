@@ -45,40 +45,42 @@ public class DeskInteractive : MonoBehaviour
             Choose_card();
             Choose_mamori();
             Choose_flower();
-            if (Input.GetKeyDown(KeyCode.RightArrow) && LookAt == false)    //查看鉛筆盒的時候就不能選物件
-            {
 
-                if (index == ObjectOnDesk.Length - 1) //已經選到最右邊的物件仍然按右鍵
-                {
-                    ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow; //則把最左邊的物體變成黃色(看起來像選最左邊的物件)
-                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index];
-                    //把上一個物件變回原來的顏色,ObjectOnDesk_Color[]用來儲存物件原本的顏色
-                    index = 0;
-                }
-                else
-                {
-                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index];
-                    ObjectOnDesk[index + 1].GetComponent<Renderer>().material.color = Color.yellow;
-                    index++;
-                }
+           
+            if (Input.GetAxis("Mouse ScrollWheel") != 0)
+            {
+                index = index + (int)(Input.GetAxis("Mouse ScrollWheel") * 10);
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow) && LookAt == false)   //正在看鉛筆盒就不能選物件
-            {
-
+            if (LookAt == false)
+             {
+                 if (index < 0)
+                 {
+                    index = 0;
+                 }
                 if (index == 0)
                 {
-                    ObjectOnDesk[ObjectOnDesk.Length - 1].GetComponent<Renderer>().material.color = Color.yellow;
-                    ObjectOnDesk[0].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[0];
+                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;
+                    ObjectOnDesk[1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[1];
+                }
+
+                if (index > ObjectOnDesk.Length - 1)
+                {
                     index = ObjectOnDesk.Length - 1;
                 }
-                else
+                if(index ==ObjectOnDesk.Length - 1)
+                
                 {
-                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index];
-                    ObjectOnDesk[index - 1].GetComponent<Renderer>().material.color = Color.yellow;
-                    index--;
+                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;
+                    ObjectOnDesk[index-1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index-1];
                 }
-            }
+                if(index>0 &&index< ObjectOnDesk.Length - 1)
+                {
+                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;
+                    ObjectOnDesk[index-1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index-1];
+                    ObjectOnDesk[index +1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index +1];
+                }
+             }
 
             if (Input.GetKeyDown(KeyCode.F) && LookAt == false)    //沒有查看鉛筆盒的情況按F才可以離開桌面
             {
@@ -211,25 +213,25 @@ public class DeskInteractive : MonoBehaviour
         {
             if (LookAt == false)
             {
-                butt_t2.text = "Enter↲";
+                butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看鉛筆盒";
                 butt_and_text_open2();
             }
             
-            if (Input.GetKey(KeyCode.Return))
+            if (Input.GetMouseButtonDown(0))
             {
                 LookAt = true;
                 ObjectOnDesk[0].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[0];
                 Table_SwitchTo_PB();
                 butt_and_text_close();
-                butt_t2.text = "Back\nSpace";
+                butt_t2.text = "滑鼠\n右鍵";
                 t2.text = "離開鉛筆盒";
             }
-            if (Input.GetKeyDown(KeyCode.Backspace) && LookAt==true)
+            if (Input.GetMouseButtonDown(1) && LookAt==true)
             {
                 ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow;
                 PB_SwitchTo_Table();
-                butt_t2.text = "Enter\n↵";
+                butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看鉛筆盒";
                 LookAt = false;
             }
@@ -245,24 +247,24 @@ public class DeskInteractive : MonoBehaviour
         {
             if (LookAt == false)
             {
-                butt_t2.text = "Enter↲";
+                butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看卡片";
                 butt_and_text_open2();
             }
-            if (Input.GetKey(KeyCode.Return))
+            if (Input.GetMouseButtonDown(0))
             {
                 LookAt = true;
                 ObjectOnDesk[2].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[2];
                 Table_SwitchTo_Card();
                 butt_and_text_close();
-                butt_t2.text = "Back\nSpace";
+                butt_t2.text = "滑鼠\n右鍵";
                 t2.text = "離開卡片";
             }
-            if (Input.GetKeyDown(KeyCode.Backspace) && LookAt == true)
+            if (Input.GetMouseButtonDown(1) && LookAt == true)
             {
                 ObjectOnDesk[2].GetComponent<Renderer>().material.color = Color.yellow;
                 Card_SwitchTo_Table();
-                butt_t2.text = "Enter\n↵";
+                butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看卡片";
                 LookAt = false;
             }
@@ -277,26 +279,26 @@ public class DeskInteractive : MonoBehaviour
         {
             if (LookAt == false)
             {
-                butt_t2.text = "Enter↲";
+                butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看御守";
                 butt_and_text_open2();
             }
             
 
-            if (Input.GetKey(KeyCode.Return))
+            if (Input.GetMouseButtonDown(0))
             {
                 LookAt = true;
                 ObjectOnDesk[1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[1];
                 Table_SwitchTo_mamori();
                 butt_and_text_close();
-                butt_t2.text = "Back\nSpace";
+                butt_t2.text = "滑鼠\n右鍵";
                 t2.text = "離開御守";
             }
-            if (Input.GetKeyDown(KeyCode.Backspace) && LookAt == true)
+            if (Input.GetMouseButtonDown(1) && LookAt == true)
             {
                 ObjectOnDesk[1].GetComponent<Renderer>().material.color = Color.yellow;
                 Mamori_SwitchTo_Table();
-                butt_t2.text = "Enter\n↵";
+                butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看御守";
                 LookAt = false;
             }
@@ -308,24 +310,24 @@ public class DeskInteractive : MonoBehaviour
         {
             if (LookAt == false)
             {
-                butt_t2.text = "Enter↲";
+                butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看天堂鳥";
                 butt_and_text_open2();
             }
-            if (Input.GetKey(KeyCode.Return))
+            if (Input.GetMouseButtonDown(0))
             {
                 LookAt = true;
                 ObjectOnDesk[3].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[3];
                 Table_SwitchTo_flower();
                 butt_and_text_close();
-                butt_t2.text = "Back\nSpace";
+                butt_t2.text = "滑鼠\n右鍵";
                 t2.text = "離開天堂鳥";
             }
-            if (Input.GetKeyDown(KeyCode.Backspace) && LookAt == true)
+            if (Input.GetMouseButtonDown(1) && LookAt == true)
             {
                 ObjectOnDesk[3].GetComponent<Renderer>().material.color = Color.yellow;
                 Flower_SwitchTo_Table();
-                butt_t2.text = "Enter\n↵";
+                butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看天堂鳥";
                 LookAt = false;
             }
