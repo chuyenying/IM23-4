@@ -4,20 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DeskInteractive : MonoBehaviour
 {
-    public GameObject focus_people, focus_table, focus_pencilbox, butt, firstperson_object, butt2;  //focus_people為跟隨人的攝影機,focus_table拍桌面的攝影機,butt為button
-    public GameObject focus_card, cardpic, focus_mamori,focus_flower;
+    public GameObject focus_people, focus_table, butt, firstperson_object, butt2;  //focus_people為跟隨人的攝影機,focus_table拍桌面的攝影機,butt為button
+    public GameObject focus_card, focus_mamori,focus_flower;
     public Text butt_t, t, butt_t2, t2;   //butt_t為button的文字, t為button旁邊的文字
-    private bool E_use = false, LookAt = false;     //紀錄是否按下了E鍵，如果按下了E鍵才可以按F退出桌面。LookAt紀錄是否正在看鉛筆盒
+    private bool E_use = false, LookAt = false, do_once = true;     //紀錄是否按下了E鍵，如果按下了E鍵才可以按F退出桌面。LookAt紀錄是否正在看鉛筆盒
     private Vector3 player_pos;    //用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
     public GameObject[] ObjectOnDesk = new GameObject[8];  //此陣列存放存放桌子上的物件
+    private Vector3[] objectpos = new Vector3[8],objectrot = new Vector3[8];    //儲存一開始物件的位子跟旋轉角度
     private int index = 0;        //ObjectOnDesk的索引值
+    private float turnspeed = 100f;
     private Color[] ObjectOnDesk_Color = new Color[8];   //儲存物件原本的顏色
     void Start()
     {
         focus_people.SetActive(true);
         focus_table.SetActive(false);   //一開始桌子跟鉛筆盒的相機都先關閉
-        focus_pencilbox.SetActive(false);
-        cardpic.SetActive(false);
         focus_card.SetActive(false);
         focus_mamori.SetActive(false);
         focus_flower.SetActive(false);
@@ -27,6 +27,8 @@ public class DeskInteractive : MonoBehaviour
         for (int i = 0; i < ObjectOnDesk.Length; i++)
         {
             ObjectOnDesk_Color[i] = ObjectOnDesk[i].GetComponent<Renderer>().material.color;        //先把物件原先的顏色儲存起來
+            objectpos[i] = ObjectOnDesk[i].transform.position;
+            objectrot[i] = ObjectOnDesk[i].transform.rotation.eulerAngles;
         }
     }
     void Update()
@@ -41,44 +43,119 @@ public class DeskInteractive : MonoBehaviour
                 butt_and_text_open();
             }
 
-            Choose_PB();
-            Choose_card();
-            Choose_mamori();
-            Choose_flower();
-
-           
-            if (Input.GetAxis("Mouse ScrollWheel") != 0)
+            if (Input.GetAxis("Mouse ScrollWheel") != 0)    //滾輪
             {
                 index = index + (int)(Input.GetAxis("Mouse ScrollWheel") * 10);
+                do_once = true;
             }
 
             if (LookAt == false)
              {
-                 if (index < 0)
-                 {
-                    index = 0;
-                 }
-                if (index == 0)
-                {
-                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;
-                    ObjectOnDesk[1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[1];
-                }
 
                 if (index > ObjectOnDesk.Length - 1)
                 {
                     index = ObjectOnDesk.Length - 1;
+                    do_once = false;
                 }
-                if(index ==ObjectOnDesk.Length - 1)
+                if (index < 0)
+                 {
+                    index = 0;
+                    do_once = false;
+                }
+                if (index == 0)
+                {
+                    ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;     
+                    if (do_once)
+                    {
+                        ObjectOnDesk[index].transform.position = ObjectOnDesk[index].transform.position + new Vector3(0, 0.3f, 0);
+                        do_once = false;
+                    } 
+                    ObjectOnDesk[1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[1];
+                    ObjectOnDesk[1].transform.position = objectpos[1];
+                    ObjectOnDesk[1].transform.eulerAngles = objectrot[1];
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(-Vector3.right * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.S))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(Vector3.right * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.A))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(Vector3.forward * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.D))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(-Vector3.forward * turnspeed * Time.deltaTime);
+                    }
+                }
+
+                else if(index ==ObjectOnDesk.Length - 1)
                 
                 {
+                    if (do_once)
+                    {
+                        ObjectOnDesk[index].transform.position = ObjectOnDesk[index].transform.position + new Vector3(0, 0.3f, 0);
+                        do_once = false;
+                    }
                     ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;
+
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(-Vector3.right * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.S))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(Vector3.right * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.A))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(Vector3.forward * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.D))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(-Vector3.forward * turnspeed * Time.deltaTime);
+                    }
+
                     ObjectOnDesk[index-1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index-1];
+                    ObjectOnDesk[index - 1].transform.position = objectpos[index - 1];
+                    ObjectOnDesk[index - 1].transform.eulerAngles = objectrot[index - 1];
                 }
-                if(index>0 &&index< ObjectOnDesk.Length - 1)
+
+                else if (index > 0 && index < ObjectOnDesk.Length - 1)
                 {
+                    if (do_once)
+                    {
+                        ObjectOnDesk[index].transform.position = ObjectOnDesk[index].transform.position + new Vector3(0, 0.3f, 0);
+                        do_once = false;
+                    }
+
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(-Vector3.right * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.S))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(Vector3.right * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.A))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(Vector3.forward * turnspeed * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.D))
+                    {
+                        ObjectOnDesk[index].transform.Rotate(-Vector3.forward * turnspeed * Time.deltaTime);
+                    }
                     ObjectOnDesk[index].GetComponent<Renderer>().material.color = Color.yellow;
-                    ObjectOnDesk[index-1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index-1];
-                    ObjectOnDesk[index +1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index +1];
+
+                    ObjectOnDesk[index - 1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index - 1];
+                    ObjectOnDesk[index - 1].transform.position = objectpos[index - 1];
+                    ObjectOnDesk[index - 1].transform.eulerAngles = objectrot[index - 1];
+
+                    ObjectOnDesk[index + 1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[index + 1];
+                    ObjectOnDesk[index + 1].transform.position = objectpos[index+1];
+                    ObjectOnDesk[index + 1].transform.eulerAngles = objectrot[index + 1];
                 }
              }
 
@@ -93,6 +170,8 @@ public class DeskInteractive : MonoBehaviour
                 for (int i = 0; i < ObjectOnDesk.Length; i++)
                 {
                     ObjectOnDesk[i].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[i];
+                    ObjectOnDesk[i].transform.position = objectpos[i];
+                    ObjectOnDesk[i].transform.eulerAngles = objectrot[i];
                 }
             }
         }
@@ -160,38 +239,17 @@ public class DeskInteractive : MonoBehaviour
         focus_table.SetActive(false);
     }
 
-    void Table_SwitchTo_PB()        //將聚焦桌面的相機關閉，打開聚焦鉛筆盒(用於從桌面按Enter選鉛筆盒)
-    {
-        focus_pencilbox.SetActive(true);
-        focus_table.SetActive(false);
-    }
-    void PB_SwitchTo_Table()        //(用於離開鉛筆盒)
-    {
-        focus_pencilbox.SetActive(false);
-        focus_table.SetActive(true);
-    }
     void Table_SwitchTo_Card()
     {
         focus_table.SetActive(false);
         focus_card.SetActive(true);
-        cardpic.SetActive(true);
     }
     void Card_SwitchTo_Table()
     {
         focus_card.SetActive(false);
         focus_table.SetActive(true);
-        cardpic.SetActive(false);
     }
-    void Table_SwitchTo_mamori()
-    {
-        focus_table.SetActive(false);
-        focus_mamori.SetActive(true);
-    }
-    void Mamori_SwitchTo_Table()
-    {
-        focus_mamori.SetActive(false);
-        focus_table.SetActive(true);
-    }
+
     void Table_SwitchTo_flower()
     {
         focus_table.SetActive(false);
@@ -202,136 +260,4 @@ public class DeskInteractive : MonoBehaviour
         focus_flower.SetActive(false);
         focus_table.SetActive(true);
     }
-
-    //--------------------------------------------------------
-
-    // **** 與選擇物件相關****
-    void Choose_PB()     //跟鉛筆盒有關的
-    {
-        if (index == 0)
-
-        {
-            if (LookAt == false)
-            {
-                butt_t2.text = "滑鼠\n左鍵";
-                t2.text = "查看鉛筆盒";
-                butt_and_text_open2();
-            }
-            
-            if (Input.GetMouseButtonDown(0))
-            {
-                LookAt = true;
-                ObjectOnDesk[0].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[0];
-                Table_SwitchTo_PB();
-                butt_and_text_close();
-                butt_t2.text = "滑鼠\n右鍵";
-                t2.text = "離開鉛筆盒";
-            }
-            if (Input.GetMouseButtonDown(1) && LookAt==true)
-            {
-                ObjectOnDesk[0].GetComponent<Renderer>().material.color = Color.yellow;
-                PB_SwitchTo_Table();
-                butt_t2.text = "滑鼠\n左鍵";
-                t2.text = "查看鉛筆盒";
-                LookAt = false;
-            }
-        }
-        
-    }
-    // ----------------------------------------------------------------
-
-    //**** 選卡片
-    void Choose_card()
-    {
-        if (index == 2)
-        {
-            if (LookAt == false)
-            {
-                butt_t2.text = "滑鼠\n左鍵";
-                t2.text = "查看卡片";
-                butt_and_text_open2();
-            }
-            if (Input.GetMouseButtonDown(0))
-            {
-                LookAt = true;
-                ObjectOnDesk[2].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[2];
-                Table_SwitchTo_Card();
-                butt_and_text_close();
-                butt_t2.text = "滑鼠\n右鍵";
-                t2.text = "離開卡片";
-            }
-            if (Input.GetMouseButtonDown(1) && LookAt == true)
-            {
-                ObjectOnDesk[2].GetComponent<Renderer>().material.color = Color.yellow;
-                Card_SwitchTo_Table();
-                butt_t2.text = "滑鼠\n左鍵";
-                t2.text = "查看卡片";
-                LookAt = false;
-            }
-        }
-     
-    }
-
-    //****選御守
-    void Choose_mamori()
-    {
-        if (index == 1)
-        {
-            if (LookAt == false)
-            {
-                butt_t2.text = "滑鼠\n左鍵";
-                t2.text = "查看御守";
-                butt_and_text_open2();
-            }
-            
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                LookAt = true;
-                ObjectOnDesk[1].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[1];
-                Table_SwitchTo_mamori();
-                butt_and_text_close();
-                butt_t2.text = "滑鼠\n右鍵";
-                t2.text = "離開御守";
-            }
-            if (Input.GetMouseButtonDown(1) && LookAt == true)
-            {
-                ObjectOnDesk[1].GetComponent<Renderer>().material.color = Color.yellow;
-                Mamori_SwitchTo_Table();
-                butt_t2.text = "滑鼠\n左鍵";
-                t2.text = "查看御守";
-                LookAt = false;
-            }
-        }
-    }
-    void Choose_flower()
-    {
-        if (index == 3)
-        {
-            if (LookAt == false)
-            {
-                butt_t2.text = "滑鼠\n左鍵";
-                t2.text = "查看天堂鳥";
-                butt_and_text_open2();
-            }
-            if (Input.GetMouseButtonDown(0))
-            {
-                LookAt = true;
-                ObjectOnDesk[3].GetComponent<Renderer>().material.color = ObjectOnDesk_Color[3];
-                Table_SwitchTo_flower();
-                butt_and_text_close();
-                butt_t2.text = "滑鼠\n右鍵";
-                t2.text = "離開天堂鳥";
-            }
-            if (Input.GetMouseButtonDown(1) && LookAt == true)
-            {
-                ObjectOnDesk[3].GetComponent<Renderer>().material.color = Color.yellow;
-                Flower_SwitchTo_Table();
-                butt_t2.text = "滑鼠\n左鍵";
-                t2.text = "查看天堂鳥";
-                LookAt = false;
-            }
-        }
-    }
-    
 }
