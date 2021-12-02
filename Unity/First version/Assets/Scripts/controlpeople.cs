@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class controlpeople : MonoBehaviour
 {
+    public AudioSource walk;
     public CharacterController controller;
     public float speed;    //角色移動速度
-    Animator anim;
-
+    private bool run = false;
     void Update()
     {
-        speed = 1f;
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift)) { if (run) { run = false; } else { run = true; } }
+        if(run)
         {
+            walk.UnPause();
+            walk.pitch = 2;
             speed = 3;    //按shift可加速
+        }
+        else
+        {
+            walk.UnPause();
+            walk.pitch = 1;
+            speed = 1.5f;
         }
 
         //利用Input.GetAxis("Horizontal")、("Vertical")
@@ -23,9 +31,10 @@ public class controlpeople : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
+        if(move==new Vector3(0, 0, 0))
+        {
+            walk.Pause();
+        }
         controller.Move(move * speed * Time.deltaTime);
-
-
     }
-
 }
