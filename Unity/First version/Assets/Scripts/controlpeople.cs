@@ -6,7 +6,7 @@ public class controlpeople : MonoBehaviour
 {
     public AudioSource walk;
     public CharacterController controller;
-    public float speed;    //角色移動速度
+    static public float speed = 0;    //角色移動速度
     private bool run = false;
     void Update()
     {

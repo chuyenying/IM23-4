@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ChaMove : MonoBehaviour
-{
-    public float speed = 0;
-    public float direction;
+{   
+    public float speed;
+    public float direction = 0;
     Animator anim;
     Vector3 move;
     float forwardAmount;
+    private bool run = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,45 +18,47 @@ public class ChaMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        /*if (Input.GetKeyDown(KeyCode.LeftShift)) { if (run) { run = false; } else { run = true; } }
+        if (run)
+        {
+         
+            speed = 3;    //按shift可加速
+        }
+        else
+        {
+           
+            speed = 1.5f;
+        } */
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+        move = (transform.right * x) + transform.forward * z;
+        speed = controlpeople.speed;
         bool moveforward =Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.UpArrow);
         bool moveright = Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.RightArrow);
         bool moveleft = Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.LeftArrow);
         bool movebackward = Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.DownArrow);
-        speed = 0;
-        if(moveforward)
+        if (moveforward)
         {
             direction = 1;
-            speed = 2;
         }
         else if(movebackward)
         {
             direction = 2;
-            speed = 2;
         }
         else if (moveleft)
         {
             direction = 3;
-            speed = 2;
         }
         else if(moveright)
         {
             direction = 4;
-            speed = 2;
         }
-        else
+        if (move == new Vector3(0, 0, 0))
         {
-            direction = 1;
+            direction = 0;
             speed = 0;
         }
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            speed = 5;    //按shift可加速
-        }
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-        move = (transform.right * x) + transform.forward * z;
-
+        if (Input.GetKeyDown(KeyCode.LeftShift)) { if (run) { run = false; } else { run = true; } }
         UpdateAnim();
     }
     void UpdateAnim()
