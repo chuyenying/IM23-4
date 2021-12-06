@@ -1,123 +1,123 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Education; OS build 19043.1348; Version 2009; 64bit' Language: 'zh' Physical Memory: 16147 MB
+OS: 'Windows 10 Education; OS build 19043.1348; Version 2009; 64bit' Language: 'zh' Physical Memory: 12138 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
+D:\Unity\2020.3.21f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/User/Documents/Github/1106/Unity/First version
+D:/IM23-4/Unity/First version
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64792
-Successfully changed project path to: D:/User/Documents/Github/1106/Unity/First version
-D:/User/Documents/Github/1106/Unity/First version
+56205
+Successfully changed project path to: D:/IM23-4/Unity/First version
+D:/IM23-4/Unity/First version
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.15 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 264.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/User/Documents/Github/1106/Unity/First version/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/IM23-4/Unity/First version/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
     Vendor:   
-    VRAM:     3990 MB
-    Driver:   27.21.14.6262
+    VRAM:     6069 MB
+    Driver:   25.20.100.6577
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Mono path[0] = 'D:/Unity/2020.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001327 seconds.
+Register platform support module: D:/Unity/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005624 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.73 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 253.23 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.814 seconds
+- Completed reload, in  4.047 seconds
 Domain Reload Profiling:
-	ReloadAssembly (814ms)
-		BeginReloadAssembly (36ms)
+	ReloadAssembly (4048ms)
+		BeginReloadAssembly (166ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (339ms)
-			LoadAssemblies (35ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (2006ms)
+			LoadAssemblies (165ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
+			SetupTypeCache (615ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (136ms)
+			RebuildScriptCaches (127ms)
+			SetupLoadedEditorAssemblies (890ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (38ms)
-				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (63ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (253ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (411ms)
+				ProcessInitializeOnLoadMethodAttributes (153ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000611 seconds.
+Registered in 0.002920 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.19 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.611 seconds
+- Completed reload, in  2.929 seconds
 Domain Reload Profiling:
-	ReloadAssembly (612ms)
-		BeginReloadAssembly (98ms)
+	ReloadAssembly (2932ms)
+		BeginReloadAssembly (494ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (14ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (468ms)
-			LoadAssemblies (55ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (2241ms)
+			LoadAssemblies (238ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (146ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (151ms)
+			SetupTypeCache (780ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (235ms)
+			SetupLoadedEditorAssemblies (634ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (58ms)
-				ProcessInitializeOnLoadAttributes (79ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (249ms)
+				ProcessInitializeOnLoadAttributes (345ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1914 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.0 MB.
-System memory in use after: 82.0 MB.
+System memory in use before: 84.4 MB.
+System memory in use after: 84.5 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2359.
-Total: 1.996200 ms (FindLiveObjects: 0.121600 ms CreateObjectMapping: 0.029300 ms MarkObjects: 1.781100 ms  DeleteObjects: 0.063500 ms)
+Total: 6.488800 ms (FindLiveObjects: 0.385700 ms CreateObjectMapping: 0.164100 ms MarkObjects: 5.768800 ms  DeleteObjects: 0.167900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,65 +131,136 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Animation/Move 1.controller
-  artifactKey: Guid(26f25e721f806be4d9e19a406443db7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Move 1.controller using Guid(26f25e721f806be4d9e19a406443db7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b3f6b53a482c4dda30ba78e3c6b63c') in 0.059583 seconds 
-  Import took 0.062338 seconds .
+  path: Assets/建模/第一章/教室/教室裝飾品/New Folder
+  artifactKey: Guid(ee35125c121402542968a4a757319f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/New Folder using Guid(ee35125c121402542968a4a757319f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e2d0e0cd65d7f102354853ffae8baf') in 0.021200 seconds 
+  Import took 0.029676 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000610 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.590 seconds
-Domain Reload Profiling:
-	ReloadAssembly (590ms)
-		BeginReloadAssembly (84ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (460ms)
-			LoadAssemblies (61ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (153ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (145ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (74ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1907 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.6 MB.
-System memory in use after: 81.8 MB.
+Received Import Request.
+  Time since last request: 1.644301 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷
+  artifactKey: Guid(ee35125c121402542968a4a757319f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷 using Guid(ee35125c121402542968a4a757319f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49047a6c9a6dd073bbc9184a1d7caa33') in 0.006546 seconds 
+  Import took 0.015366 seconds .
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2361.
-Total: 1.775700 ms (FindLiveObjects: 0.118400 ms CreateObjectMapping: 0.029700 ms MarkObjects: 1.615400 ms  DeleteObjects: 0.011400 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 8.910288 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷1.fbx
+  artifactKey: Guid(33598a31cb230cc4fb6eaf4fe209a535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷1.fbx using Guid(33598a31cb230cc4fb6eaf4fe209a535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887e105ff54c4e33fb575eb2d07c35e7') in 0.344086 seconds 
+  Import took 0.352647 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 0.000580 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷4.fbx
+  artifactKey: Guid(970dda5c34b0a6346aeca180581b5833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷4.fbx using Guid(970dda5c34b0a6346aeca180581b5833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54a8d461929f15b1a043493e1e00184') in 0.055882 seconds 
+  Import took 0.066673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷3.fbx
+  artifactKey: Guid(240e317d7aac0b94682c0df07a6755fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷3.fbx using Guid(240e317d7aac0b94682c0df07a6755fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '821303ec828777236b04589000602096') in 0.046617 seconds 
+  Import took 0.052916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000564 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷2.fbx
+  artifactKey: Guid(071fcd894425b714599805665f5e3df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷2.fbx using Guid(071fcd894425b714599805665f5e3df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2564b38d4fbc4c983013958440b2313e') in 0.046262 seconds 
+  Import took 0.055144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.588790 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷1.fbx
+  artifactKey: Guid(33598a31cb230cc4fb6eaf4fe209a535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷1.fbx using Guid(33598a31cb230cc4fb6eaf4fe209a535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a0571028bb9189b8649a067234a8f00') in 0.054753 seconds 
+  Import took 0.061614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.205309 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷2.fbx
+  artifactKey: Guid(071fcd894425b714599805665f5e3df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷2.fbx using Guid(071fcd894425b714599805665f5e3df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4de46c2caf04409036e213b19cc47b7e') in 0.051376 seconds 
+  Import took 0.060461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.889392 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷3.fbx
+  artifactKey: Guid(240e317d7aac0b94682c0df07a6755fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷3.fbx using Guid(240e317d7aac0b94682c0df07a6755fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed6e426f52cf12877f12893a13e61b7') in 0.060048 seconds 
+  Import took 0.067839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.424851 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷4.fbx
+  artifactKey: Guid(970dda5c34b0a6346aeca180581b5833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/考試卷/考試卷4.fbx using Guid(970dda5c34b0a6346aeca180581b5833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351109a2ab33e41d1bfaab5d6e7b8fd2') in 0.054301 seconds 
+  Import took 0.065188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.764663 seconds.
+  path: Assets/建模/第一章/教室/教室裝飾品/板擦
+  artifactKey: Guid(40daab9e2ddbf8f499ee4ab616a2962e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/教室裝飾品/板擦 using Guid(40daab9e2ddbf8f499ee4ab616a2962e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20769dcb5bd5f4d03966726ed4db1619') in 0.003823 seconds 
+  Import took 0.010162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.317503 seconds.
+  path: Assets/建模/第一章/教室/機器人.fbm
+  artifactKey: Guid(c18e3bb010325a743914515d3682a987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/機器人.fbm using Guid(c18e3bb010325a743914515d3682a987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b282801619193ee558375363d70db46f') in 0.024310 seconds 
+  Import took 0.035966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.545706 seconds.
+  path: Assets/建模/第一章/教室/玩家桌子
+  artifactKey: Guid(70b7056f8800f334a997515691a711a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/玩家桌子 using Guid(70b7056f8800f334a997515691a711a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094055c57e60ce01737f098bb83e67ab') in 0.019989 seconds 
+  Import took 0.032176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.516066 seconds.
+  path: Assets/建模/第一章/教室/玩家桌子/糖果
+  artifactKey: Guid(73c53ce310bab884aab98c868eb3f300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/玩家桌子/糖果 using Guid(73c53ce310bab884aab98c868eb3f300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8d49ed9287392fa58df698f5ee4224') in 0.011556 seconds 
+  Import took 0.019060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.114423 seconds.
+  path: Assets/建模/第一章/教室/玩家桌子/糖果/candy.fbx
+  artifactKey: Guid(27f46989fc4c9ef42b55a884e5d263c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/玩家桌子/糖果/candy.fbx using Guid(27f46989fc4c9ef42b55a884e5d263c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc900b67f3daa1acdda06d1958e122e') in 0.135097 seconds 
+  Import took 0.144100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.009573 seconds.
+  path: Assets/建模/第一章/教室/玩家桌子/糖果/candy.fbx
+  artifactKey: Guid(27f46989fc4c9ef42b55a884e5d263c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/玩家桌子/糖果/candy.fbx using Guid(27f46989fc4c9ef42b55a884e5d263c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87dbd059f407c4dd43a863bc055fff0d') in 0.125078 seconds 
+  Import took 0.131337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.396427 seconds.
+  path: Assets/建模/第一章/教室/黑板
+  artifactKey: Guid(47ef03de0122ea64ab603be6b340fb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/建模/第一章/教室/黑板 using Guid(47ef03de0122ea64ab603be6b340fb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2c40d7523db728711f187eab98bb07') in 0.004176 seconds 
+  Import took 0.011888 seconds .
+
