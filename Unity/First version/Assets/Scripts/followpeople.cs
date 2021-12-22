@@ -17,7 +17,7 @@ public class followpeople : MonoBehaviour
     void Update()
     {
         //利用input.GetAxis取得滑鼠往X、Y方向的值
-        float mouse_x = Input.GetAxis("Mouse X") * mousespeed * Time.deltaTime;
+      /*  float mouse_x = Input.GetAxis("Mouse X") * mousespeed * Time.deltaTime;
         float mouse_y = Input.GetAxis("Mouse Y") * mousespeed * Time.deltaTime;
 
         xrotation -= mouse_y;
@@ -28,5 +28,6 @@ public class followpeople : MonoBehaviour
         //camera視角隨滑鼠移動
         playerbody.Rotate(Vector3.up * mouse_x);
         //玩家將滑鼠左右移動，角色也會跟著左右旋轉
+      */
     }
 }
