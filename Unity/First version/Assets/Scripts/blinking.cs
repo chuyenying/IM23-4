@@ -12,7 +12,7 @@ public class blinking : MonoBehaviour
 
     IEnumerator blink()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1);
         topeye.Play();
         bottomeye.Play();
     }

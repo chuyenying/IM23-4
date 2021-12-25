@@ -5,11 +5,9 @@ using UnityEngine.UI;
 public class DeskInteractive : MonoBehaviour
 {
     public GameObject bg;   //查看物件的背景
-    
+    private bool IfUserNeedNPC = true;
     public GameObject focus_people, focus_table, butt, firstperson_object, butt2;  
     //focus_people為跟隨人的攝影機,focus_table拍桌面的攝影機,butt為button
-    
-    public GameObject focus_flower;
     
     public Text butt_t, t, butt_t2, t2, more_info,write_name;   
     //butt_t為button的文字, t為button旁邊的文字
@@ -36,7 +34,6 @@ public class DeskInteractive : MonoBehaviour
     {
         focus_people.SetActive(true);
         focus_table.SetActive(false);   //一開始桌子跟鉛筆盒的相機都先關閉
-        focus_flower.SetActive(false);
         butt_and_text_close();          //上下button也全關閉
         butt_and_text_close2();
         bg.SetActive(false);
@@ -48,6 +45,7 @@ public class DeskInteractive : MonoBehaviour
             objectpos[i] = ObjectOnDesk[i].transform.position;  //儲存一開始物件的位置
             objectrot[i] = ObjectOnDesk[i].transform.rotation.eulerAngles;//儲存一開始物件的角度
         }
+        StartCoroutine(NPC_WaitFor30Sec());
     }
     void Update()
     {
@@ -60,7 +58,11 @@ public class DeskInteractive : MonoBehaviour
                 t.text = "離開桌面";
                 butt_and_text_open();
             }
-
+            Choose_paper1();
+            Choose_paper2();
+            Choose_paper3();
+            Choose_paper4();
+            Choose_paper5();
             Choose_card();
             Choose_flower();
             if (!see_image) //避免玩家在查看(EX:卡片內容)的時候使用滾輪而出錯
@@ -206,6 +208,7 @@ public class DeskInteractive : MonoBehaviour
 
             if (Input.GetKey(KeyCode.E) && E_use == false)    //沒按過E鍵才可以開啟桌面
             {
+                IfUserNeedNPC = false;  //玩家查看桌面了，所以不需要A來引導
                 firstperson_object.gameObject.SetActive(false); //打開桌面後，角色就暫時看不到
                 player_pos = firstperson_object.gameObject.transform.position;  //把角色按下E當下的位置記錄起來。
                 butt_and_text_close();                         //把BUTTON跟文字關閉
@@ -258,19 +261,77 @@ public class DeskInteractive : MonoBehaviour
         focus_table.SetActive(false);
     }
 
-    void Table_SwitchTo_flower()
-    {
-        focus_table.SetActive(false);
-        focus_flower.SetActive(true);
-    }
-    void Flower_SwitchTo_Table()
-    {
-        focus_flower.SetActive(false);
-        focus_table.SetActive(true);
-    }
-    void Choose_card()
+    // *******************************
+    void Choose_paper1()
     {
         if (index == 0)
+        {
+            if (LookAt == false)
+            {
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                butt_and_text_open2();
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+                see_image = true;
+                LookAt = true;
+                bg.SetActive(true);                         //讀內容的背景
+                more_info.text = "\t\t\t前一天才和你一起打球，\n\n\t\t\t你說輸的要請飲料，但我還沒請你怎麼可以先走了...";
+                more_info.gameObject.SetActive(true);       //道具的內容
+                write_name.text = "曉銘";
+                write_name.gameObject.SetActive(true);      //卡片署名的TEXT
+                butt_t2.text = "滑鼠\n右鍵";
+                t2.text = "離開便條紙";
+            }
+            if (Input.GetMouseButtonDown(1) && LookAt == true)
+            {
+                bg.SetActive(false);
+                more_info.gameObject.SetActive(false);
+                write_name.gameObject.SetActive(false);
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                LookAt = false;
+                see_image = false;    //玩家才可以重新使用滾輪選取物件
+            }
+        }
+    }
+
+    void Choose_paper2()
+    {
+        if (index == 1)
+        {
+            if (LookAt == false)
+            {
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                butt_and_text_open2();
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+                see_image = true;
+                LookAt = true;
+                bg.SetActive(true);                         //讀內容的背景
+                more_info.text = "\t\t\t\t上天總是把善良的人先帶走\n\n\t\t\t\t你要快樂\n\n\t\t\t\t我們好想你\n\n\t\t\t\t你要在那邊過得開心\n\n\t\t\t\t謝謝你\n\n\t\t\t\t你怎麼先離開了..";
+                more_info.gameObject.SetActive(true);       //道具的內容
+                butt_t2.text = "滑鼠\n右鍵";
+                t2.text = "離開便條紙";
+            }
+            if (Input.GetMouseButtonDown(1) && LookAt == true)
+            {
+                bg.SetActive(false);
+                more_info.gameObject.SetActive(false);
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                LookAt = false;
+                see_image = false;    //玩家才可以重新使用滾輪選取物件
+            }
+        }
+    }
+
+    void Choose_card()
+    {
+        if (index == 2)
         {
             if (LookAt == false)
             {
@@ -283,9 +344,9 @@ public class DeskInteractive : MonoBehaviour
                 see_image = true;
                 LookAt = true;
                 bg.SetActive(true);                         //讀內容的背景
-                more_info.text = "xx,對不起... ";
+                more_info.text = "\n\n\t\t\t\t\t\t\t\t\t曉鶴,對不起... ";
                 more_info.gameObject.SetActive(true);       //道具的內容
-                write_name.text = "主角";
+                write_name.text = "吳旻蘭";
                 write_name.gameObject.SetActive(true);      //卡片署名的TEXT
                 butt_t2.text = "滑鼠\n右鍵";
                 t2.text = "離開卡片";
@@ -302,9 +363,114 @@ public class DeskInteractive : MonoBehaviour
             }
         }
     }
-     void Choose_flower()
+
+    void Choose_paper3()
     {
-        if (index == 1)
+        if (index == 3)
+        {
+            if (LookAt == false)
+            {
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                butt_and_text_open2();
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+                see_image = true;
+                LookAt = true;
+                bg.SetActive(true);                         //讀內容的背景
+                more_info.text = "\t\t\t\t因為有你，我才有信心讀到那間大學，\n\n\t\t\t\t我都打算放棄了是你改變了我。\n\n\t\t\t\t你對大家都那麼好為什麼死神要找上你...";
+                more_info.gameObject.SetActive(true);       //道具的內容
+                write_name.text = "宇熙";
+                write_name.gameObject.SetActive(true);      //卡片署名的TEXT
+                butt_t2.text = "滑鼠\n右鍵";
+                t2.text = "離開便條紙";
+            }
+            if (Input.GetMouseButtonDown(1) && LookAt == true)
+            {
+                bg.SetActive(false);
+                more_info.gameObject.SetActive(false);
+                write_name.gameObject.SetActive(false);
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                LookAt = false;
+                see_image = false;    //玩家才可以重新使用滾輪選取物件
+            }
+        }
+    }
+
+    void Choose_paper4()
+    {
+        if (index == 4)
+        {
+            if (LookAt == false)
+            {
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                butt_and_text_open2();
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+                see_image = true;
+                LookAt = true;
+                bg.SetActive(true);                         //讀內容的背景
+                more_info.text = "\t\t\t\t第一次感覺到死亡原來那麼近，\n\n\t\t\t\t記得要在那邊快樂活著...";
+                more_info.gameObject.SetActive(true);       //道具的內容
+                write_name.text = "大寶上";
+                write_name.gameObject.SetActive(true);      //卡片署名的TEXT
+                butt_t2.text = "滑鼠\n右鍵";
+                t2.text = "離開便條紙";
+            }
+            if (Input.GetMouseButtonDown(1) && LookAt == true)
+            {
+                bg.SetActive(false);
+                more_info.gameObject.SetActive(false);
+                write_name.gameObject.SetActive(false);
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                LookAt = false;
+                see_image = false;    //玩家才可以重新使用滾輪選取物件
+            }
+        }
+    }
+
+    void Choose_paper5()
+    {
+        if (index == 5)
+        {
+            if (LookAt == false)
+            {
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                butt_and_text_open2();
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+                see_image = true;
+                LookAt = true;
+                bg.SetActive(true);                         //讀內容的背景
+                more_info.text = "\n\n\t\t\t\t\t\t\t\t\t曉鶴，一路好走";
+                more_info.gameObject.SetActive(true);       //道具的內容
+                write_name.text = "筱涵";
+                write_name.gameObject.SetActive(true);      //卡片署名的TEXT
+                butt_t2.text = "滑鼠\n右鍵";
+                t2.text = "離開便條紙";
+            }
+            if (Input.GetMouseButtonDown(1) && LookAt == true)
+            {
+                bg.SetActive(false);
+                more_info.gameObject.SetActive(false);
+                write_name.gameObject.SetActive(false);
+                butt_t2.text = "滑鼠\n左鍵";
+                t2.text = "查看便條紙";
+                LookAt = false;
+                see_image = false;    //玩家才可以重新使用滾輪選取物件
+            }
+        }
+    }
+    void Choose_flower()
+    {
+        if (index == 6)
         {
             if (LookAt == false)
             {
@@ -314,20 +480,34 @@ public class DeskInteractive : MonoBehaviour
             }
             if (Input.GetMouseButtonDown(0))
             {
+                see_image = true;
                 LookAt = true;
-                Table_SwitchTo_flower();
-                butt_and_text_close();
+                bg.SetActive(true);                         //讀內容的背景
+                more_info.text = "天堂鳥\n\n鶴望蘭（學名：Strelitzia reginae），又稱天堂鳥或極樂鳥花，\n為鶴望蘭科鶴望蘭屬物種，\n是原產南非的一種單子葉植物。\n它們學名是為紀念英王喬治三世王妃夏洛特皇后而取的。 ";
+                more_info.gameObject.SetActive(true);       //道具的內容
                 butt_t2.text = "滑鼠\n右鍵";
                 t2.text = "離開花瓶";
             }
             if (Input.GetMouseButtonDown(1) && LookAt == true)
             {
-                Flower_SwitchTo_Table();
+                bg.SetActive(false);
+                more_info.gameObject.SetActive(false);
+                write_name.gameObject.SetActive(false);
                 butt_t2.text = "滑鼠\n左鍵";
                 t2.text = "查看花瓶";
                 LookAt = false;
+                see_image = false;    //玩家才可以重新使用滾輪選取物件
             }
         }
      }
+
+    IEnumerator NPC_WaitFor30Sec()
+    {
+        yield return new WaitForSeconds(30);
+        if (IfUserNeedNPC)
+        {
+            //觸發A同學劇情
+        }
+    }
 }
 
