@@ -8,7 +8,6 @@ public class ChaMove : MonoBehaviour
     public float direction = 0;
     Animator anim;
     Vector3 move;
-    float forwardAmount;
     private bool run = false;
     // Start is called before the first frame update
     void Start()
@@ -18,17 +17,6 @@ public class ChaMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.LeftShift)) { if (run) { run = false; } else { run = true; } }
-        if (run)
-        {
-         
-            speed = 3;    //«öshift¥i¥[³t
-        }
-        else
-        {
-           
-            speed = 1.5f;
-        } */
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         move = (transform.right * x) + transform.forward * z;

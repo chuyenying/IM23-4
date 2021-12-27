@@ -12,10 +12,12 @@ public class DeskInteractive : MonoBehaviour
     public Text butt_t, t, butt_t2, t2, more_info,write_name;   
     //butt_t為button的文字, t為button旁邊的文字
    
-    private bool E_use = false, LookAt = false, do_once = true,see_image=false;     
+    private bool E_use = false, LookAt = false, do_once = true,see_image=false;
     //紀錄是否按下了E鍵，如果按下了E鍵才可以按F退出桌面。LookAt紀錄是否正在看鉛筆盒
     //do_once避免進入桌面後道具越來越高。
-    
+
+    static public bool Amove = false;
+
     private Vector3 player_pos;    
     //用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
     
@@ -503,11 +505,15 @@ public class DeskInteractive : MonoBehaviour
 
     IEnumerator NPC_WaitFor30Sec()
     {
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(1);
         if (IfUserNeedNPC)
         {
             //觸發A同學劇情
+            Amove = true;
+            GameObject.Find("同學A").GetComponent<movetoplayer>().enabled = true;
+            GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
         }
+
     }
 }
 
