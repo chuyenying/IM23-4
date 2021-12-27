@@ -7,9 +7,11 @@ public class open_door : MonoBehaviour
     public Text b1_t,t1;
     public GameObject b1;
     private bool open = false;
+    float op = 0;
+    private Animator anim;
     private void Start()
     {
-       
+        anim = GetComponent<Animator>();
     }
     private void OnTriggerStay(Collider other)
     {
@@ -32,20 +34,27 @@ public class open_door : MonoBehaviour
    
             if (Input.GetKey(KeyCode.E) && !open)
             {
-                //從教室開門，播放動畫
                 open = true;
+                op = 1;
+                //從教室開門，播放動畫   
             }
             else if (Input.GetKey(KeyCode.F) && open)
             {
                 //從走廊關門，播放動畫
+                op = 0;
                 open = false;
             }
-
+            
         }
+        Updateanim();
     }
     private void OnTriggerExit(Collider other)
     {
         b1.SetActive(false);
         t1.gameObject.SetActive(false);
+    }
+    void Updateanim()
+    {
+        anim.SetFloat("open", op);
     }
 }

@@ -20,7 +20,7 @@ public class movetoplayer : MonoBehaviour
     void Update()
     {
         Vector3 a = new Vector3(0, 0, -0.5f);
-        //Vector3 look = GameObject.Find("FirstPerson").transform.position;
+        Vector3 look = nav.nextPosition;
         Vector3 point = GameObject.Find("FirstPerson").transform.position + a;
         if(DeskInteractive.Amove)
         {
@@ -37,7 +37,6 @@ public class movetoplayer : MonoBehaviour
             direction = 0;
             speed = 0;
             GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
-            //GameObject.Find("FirstPerson").GetComponent<ChaMove>().enabled = true;
             GameObject.Find("¦P¾ÇA").GetComponent<movetoplayer>().enabled = false;
 
         }

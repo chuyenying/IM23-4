@@ -505,7 +505,7 @@ public class DeskInteractive : MonoBehaviour
 
     IEnumerator NPC_WaitFor30Sec()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(30);
         if (IfUserNeedNPC)
         {
             //觸發A同學劇情
