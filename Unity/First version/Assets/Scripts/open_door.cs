@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class open_door : MonoBehaviour
 {
-    public Text b1_t,t1;
-    public GameObject b1;
     private bool open = false;
     float op = 0;
     private Animator anim;
@@ -17,21 +15,6 @@ public class open_door : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (!open)
-            {
-                b1.SetActive(true);
-                t1.gameObject.SetActive(true);
-                b1_t.text = "E";
-                t1.text = "打開門";
-            }
-            else
-            {
-                b1.SetActive(true);
-                t1.gameObject.SetActive(true);
-                b1_t.text = "F";
-                t1.text = "關上門";
-            }
-   
             if (Input.GetKey(KeyCode.E) && !open)
             {
                 open = true;
@@ -47,11 +30,6 @@ public class open_door : MonoBehaviour
             
         }
         Updateanim();
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        b1.SetActive(false);
-        t1.gameObject.SetActive(false);
     }
     void Updateanim()
     {

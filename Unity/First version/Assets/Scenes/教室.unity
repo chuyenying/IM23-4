@@ -532,6 +532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 89815097}
   - component: {fileID: 89815098}
+  - component: {fileID: 89815099}
   m_Layer: 0
   m_Name: "\u958B\u9580trigger"
   m_TagString: Untagged
@@ -566,6 +567,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5290909, y: 0.79672956, z: 1.0015634}
   m_Center: {x: -0.36450195, y: -0.10163498, z: 0.00079029804}
+--- !u!114 &89815099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89815096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8798d500feae1547b93d89435270051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b1_t: {fileID: 515150458}
+  t1: {fileID: 330869561}
+  b1: {fileID: 1227408042}
 --- !u!1 &111483057
 GameObject:
   m_ObjectHideFlags: 0
@@ -25851,9 +25867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4755cfb9bfde694cad246f54100174d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  b1_t: {fileID: 330869561}
-  t1: {fileID: 330869561}
-  b1: {fileID: 1227408042}
 --- !u!23 &2946507039769337258
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49277,6 +49290,7 @@ GameObject:
   - component: {fileID: 8616656245324379730}
   - component: {fileID: 1873390356155188105}
   - component: {fileID: 7290537260203820121}
+  - component: {fileID: 7445332895141381766}
   m_Layer: 0
   m_Name: "\u524D\u9580"
   m_TagString: Untagged
@@ -49284,6 +49298,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7445332895141381766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7445332895141381765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 1.9999998, z: 0.43572062}
+  m_Center: {x: -0.37000227, y: 0.9999999, z: 0.03411171}
 --- !u!33 &7448787667270601148
 MeshFilter:
   m_ObjectHideFlags: 0
