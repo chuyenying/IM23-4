@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class choose_SoundEffect : MonoBehaviour
 {
-    public GameObject Ob;
-    public AudioSource choose_sound;
-    private bool do_once=true;  //避免音效重複播放
+    [SerializeField] private GameObject Ob;
+    [SerializeField] private AudioSource choose_sound;
+    [SerializeField] private bool do_once=true;  //避免音效重複播放
     void Update()
     {
-        if(Ob.transform.position== new Vector3(-1.039f, 1.5f, -0.299f)) {   //物件飛起來的時候(選物件)
+        if(Ob.transform.position== new Vector3(-0.484f, 1.35f, -0.853f)) {   //物件飛起來的時候(選物件)
             if (do_once) { choose_sound.Play(); } 
             do_once = false;
         } 
