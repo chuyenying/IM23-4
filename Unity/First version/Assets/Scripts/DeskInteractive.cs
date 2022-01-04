@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DeskInteractive : MonoBehaviour
 {
-    public GameObject bg;   //查看物件的背景
+    [SerializeField] private GameObject bg;   //查看物件的背景
     private bool IfUserNeedNPC = true;
-    public GameObject focus_people, focus_table, butt, firstperson_object, butt2;  
+    [SerializeField] private GameObject focus_people, focus_table, butt, firstperson_object, butt2;
     //focus_people為跟隨人的攝影機,focus_table拍桌面的攝影機,butt為button
-    
-    public Text butt_t, t, butt_t2, t2, more_info,write_name;   
+
+    [SerializeField] private Text butt_t, t, butt_t2, t2, more_info,write_name;   
     //butt_t為button的文字, t為button旁邊的文字
    
     private bool E_use = false, LookAt = false, do_once = true,see_image=false;
@@ -18,10 +18,11 @@ public class DeskInteractive : MonoBehaviour
 
     static public bool Amove = false;
 
-    private Vector3 player_pos;    
-    //用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
-    
-    public GameObject[] ObjectOnDesk = new GameObject[8];  
+    private Vector3 player_pos, ob_pos = new Vector3(-0.484f, 1.35f, -0.853f);
+    //player_pos用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
+    //ob_pos是物體被選到的位置
+
+    [SerializeField] private GameObject[] ObjectOnDesk = new GameObject[8];  
     //此陣列存放存放桌子上的物件
    
     private Vector3[] objectpos = new Vector3[8],objectrot = new Vector3[8];    
@@ -31,6 +32,8 @@ public class DeskInteractive : MonoBehaviour
     //ObjectOnDesk的索引值
 
     private float turnspeed = 100f;
+
+
     //選物件的旋轉速度
     void Start()
     {
@@ -92,7 +95,7 @@ public class DeskInteractive : MonoBehaviour
                     {
                         if (do_once)
                         {
-                            ObjectOnDesk[index].transform.position = new Vector3(-1.039f, 1.5f, -0.299f);
+                            ObjectOnDesk[index].transform.position = ob_pos;
                             do_once = false;
                         }
                         ObjectOnDesk[1].transform.position = objectpos[1];
@@ -123,7 +126,7 @@ public class DeskInteractive : MonoBehaviour
                     {
                         if (do_once)
                         {
-                            ObjectOnDesk[index].transform.position = new Vector3(-1.039f, 1.5f, -0.299f);
+                            ObjectOnDesk[index].transform.position = ob_pos;
                             do_once = false;
                         }
 
@@ -154,7 +157,7 @@ public class DeskInteractive : MonoBehaviour
                     {
                         if (do_once)
                         {
-                            ObjectOnDesk[index].transform.position = new Vector3(-1.039f, 1.5f, -0.299f);
+                            ObjectOnDesk[index].transform.position = ob_pos;
                             do_once = false;
                         }
 
@@ -485,7 +488,7 @@ public class DeskInteractive : MonoBehaviour
                 see_image = true;
                 LookAt = true;
                 bg.SetActive(true);                         //讀內容的背景
-                more_info.text = "天堂鳥\n\n鶴望蘭（學名：Strelitzia reginae），又稱天堂鳥或極樂鳥花，\n為鶴望蘭科鶴望蘭屬物種，\n是原產南非的一種單子葉植物。\n它們學名是為紀念英王喬治三世王妃夏洛特皇后而取的。 ";
+                more_info.text = "天堂鳥\n\n鶴望蘭（學名：Strelitzia reginae），又稱天堂鳥或極樂鳥花，\n為鶴望蘭科鶴望蘭屬物種，\n是原產南非的一種單子葉植物。\n\n\n天堂鳥的花語:\n能飛向天堂的鳥，能把各種情感、思戀帶到天堂，\n為自由與幸福的化身。";
                 more_info.gameObject.SetActive(true);       //道具的內容
                 butt_t2.text = "滑鼠\n右鍵";
                 t2.text = "離開花瓶";
