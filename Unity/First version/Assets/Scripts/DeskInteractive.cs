@@ -203,7 +203,7 @@ public class DeskInteractive : MonoBehaviour
             }
         }
     }
-    void OnCollisionStay(Collision other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -223,7 +223,7 @@ public class DeskInteractive : MonoBehaviour
         }
     }
 
-    void OnCollisionExit(Collision other)
+    void OnTriggerExit(Collider other)
     {
         butt_and_text_close();
     }

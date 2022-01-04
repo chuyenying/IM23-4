@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class LevelLoader : MonoBehaviour
 {
+
     public GameObject loadingScreen;
     public Slider slider;
     public Text progressText;
@@ -16,7 +17,7 @@ public class LevelLoader : MonoBehaviour
     {
         yield return new WaitForSeconds(22);
         loadingScreen.SetActive(true);
-        StartCoroutine(LoadAsynchronously("БаЋЧ"));
+        StartCoroutine(LoadAsynchronously("Home"));
     }
     IEnumerator LoadAsynchronously (string sceneName)
     {
