@@ -6,10 +6,21 @@ public class controlpeople : MonoBehaviour
 {
     public AudioSource walk;
     public CharacterController controller;
+    [SerializeField] public float gravity = -9.81f;
+    [SerializeField] Vector3 velocity;
     static public float speed = 0;    //角色移動速度
     private bool run = false;
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
+   [SerializeField] bool isGrounded;
     void Update()
     {
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        if(isGrounded && velocity.y < 0)
+        {
+            velocity.y = 0f;
+        }
         if (Input.GetKeyDown(KeyCode.LeftShift)) { if (run) { run = false; } else { run = true; } }
         if(run)
         {
@@ -35,6 +46,9 @@ public class controlpeople : MonoBehaviour
         {
             walk.Pause();
         }
+
         controller.Move(move * speed * Time.deltaTime);
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
     }
 }
