@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public Animator Anim;
-    public AudioSource music;
+    //public AudioSource music;
 
     private void Start()
     {
@@ -13,9 +13,9 @@ public class ChangeScene : MonoBehaviour
     }
     IEnumerator waitfor22()
     {
-        yield return new WaitForSeconds(22);
+        yield return new WaitForSeconds(20);
         Anim.SetTrigger("Start");
-        music.Play();
+        //music.Play();
         StartCoroutine(waitfor2());
     }
 
