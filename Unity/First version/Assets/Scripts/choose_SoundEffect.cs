@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class choose_SoundEffect : MonoBehaviour
 {
     [SerializeField] private GameObject Ob;
