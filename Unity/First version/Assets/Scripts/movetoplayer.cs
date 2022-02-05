@@ -13,14 +13,14 @@ public class movetoplayer : MonoBehaviour
     {
         GameObject.Find("¦P¾ÇA").GetComponent<movetoplayer>().enabled = false;
         anim = GetComponent<Animator>();
-        nav = GetComponent<NavMeshAgent>();
+        //nav = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 a = new Vector3(0, 0, -0.5f);
-        Vector3 look = nav.nextPosition;
+        //Vector3 look = nav.nextPosition;
         Vector3 point = GameObject.Find("FirstPerson").transform.position + a;
         if(DeskInteractive.Amove)
         {
