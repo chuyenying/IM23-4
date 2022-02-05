@@ -18,7 +18,7 @@ public class DeskInteractive : MonoBehaviour
 
     static public bool Amove = false;
 
-    private Vector3 player_pos, ob_pos = new Vector3(-0.484f, 1.35f, -0.853f);
+    private Vector3 player_pos, ob_pos = new Vector3(-0.473f, 3.972f, 23.622f);
     //player_pos用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
     //ob_pos是物體被選到的位置
 
