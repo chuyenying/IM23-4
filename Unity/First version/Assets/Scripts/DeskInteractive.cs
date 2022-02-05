@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class DeskInteractive : MonoBehaviour
 {
     [SerializeField] private GameObject bg;   //查看物件的背景
-    //private bool IfUserNeedNPC = true;
+    private bool IfUserNeedNPC = true;
     [SerializeField] private GameObject focus_people, focus_table, butt, firstperson_object, butt2;
     //focus_people為跟隨人的攝影機,focus_table拍桌面的攝影機,butt為button
 
@@ -18,14 +18,14 @@ public class DeskInteractive : MonoBehaviour
 
     static public bool Amove = false;
 
-    private Vector3 player_pos,ob_pos = new Vector3(-0.445f, 3.979f, 23.568f);
+    private Vector3 player_pos, ob_pos = new Vector3(-0.484f, 1.35f, -0.853f);
     //player_pos用來固定角色的位置，防止角色在聚焦桌子後亂跑，離開桌子後卻發現自己根本不在桌子旁邊
     //ob_pos是物體被選到的位置
 
-    [SerializeField] private GameObject[] ObjectOnDesk = new GameObject[7];  
+    [SerializeField] private GameObject[] ObjectOnDesk = new GameObject[8];  
     //此陣列存放存放桌子上的物件
    
-    private Vector3[] objectpos = new Vector3[7],objectrot = new Vector3[7];    
+    private Vector3[] objectpos = new Vector3[8],objectrot = new Vector3[8];    
     //儲存一開始物件的位子跟旋轉角度
    
     private int index = 0;        
@@ -50,7 +50,7 @@ public class DeskInteractive : MonoBehaviour
             objectpos[i] = ObjectOnDesk[i].transform.position;  //儲存一開始物件的位置
             objectrot[i] = ObjectOnDesk[i].transform.rotation.eulerAngles;//儲存一開始物件的角度
         }
-        //StartCoroutine(NPC_WaitFor30Sec());
+        StartCoroutine(NPC_WaitFor30Sec());
     }
     void Update()
     {
@@ -213,7 +213,7 @@ public class DeskInteractive : MonoBehaviour
 
             if (Input.GetKey(KeyCode.E) && E_use == false)    //沒按過E鍵才可以開啟桌面
             {
-                //IfUserNeedNPC = false;  //玩家查看桌面了，所以不需要A來引導
+                IfUserNeedNPC = false;  //玩家查看桌面了，所以不需要A來引導
                 firstperson_object.gameObject.SetActive(false); //打開桌面後，角色就暫時看不到
                 player_pos = firstperson_object.gameObject.transform.position;  //把角色按下E當下的位置記錄起來。
                 butt_and_text_close();                         //把BUTTON跟文字關閉
@@ -506,17 +506,17 @@ public class DeskInteractive : MonoBehaviour
         }
      }
 
-    //IEnumerator NPC_WaitFor30Sec()
-    //{
-    //    yield return new WaitForSeconds(30);
-    //    if (IfUserNeedNPC)
-    //    {
-    //        //觸發A同學劇情
-    //        //Amove = true;
-    //        //GameObject.Find("同學A").GetComponent<movetoplayer>().enabled = true;
-    //        //GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
-    //    }
+    IEnumerator NPC_WaitFor30Sec()
+    {
+        yield return new WaitForSeconds(30);
+        if (IfUserNeedNPC)
+        {
+            //觸發A同學劇情
+            Amove = true;
+            GameObject.Find("同學A").GetComponent<movetoplayer>().enabled = true;
+            GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
+        }
 
-    //}
+    }
 }
 
