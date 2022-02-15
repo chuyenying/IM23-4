@@ -20,7 +20,7 @@ public class flicker : MonoBehaviour
     IEnumerator Light_flicker_on()
     {
         call = !call;
-        turn_sec = Random.Range(1, 3);
+        turn_sec = Random.Range(0, 2);
         OffOrOn = Random.Range(0, 2);
   
         yield return new WaitForSeconds(turn_sec);
