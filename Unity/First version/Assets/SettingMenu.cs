@@ -6,12 +6,15 @@ using UnityEngine.UI;
 
 public class SettingMenu : MonoBehaviour
 {
+    public Toggle FullScreen;
     public AudioMixer audioMixer;
     public Dropdown resolusionDropdown;
     Resolution[] resolutions;
 
     private void Start()
     {
+        Screen.fullScreen = FullScreen.isOn;
+
         resolutions = Screen.resolutions;
         resolusionDropdown.ClearOptions();
         List<string> options = new List<string>();
