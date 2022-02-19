@@ -197,6 +197,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+  - id: 6
+    fields:
+    - title: Name
+      value: Act
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -3025,7 +3039,7 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: "Variable[\"\u4E8C\u6B21\u5C0D\u8A71\"] == false"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4014,7 +4028,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Animation(Move1)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4795,7 +4809,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: LoadLevel(Home)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4807,10 +4821,22 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: "Variable[\"\u4E8C\u6B21\u5C0D\u8A71\"] = true;;"
+      userScript: "Variable[\"\u4E8C\u6B21\u5C0D\u8A71\"] = true"
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9fbdfbcdf2f906948b9fac8af5c73b7f, type: 2}
+            m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_MethodName: set_name
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -5320,8 +5346,8 @@ MonoBehaviour:
         y: 657.67114
         width: 160
         height: 30
-    canvasScrollPosition: {x: 79.457085, y: 728.7557}
-    canvasZoom: 0.6700003
+    canvasScrollPosition: {x: 96.056526, y: 615.03107}
+    canvasZoom: 0.46000046
   - id: 8
     fields:
     - title: Title
