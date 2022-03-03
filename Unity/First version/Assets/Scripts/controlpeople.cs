@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class controlpeople : MonoBehaviour
 {
-    public AudioSource walk;
+    public static Vector3 move;
     public CharacterController controller;
     [SerializeField] public float gravity = -9.81f;
     [SerializeField] Vector3 velocity;
@@ -24,14 +24,10 @@ public class controlpeople : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift)) { if (run) { run = false; } else { run = true; } }
         if(run)
         {
-            walk.UnPause();
-            walk.pitch = 2;
             speed = 3;    //按shift可加速
         }
         else
         {
-            walk.UnPause();
-            walk.pitch = 1;
             speed = 1.5f;
         }
 
@@ -41,11 +37,7 @@ public class controlpeople : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
-        if(move==new Vector3(0, 0, 0))
-        {
-            walk.Pause();
-        }
+        move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
