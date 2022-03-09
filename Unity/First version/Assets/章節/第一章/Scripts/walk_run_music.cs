@@ -5,7 +5,13 @@ using UnityEngine;
 public class walk_run_music : MonoBehaviour
 {
     [SerializeField] private AudioSource walk, run;
-    private bool iswalk=true;
+    private bool iswalk=true;   //判斷走路或跑步
+
+    void start()
+    {
+        walk.Pause();
+        run.Pause();
+    }
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.LeftShift))
