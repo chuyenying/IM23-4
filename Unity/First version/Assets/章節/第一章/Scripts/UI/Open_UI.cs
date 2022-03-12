@@ -6,7 +6,8 @@ using UnityEngine;
 public class Open_UI : MonoBehaviour
 {
     [SerializeField] private Animator MainMenu;
-    public bool open = false,Open_SM=false;
+    public static bool open = false;
+    private bool Open_SM=false;
     //Open_SM為打開設定與幫助菜單
 
     public void QuitGame()
@@ -29,7 +30,7 @@ public class Open_UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyUp(KeyCode.Escape) && !DeskInteractive_Main.E_use && !DeskInteractive_bro.E_use)
         {
             open = !open;
             if (open && !Open_SM)

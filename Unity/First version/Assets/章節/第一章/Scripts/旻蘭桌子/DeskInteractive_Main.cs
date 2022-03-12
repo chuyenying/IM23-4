@@ -11,7 +11,7 @@ public class DeskInteractive_Main : MonoBehaviour
     [SerializeField] private GameObject selectionManager;
     //[SerializeField] private GameObject selectionManager;
 
-    private bool E_use = false;
+    public static bool E_use = false;
 
     private void Start()
     {

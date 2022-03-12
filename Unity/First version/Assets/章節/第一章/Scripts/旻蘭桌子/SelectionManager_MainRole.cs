@@ -13,6 +13,7 @@ public class SelectionManager_MainRole : MonoBehaviour
     [SerializeField] private Animator SelectOB_anim;
     private Transform _selection;
     public static bool read_info = false;
+    public static bool take_phone=false, take_candy=true;
     private Ray ray;
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,7 @@ public class SelectionManager_MainRole : MonoBehaviour
         if (_selection != null)
         {
             var selectionRenderer = _selection.GetComponent<Renderer>();
-            selectionRenderer.material = defaultMaterial;
+            //selectionRenderer.material = defaultMaterial;
             //_selection.gameObject.layer = LayerMask.NameToLayer("Default");
             _selection = null;  //沒抓到物件的時候就會一直是null
         }
@@ -50,26 +51,29 @@ public class SelectionManager_MainRole : MonoBehaviour
                 if (selectionRenderer != null)
                 {
                     name = gb.name;
-                    selectionRenderer.material = highlightMaterial; //把她高光
+                    //selectionRenderer.material = highlightMaterial; //把她高光
                     //gb.layer = LayerMask.NameToLayer("highlight");     // 使用shader用layer控制
                 }
                 if (Input.GetMouseButtonUp(0) && ! read_info)
                 {
-                    if ((gb.name == "手機" || gb.name == "candy"))
+                    if (gb.name == "手機")
                     {
-                        read_info = false;
+                        take_phone = true;
                         Destroy(gb);
                     }
-                    else
+                    else if(gb.name =="candy")
                     {
-                        read_info = true;
-                        focus_info.SetActive(true);
-                        focus_table.SetActive(false);
-                        bg.SetActive(true);
-                        left_click.SetActive(false);
-                        right_click.SetActive(true);
-                        SelectOB_anim.gameObject.SetActive(true);
+                        take_candy = true;
+                        Destroy(gb);
                     }
+                    read_info = true;
+                    focus_info.SetActive(true);
+                    focus_table.SetActive(false);
+                    bg.SetActive(true);
+                    left_click.SetActive(false);
+                    right_click.SetActive(true);
+                    F_button.SetActive(false);
+                    SelectOB_anim.gameObject.SetActive(true);
                 }
                 _selection = selection;
             }
@@ -82,6 +86,7 @@ public class SelectionManager_MainRole : MonoBehaviour
             bg.SetActive(false);
             left_click.SetActive(true);
             right_click.SetActive(false);
+            F_button.SetActive(true);
             SelectOB_anim.gameObject.SetActive(false);
         }
     }

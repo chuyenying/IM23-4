@@ -20,7 +20,7 @@ public class walk_run_music : MonoBehaviour
         }
         if (iswalk)
         {
-            if(controlpeople.move==new Vector3(0, 0, 0))
+            if(controlpeople.move==new Vector3(0, 0, 0) || Open_UI.open)
             {
                 walk.Pause();
                 run.Pause();
@@ -33,7 +33,7 @@ public class walk_run_music : MonoBehaviour
         }
         else
         {
-            if (controlpeople.move == new Vector3(0, 0, 0))
+            if (controlpeople.move == new Vector3(0, 0, 0) || Open_UI.open)
             {
                 walk.Pause();
                 run.Pause();

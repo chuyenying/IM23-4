@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class read_info : MonoBehaviour
 {
     [SerializeField] private GameObject paper1, paper2, paper3, paper4, paper5, card,bg,flower;
-    [SerializeField] private GameObject Omamori; //Omamori是御守
+    [SerializeField] private GameObject Omamori, Chemical, candy,phone; //Omamori是御守
     [SerializeField] private Text info;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,9 @@ public class read_info : MonoBehaviour
         card.SetActive(false);
         flower.SetActive(false);
         Omamori.SetActive(false);
+        Chemical.SetActive(false);
+        candy.SetActive(false);
+        phone.SetActive(false);
     }
 
     private void Update()
@@ -32,6 +35,9 @@ public class read_info : MonoBehaviour
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
         }
         else if (SelectionManager_bro.name == "便條紙第2個內容")
         {
@@ -45,6 +51,9 @@ public class read_info : MonoBehaviour
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
         }
         else if (SelectionManager_bro.name == "便條紙第3個內容")
         {
@@ -58,6 +67,9 @@ public class read_info : MonoBehaviour
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
         }
         else if (SelectionManager_bro.name == "便條紙第4個內容")
         {
@@ -71,6 +83,9 @@ public class read_info : MonoBehaviour
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
         }
         else if (SelectionManager_bro.name == "便條紙第5個內容")
         {
@@ -84,6 +99,9 @@ public class read_info : MonoBehaviour
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
         }
         else if (SelectionManager_bro.name == "卡片")
         {
@@ -97,6 +115,9 @@ public class read_info : MonoBehaviour
             card.SetActive(true);
             flower.SetActive(false);
             Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
         }
         else if (SelectionManager_bro.name == "花瓶")
         {
@@ -110,6 +131,9 @@ public class read_info : MonoBehaviour
             card.SetActive(false);
             flower.SetActive(true);
             Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
         }
         else if (SelectionManager_MainRole.name == "御守")
         {
@@ -123,6 +147,57 @@ public class read_info : MonoBehaviour
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(true);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
+        }
+        else if (SelectionManager_MainRole.name == "化學")
+        {
+            info.gameObject.SetActive(true);
+            info.text = "最不可愛的科目...";
+            paper1.SetActive(false);
+            paper2.SetActive(false);
+            paper3.SetActive(false);
+            paper4.SetActive(false);
+            paper5.SetActive(false);
+            card.SetActive(false);
+            flower.SetActive(false);
+            Omamori.SetActive(false);
+            Chemical.SetActive(true);
+            candy.SetActive(false);
+            phone.SetActive(false);
+        }
+        else if (SelectionManager_MainRole.name == "手機")
+        {
+            info.gameObject.SetActive(true);
+            info.text = "按Tab可開啟手機。";
+            paper1.SetActive(false);
+            paper2.SetActive(false);
+            paper3.SetActive(false);
+            paper4.SetActive(false);
+            paper5.SetActive(false);
+            card.SetActive(false);
+            flower.SetActive(false);
+            Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(true);
+        }
+        else if (SelectionManager_MainRole.name == "candy")
+        {
+            info.gameObject.SetActive(true);
+            info.text = "葡萄口味的哈啾最好吃了。";
+            paper1.SetActive(false);
+            paper2.SetActive(false);
+            paper3.SetActive(false);
+            paper4.SetActive(false);
+            paper5.SetActive(false);
+            card.SetActive(false);
+            flower.SetActive(false);
+            Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(true);
+            phone.SetActive(false);
         }
     }
 }
