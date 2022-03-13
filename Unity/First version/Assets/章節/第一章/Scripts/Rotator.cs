@@ -30,7 +30,7 @@ public class Rotator : MonoBehaviour
         {
             float x = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
             float y = Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
-            if (rb.gameObject.name == "卡片" || rb.gameObject.name == "化學" || rb.gameObject.name == "candy")
+            if (rb.gameObject.name == "卡片" || rb.gameObject.name == "candy")
             {
                 rb.transform.Rotate(0, 0, -x);
             }
@@ -45,6 +45,10 @@ public class Rotator : MonoBehaviour
             else if(rb.gameObject.name == "御守" || rb.gameObject.name == "花瓶" || rb.gameObject.name == "手機")
             {
                 rb.transform.Rotate(0, 0, x);
+            }
+            else if (rb.gameObject.name == "化學")
+            {
+                rb.transform.Rotate(0, x, 0);
             }
         }
     }

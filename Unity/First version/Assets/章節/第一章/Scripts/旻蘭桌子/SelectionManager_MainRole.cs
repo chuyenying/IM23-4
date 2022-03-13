@@ -66,6 +66,7 @@ public class SelectionManager_MainRole : MonoBehaviour
                         take_candy = true;
                         Destroy(gb);
                     }
+                    selectob_music.Play();                  //¼½©ñ­µ®Ä
                     read_info = true;
                     focus_info.SetActive(true);
                     focus_table.SetActive(false);
