@@ -24,7 +24,7 @@ public class controlpeople : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift)) { if (run) { run = false; } else { run = true; } }
         if(run)
         {
-            speed = 3;    //按shift可加速
+            speed = 10;    //按shift可加速
         }
         else
         {
