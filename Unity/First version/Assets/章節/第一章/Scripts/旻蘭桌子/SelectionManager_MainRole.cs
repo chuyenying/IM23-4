@@ -18,6 +18,7 @@ public class SelectionManager_MainRole : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.DeleteKey("Cellphone");
         bg.SetActive(false);
         focus_info.SetActive(false);
         SelectOB_anim.gameObject.SetActive(false);
@@ -59,11 +60,13 @@ public class SelectionManager_MainRole : MonoBehaviour
                     if (gb.name == "手機")
                     {
                         take_phone = true;
+                        PlayerPrefs.SetInt("Cellphone", 1);
                         Destroy(gb);
                     }
                     else if(gb.name =="candy")
                     {
                         take_candy = true;
+                        PlayerPrefs.SetInt("Candy", 1);
                         Destroy(gb);
                     }
                     selectob_music.Play();                  //播放音效

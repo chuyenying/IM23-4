@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Open_UI : MonoBehaviour
 {
+    [SerializeField] private GameObject walk_and_run;
     [SerializeField] private Animator MainMenu;
     public static bool open = false;
     private bool Open_SM=false;
@@ -21,7 +22,8 @@ public class Open_UI : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = true;
         GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
-        
+        walk_and_run.SetActive(true);
+
     }
     public void Open_SettingMenu()
     {
@@ -38,6 +40,7 @@ public class Open_UI : MonoBehaviour
                 MainMenu.SetTrigger("FlyIn");
                 GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = false;
                 GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
+                walk_and_run.SetActive(false);
                 Cursor.lockState = CursorLockMode.Confined;
             }
             else if (!open && !Open_SM)
