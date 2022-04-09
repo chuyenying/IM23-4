@@ -15,11 +15,11 @@ D:/IM23-4/IM23-4/Unity/First version
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50697
+64102
 Successfully changed project path to: D:/IM23-4/IM23-4/Unity/First version
 D:/IM23-4/IM23-4/Unity/First version
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 96.84 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 84.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -37,416 +37,42 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000917 seconds.
+Registered in 0.209604 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 81.67 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 83.96 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.247 seconds
+- Completed reload, in 19.168 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1247ms)
-		BeginReloadAssembly (56ms)
+	ReloadAssembly (19168ms)
+		BeginReloadAssembly (3932ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (606ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (1387ms)
+			LoadAssemblies (3949ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (189ms)
+			SetupTypeCache (866ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (256ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (310ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (120ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (19ms)
+				ProcessInitializeOnLoadAttributes (97ms)
+				ProcessInitializeOnLoadMethodAttributes (107ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001146 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.541 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2542ms)
-		BeginReloadAssembly (219ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (2237ms)
-			LoadAssemblies (122ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (371ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (98ms)
-			SetupLoadedEditorAssemblies (1498ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (1255ms)
-				ProcessInitializeOnLoadMethodAttributes (103ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2256 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 275.8 MB.
-System memory in use after: 273.7 MB.
-
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2762.
-Total: 5.745100 ms (FindLiveObjects: 0.380200 ms CreateObjectMapping: 0.170600 ms MarkObjects: 3.822600 ms  DeleteObjects: 1.369600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/章節/第一章/教室.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6affcf8d082029c19d61b095804595b2') in 0.052852 seconds 
-  Import took 0.073097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 487.364635 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/手機畫面最上方（電信WiFi列）的框.png
-  artifactKey: Guid(2df379d31fff1e245a7e7778ab26b86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/手機畫面最上方（電信WiFi列）的框.png using Guid(2df379d31fff1e245a7e7778ab26b86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56aa297b5214e44d6726a613516e8919') in 0.212165 seconds 
-  Import took 0.267764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.596267 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/手機最上方的字(無訊號、9點34分).png
-  artifactKey: Guid(5eb1c24a7419ad84bb0fb1fd64ca45c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/手機最上方的字(無訊號、9點34分).png using Guid(5eb1c24a7419ad84bb0fb1fd64ca45c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e645620e56ef6e22c5530a964f2864') in 0.016887 seconds 
-  Import took 0.058794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 178.989597 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景).png
-  artifactKey: Guid(3f9e54bf336748c46885b0bb3c81596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景).png using Guid(3f9e54bf336748c46885b0bb3c81596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b13208a3a142d3ee77db4f4d0983028') in 0.036809 seconds 
-  Import took 0.101841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.348770 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景) 2.png
-  artifactKey: Guid(389fae9256cc3384abac249d69ad83f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景) 2.png using Guid(389fae9256cc3384abac249d69ad83f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ac6795444bd691dbd7a3d978f925fa') in 0.020718 seconds 
-  Import took 0.067860 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.913534 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景) 2.png
-  artifactKey: Guid(389fae9256cc3384abac249d69ad83f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景) 2.png using Guid(389fae9256cc3384abac249d69ad83f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51504075abc34c0fa1bf4920937a8474') in 0.107781 seconds 
-  Import took 0.142098 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.300974 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/手機最上方的字(無訊號、9點34分).png
-  artifactKey: Guid(5eb1c24a7419ad84bb0fb1fd64ca45c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/手機最上方的字(無訊號、9點34分).png using Guid(5eb1c24a7419ad84bb0fb1fd64ca45c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef001b35fcb63862fa6fe7c1f0d21d38') in 0.017012 seconds 
-  Import took 0.085044 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.375715 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/手機畫面最上方（電信WiFi列）的框.png
-  artifactKey: Guid(2df379d31fff1e245a7e7778ab26b86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/手機畫面最上方（電信WiFi列）的框.png using Guid(2df379d31fff1e245a7e7778ab26b86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be10bf28f10cb1d176ceb4bae5ace0a') in 0.016127 seconds 
-  Import took 0.078035 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1636.406412 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d393bab8019d995dbe1e52ef6d1961f') in 0.221413 seconds 
-  Import took 0.243393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 177.188813 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景).png
-  artifactKey: Guid(3f9e54bf336748c46885b0bb3c81596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景).png using Guid(3f9e54bf336748c46885b0bb3c81596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa02f0de78355cb62baebc48235445f') in 0.037786 seconds 
-  Import took 0.125051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.889341 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景).png
-  artifactKey: Guid(3f9e54bf336748c46885b0bb3c81596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景).png using Guid(3f9e54bf336748c46885b0bb3c81596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40664ce0e761e73fbe3ba3448a5346fd') in 0.026644 seconds 
-  Import took 0.132528 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.642806 seconds.
-  path: Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景).png
-  artifactKey: Guid(3f9e54bf336748c46885b0bb3c81596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/美術/手機UI/課表(解鎖後的背景).png using Guid(3f9e54bf336748c46885b0bb3c81596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5575111fb26dec05a1c74dee94398202') in 0.015213 seconds 
-  Import took 0.077711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 610.722308 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3f438983d94f05a7d3ef772dc82bd4') in 0.051991 seconds 
-  Import took 1.682806 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.768151 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cab7a4775351ba841c7bab87f53c669') in 0.056577 seconds 
-  Import took 0.113927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.411182 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0104ac993a43a0f5d672650e04184dad') in 0.050158 seconds 
-  Import took 0.084872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.723516 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39cddcdd655cb7019ba5011087743fa') in 0.048816 seconds 
-  Import took 0.101405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.365006 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8607848c20f5919135468991d8a09181') in 0.052213 seconds 
-  Import took 0.121841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.468390 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7015bbaa7f2086d4441ce505838d0c') in 0.056306 seconds 
-  Import took 0.064830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.753344 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb30306ecd9445a690108e81360869cd') in 0.049427 seconds 
-  Import took 0.081313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.774241 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42dc8d5f567fcb7067b0ec69ed31588d') in 0.058594 seconds 
-  Import took 0.065669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.627093 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ce0320ee62ef0fe123e90659c6a621') in 0.062705 seconds 
-  Import took 0.086972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.241458 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72affb8a478069acb099ce3f47bf9270') in 0.054629 seconds 
-  Import took 0.064220 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.087436 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7088aa6ae772572893be273eea928dcf') in 0.053523 seconds 
-  Import took 0.124678 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.479660 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987f3ce68ded23dfe44b307d278ad76d') in 0.050603 seconds 
-  Import took 0.118920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.027632 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c95d4062d2ea94adbff7883868f483e') in 0.072287 seconds 
-  Import took 0.123242 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.046057 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960eeb809c133edf50c1d2d48bcae3df') in 0.053033 seconds 
-  Import took 0.121051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.108586 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c8e7c597371370272ee7bd8cde87f58') in 0.050199 seconds 
-  Import took 0.108905 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.122266 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12eb478f91f0ada57af487e5733435c') in 0.058458 seconds 
-  Import took 0.122493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.764606 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6df436ccc42b64752a294c277533b2d') in 0.053696 seconds 
-  Import took 0.129635 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.787402 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80289cecc45b5bb901c1e1a2bed0269') in 0.055181 seconds 
-  Import took 0.063311 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.929187 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e190397949f98427d5d4e6969a3c1740') in 0.053792 seconds 
-  Import took 0.113084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.349702 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775057ec408b309721081774ee757663') in 0.049404 seconds 
-  Import took 0.096816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.642587 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98014e69bbf8bdf4ad571aff2bd173d1') in 0.056987 seconds 
-  Import took 0.100263 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.884778 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c8009d8026448ec1efef8582ee1bb3') in 0.062834 seconds 
-  Import took 0.110876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.137947 seconds.
-  path: Assets/章節/UI_遊戲中通用/手機Canvas.prefab
-  artifactKey: Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/UI_遊戲中通用/手機Canvas.prefab using Guid(35ea485cdd603b841a908d9350fb8b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a334b36f00011592c3720c96c9800ef') in 0.058707 seconds 
-  Import took 0.065802 seconds .
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Registered in 0.178173 seconds.
