@@ -50,7 +50,7 @@ public class SelectionManager_bro : MonoBehaviour
                 if (selectionRenderer != null)
                 {
                     name = gb.name;   
-                    selectionRenderer.material = highlightMaterial; //把她高光
+                    //selectionRenderer.material = highlightMaterial; //把她高光
                     //gb.layer = LayerMask.NameToLayer("highlight");     // 使用shader用layer控制
                     if (Input.GetMouseButtonUp(0) && !read_info)
                     {

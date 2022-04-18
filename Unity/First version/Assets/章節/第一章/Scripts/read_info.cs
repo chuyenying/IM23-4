@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class read_info : MonoBehaviour
 {
-    [SerializeField] private GameObject paper1, paper2, paper3, paper4, paper5, card,bg,flower;
+    [SerializeField] private GameObject paper1, paper2, paper3, paper4, paper5,paper6,paper7, card,bg,flower;
     [SerializeField] private GameObject Omamori, Chemical, candy,phone; //Omamori是御守
     [SerializeField] private Text info;
     // Start is called before the first frame update
@@ -15,6 +15,8 @@ public class read_info : MonoBehaviour
         paper3.SetActive(false);
         paper4.SetActive(false);
         paper5.SetActive(false);
+        paper6.SetActive(false);
+        paper7.SetActive(false);
         card.SetActive(false);
         flower.SetActive(false);
         Omamori.SetActive(false);
@@ -25,13 +27,16 @@ public class read_info : MonoBehaviour
 
     private void Update()
     {
-        if (SelectionManager_bro.name == "便條紙第1個內容")
+        if (SelectionManager_bro.name == "便條紙1")
         {
+            info.text = "前天才和你一起打球 \n你說輸的要請飲料...\n但我還沒請你怎麼可以先走了";
             paper1.SetActive(true);
             paper2.SetActive(false);
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
@@ -39,7 +44,7 @@ public class read_info : MonoBehaviour
             candy.SetActive(false);
             phone.SetActive(false);
         }
-        else if (SelectionManager_bro.name == "便條紙第2個內容")
+        else if (SelectionManager_bro.name == "便條紙2")
         {
             info.gameObject.SetActive(true);
             info.text = "第一次感覺到死亡原來那麼近 \n記得要在那邊快樂活著... \n\t\t\t\t\t\t\t大寶";
@@ -48,6 +53,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
@@ -55,7 +62,7 @@ public class read_info : MonoBehaviour
             candy.SetActive(false);
             phone.SetActive(false);
         }
-        else if (SelectionManager_bro.name == "便條紙第3個內容")
+        else if (SelectionManager_bro.name == "便條紙3")
         {
             info.gameObject.SetActive(true);
             info.text = "曉鶴，一路走好。   \n\t\t\t\t\t\t\t筱涵";
@@ -64,6 +71,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(true);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
@@ -71,7 +80,7 @@ public class read_info : MonoBehaviour
             candy.SetActive(false);
             phone.SetActive(false);
         }
-        else if (SelectionManager_bro.name == "便條紙第4個內容")
+        else if (SelectionManager_bro.name == "便條紙4")
         {
             info.gameObject.SetActive(true);
             info.text = "因為有你，我才有信心讀到那間大學\n我都打算放棄了是你改變了我。\n你對大家都那麼好為什麼死神要找上你...   \n\t\t\t\t\t\t\t宇熙";
@@ -80,6 +89,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(true);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
@@ -87,7 +98,7 @@ public class read_info : MonoBehaviour
             candy.SetActive(false);
             phone.SetActive(false);
         }
-        else if (SelectionManager_bro.name == "便條紙第5個內容")
+        else if (SelectionManager_bro.name == "便條紙5")
         {
             info.gameObject.SetActive(true);
             info.text = "「上天總是把最善良的人帶走，你要快樂」\n「我們好想你」\n「你要在那邊過得開心」\n「謝謝你」\n「你怎麼先離開了」";
@@ -96,6 +107,44 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(true);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
+            card.SetActive(false);
+            flower.SetActive(false);
+            Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
+        }
+        else if (SelectionManager_bro.name == "便條紙6")
+        {
+            info.gameObject.SetActive(true);
+            info.text = "我很喜歡在人群中發光的你\n 但再也沒有機會和你說了\n";
+            paper1.SetActive(false);
+            paper2.SetActive(false);
+            paper3.SetActive(false);
+            paper4.SetActive(false);
+            paper5.SetActive(false);
+            paper6.SetActive(true);
+            paper7.SetActive(false);
+            card.SetActive(false);
+            flower.SetActive(false);
+            Omamori.SetActive(false);
+            Chemical.SetActive(false);
+            candy.SetActive(false);
+            phone.SetActive(false);
+        }
+        else if (SelectionManager_bro.name == "便條紙7")
+        {
+            info.gameObject.SetActive(true);
+            info.text = "希望下輩子的你\n可以真的很快樂";
+            paper1.SetActive(false);
+            paper2.SetActive(false);
+            paper3.SetActive(false);
+            paper4.SetActive(false);
+            paper5.SetActive(false);
+            paper6.SetActive(false);
+            paper7.SetActive(true);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
@@ -112,6 +161,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(true);
             flower.SetActive(false);
             Omamori.SetActive(false);
@@ -128,6 +179,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(true);
             Omamori.SetActive(false);
@@ -144,6 +197,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(true);
@@ -160,6 +215,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
@@ -176,6 +233,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
@@ -192,6 +251,8 @@ public class read_info : MonoBehaviour
             paper3.SetActive(false);
             paper4.SetActive(false);
             paper5.SetActive(false);
+            paper7.SetActive(false);
+            paper6.SetActive(false);
             card.SetActive(false);
             flower.SetActive(false);
             Omamori.SetActive(false);
