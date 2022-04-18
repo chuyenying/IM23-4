@@ -18,8 +18,8 @@ public class Delete_eyes : MonoBehaviour
     {
         yield return new WaitForSeconds(6);
         Destroy(eyes);
-        //GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = true;
+        GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = true;
         //GameObject.Find("FirstPerson").GetComponent<flashlight>().enabled = true;
-        //GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
+        GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
     }
 }
