@@ -30,7 +30,7 @@ public class SelectionManager_bro : MonoBehaviour
         if (_selection != null)
         {
             var selectionRenderer = _selection.GetComponent<Renderer>();
-            selectionRenderer.material = defaultMaterial;
+            //selectionRenderer.material = defaultMaterial;
             //_selection.gameObject.layer = LayerMask.NameToLayer("Default");
             _selection = null;  //沒抓到物件的時候就會一直是null
         }
