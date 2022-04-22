@@ -225,6 +225,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+  - id: 8
+    fields:
+    - title: Name
+      value: "\u53EA\u89F8\u767C\u4E00\u6B21"
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -5753,7 +5767,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: Fade(in,1)@1
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -6927,7 +6941,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: "Variable[\"\u53EA\u89F8\u767C\u4E00\u6B21\"] = false"
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6937,7 +6951,7 @@ MonoBehaviour:
         y: 475.01938
         width: 160
         height: 30
-    canvasScrollPosition: {x: 7.272705, y: 52.727234}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.5500004
   - id: 9
     fields:
