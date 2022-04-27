@@ -25,7 +25,7 @@ public class Selection_ob : MonoBehaviour
     /// </summary>
     private List<int> important_ob = new List<int> { 0, 0, 0, 0, 0};
     public int ob_count = 0;
-
+    private bool take_notebook = false, take_medicine = false, take_computer=false, take_flower = false,take_bear=false;
     void Start()
     {
 
@@ -61,12 +61,19 @@ public class Selection_ob : MonoBehaviour
                         if (name == "藥袋")
                         {
                             important_ob[1] = 1;
-                            ob_count++;
+                            if (!take_medicine) { 
+                                ob_count++;
+                                take_medicine = true;
+                            }
                         }                        
-                        else if (name == "小熊")
+                        else if (name == "小熊玩偶")
                         {
                             important_ob[4] = 1;
-                            ob_count++;
+                            if (!take_bear)
+                            {
+                                ob_count++;
+                                take_bear = true;
+                            }
                         }
                         
                         selectob_music.Play();                  //播放音效
@@ -76,11 +83,6 @@ public class Selection_ob : MonoBehaviour
             }
 
         }
-        /*
-        if (Input.GetMouseButton(1) && read_info)
-        {
-            read_info = false;
-        }
-        */
+
     }
 }
