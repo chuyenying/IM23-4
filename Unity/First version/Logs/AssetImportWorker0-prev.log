@@ -15,11 +15,11 @@ C:/To/IM23-4/Unity/First version
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64114
+63052
 Successfully changed project path to: C:/To/IM23-4/Unity/First version
 C:/To/IM23-4/Unity/First version
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 129.49 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 77.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -37,48 +37,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56304
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002588 seconds.
+Registered in 0.001648 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 117.84 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 107.87 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.324 seconds
+- Completed reload, in  2.188 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1325ms)
-		BeginReloadAssembly (50ms)
+	ReloadAssembly (2188ms)
+		BeginReloadAssembly (49ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (671ms)
-			LoadAssemblies (48ms)
+		EndReloadAssembly (659ms)
+			LoadAssemblies (47ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (190ms)
+			SetupTypeCache (179ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (289ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (301ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (118ms)
-				BeforeProcessingInitializeOnLoad (26ms)
-				ProcessInitializeOnLoadAttributes (98ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (108ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002671 seconds.
+Registered in 0.003221 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 113.56 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 91.15 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -118,47 +118,47 @@ System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.Runti
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.364 seconds
+- Completed reload, in  2.267 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2365ms)
-		BeginReloadAssembly (142ms)
+	ReloadAssembly (2268ms)
+		BeginReloadAssembly (199ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (2139ms)
-			LoadAssemblies (118ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (1974ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (352ms)
+			SetupTypeCache (311ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (1394ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (1196ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (114ms)
-				BeforeProcessingInitializeOnLoad (113ms)
-				ProcessInitializeOnLoadAttributes (1083ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (891ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
 Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3686 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 332.7 MB.
-System memory in use after: 332.7 MB.
+Unloading 2781 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 303.0 MB.
+System memory in use after: 303.1 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4194.
-Total: 8.256500 ms (FindLiveObjects: 0.398400 ms CreateObjectMapping: 0.212200 ms MarkObjects: 7.349900 ms  DeleteObjects: 0.292900 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3283.
+Total: 3.085500 ms (FindLiveObjects: 0.276500 ms CreateObjectMapping: 0.097700 ms MarkObjects: 2.408000 ms  DeleteObjects: 0.301300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -172,18 +172,34 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/章節/第二章/Scripts/Auto Turn.cs
-  artifactKey: Guid(96ad1e631aacbc84d92abfa8447a9801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/Scripts/Auto Turn.cs using Guid(96ad1e631aacbc84d92abfa8447a9801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ebda367f229348b00c9188896cdc29') in 0.133359 seconds 
-  Import took 0.160164 seconds .
+  path: Assets/章節/UI_遊戲中通用/美術/UI美術圖/MouseLeft.png
+  artifactKey: Guid(63a294537b03be940b78230b2897bf32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/UI_遊戲中通用/美術/UI美術圖/MouseLeft.png using Guid(63a294537b03be940b78230b2897bf32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ed38a83c03bf76fa0b5a24b6d5b317') in 0.149012 seconds 
+  Import took 0.155272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.146088 seconds.
+  path: Assets/章節/第二章/Scripts/Selection_ob.cs
+  artifactKey: Guid(6dc97705600f9544984b13eaf7e3be76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/Scripts/Selection_ob.cs using Guid(6dc97705600f9544984b13eaf7e3be76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4664f942f52229ad9b45345d78626d') in 0.005648 seconds 
+  Import took 0.011097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.720019 seconds.
+  path: Assets/章節/第二章/Scripts/Selection_ob.cs
+  artifactKey: Guid(6dc97705600f9544984b13eaf7e3be76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/Scripts/Selection_ob.cs using Guid(6dc97705600f9544984b13eaf7e3be76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb8743e7b6ae22fcec1e3ad522880ed') in 0.004838 seconds 
+  Import took 0.017742 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002129 seconds.
+Registered in 0.002582 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -223,44 +239,44 @@ System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.Runti
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.239 seconds
+- Completed reload, in  2.085 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2242ms)
-		BeginReloadAssembly (241ms)
+	ReloadAssembly (2086ms)
+		BeginReloadAssembly (182ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (129ms)
-		EndReloadAssembly (1918ms)
-			LoadAssemblies (124ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1798ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (312ms)
+			SetupTypeCache (381ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (1299ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (1046ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (102ms)
-				ProcessInitializeOnLoadAttributes (1111ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (136ms)
+				ProcessInitializeOnLoadAttributes (814ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
 Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
 Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.89 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3444 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 324.6 MB.
-System memory in use after: 324.8 MB.
+Unloading 2542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 298.4 MB.
+System memory in use after: 298.5 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4196.
-Total: 52.994600 ms (FindLiveObjects: 1.569300 ms CreateObjectMapping: 0.345700 ms MarkObjects: 50.985000 ms  DeleteObjects: 0.075100 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3297.
+Total: 8.253700 ms (FindLiveObjects: 1.236000 ms CreateObjectMapping: 0.281700 ms MarkObjects: 6.675400 ms  DeleteObjects: 0.057100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -274,19 +290,75 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 74.169491 seconds.
-  path: Assets/章節/第二章/Scripts/AutoTurn.cs
-  artifactKey: Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/Scripts/AutoTurn.cs using Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd613302e744e5c1932424dac31b9e13') in 0.029151 seconds 
-  Import took 0.081897 seconds .
+  Time since last request: 23.599568 seconds.
+  path: Assets/章節/第二章/0326家.fbm/0c09f36df8fb4285919b369dd6cf9525.jpg
+  artifactKey: Guid(f21f41e50e4e30047a72e4f2d22e965a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/0326家.fbm/0c09f36df8fb4285919b369dd6cf9525.jpg using Guid(f21f41e50e4e30047a72e4f2d22e965a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4174f251e8e98a0503324d178756a4d9') in 0.042855 seconds 
+  Import took 0.052199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.547885 seconds.
+  path: Assets/章節/第一章/教室/黑板 (2).fbm/BrushedIron02_4K_BaseColor.png
+  artifactKey: Guid(8613de264530daa4fb8553579b759468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/黑板 (2).fbm/BrushedIron02_4K_BaseColor.png using Guid(8613de264530daa4fb8553579b759468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7de6cadc0c498269917445787ead61') in 0.013163 seconds 
+  Import took 0.019070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/章節/Materials/BrushedIron02_4K_BaseColor.mat
+  artifactKey: Guid(addad3471d1ab0b4ba8c1edb12d1629c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/Materials/BrushedIron02_4K_BaseColor.mat using Guid(addad3471d1ab0b4ba8c1edb12d1629c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d24d09cb4fc0f30480ae0b654460502') in 0.231730 seconds 
+  Import took 0.239416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Editor Default Resources/Dialogue System/DialogueManager Inspector Light.png
+  artifactKey: Guid(a69d5c321f729f1499ac11e52f110452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor Default Resources/Dialogue System/DialogueManager Inspector Light.png using Guid(a69d5c321f729f1499ac11e52f110452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67660828c1c90a89ed965c002da48a42') in 0.010614 seconds 
+  Import took 0.016358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/章節/第一章/教室/黑板/黑板.fbm/BrushedIron02_4K_BaseColor.png
+  artifactKey: Guid(0d5886f0ac4707b4c845370c203b957a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/黑板/黑板.fbm/BrushedIron02_4K_BaseColor.png using Guid(0d5886f0ac4707b4c845370c203b957a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b12017ea7a3a370d926faf07ad84181') in 0.016604 seconds 
+  Import took 0.024607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Editor Default Resources/Dialogue System/DialogueManager Inspector Dark.png
+  artifactKey: Guid(da2299cb159f904459216ca87bce9dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor Default Resources/Dialogue System/DialogueManager Inspector Dark.png using Guid(da2299cb159f904459216ca87bce9dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7b0c5da01e4f3771d7a04b76ff37f7') in 0.008769 seconds 
+  Import took 0.016372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Gizmos/DialogueDatabase Icon.png
+  artifactKey: Guid(8c00072895782fb4d918363c8ff501a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gizmos/DialogueDatabase Icon.png using Guid(8c00072895782fb4d918363c8ff501a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0868025b6ce12f08f8ecb1ecc6ad25d8') in 0.009434 seconds 
+  Import took 0.015746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.071585 seconds.
+  path: Assets/Editor Default Resources/Dialogue System
+  artifactKey: Guid(e7ec4f44ba34da34e8ca2ab42c717ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor Default Resources/Dialogue System using Guid(e7ec4f44ba34da34e8ca2ab42c717ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5d42e16c47630f76ec17455ceded3e') in 0.004033 seconds 
+  Import took 0.009889 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003914 seconds.
+Registered in 0.002260 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -326,171 +398,44 @@ System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.Runti
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.038 seconds
+- Completed reload, in  1.981 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2039ms)
+	ReloadAssembly (1982ms)
 		BeginReloadAssembly (171ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (1802ms)
-			LoadAssemblies (110ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1745ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (322ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (1182ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (999ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3445 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 324.7 MB.
-System memory in use after: 324.9 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4200.
-Total: 3.564800 ms (FindLiveObjects: 0.240700 ms CreateObjectMapping: 0.083100 ms MarkObjects: 3.208600 ms  DeleteObjects: 0.031100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 24.123004 seconds.
-  path: Assets/章節/第二章/Scripts/AutoTurn.cs
-  artifactKey: Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/Scripts/AutoTurn.cs using Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '853aa7be0741c3046fa477450bfa08b4') in 0.007343 seconds 
-  Import took 0.017405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.925744 seconds.
-  path: Assets/章節/第二章/Scripts/AutoTurn.cs
-  artifactKey: Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/Scripts/AutoTurn.cs using Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97048e33964f89a05d8cd1a7d725e22') in 0.002931 seconds 
-  Import took 0.011228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.936961 seconds.
-  path: Assets/章節/第二章/Scripts/AutoTurn.cs
-  artifactKey: Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/Scripts/AutoTurn.cs using Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e045817918bf2c05645707c4cf16b89') in 0.002436 seconds 
-  Import took 0.012271 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.375412 seconds.
-  path: Assets/章節/第二章/Scripts/AutoTurn.cs
-  artifactKey: Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/Scripts/AutoTurn.cs using Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8176c6291d77757093e4be2c713f1f87') in 0.002983 seconds 
-  Import took 0.012556 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002524 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.063 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2063ms)
-		BeginReloadAssembly (139ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1849ms)
-			LoadAssemblies (122ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (348ms)
+			SetupTypeCache (277ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (1233ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (1100ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (1055ms)
-				ProcessInitializeOnLoadMethodAttributes (73ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (865ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
 Platform modules already initialized, skipping
 Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
 Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3445 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 324.7 MB.
-System memory in use after: 325.0 MB.
+Unloading 2541 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 300.5 MB.
+System memory in use after: 300.7 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4203.
-Total: 3.778500 ms (FindLiveObjects: 0.279200 ms CreateObjectMapping: 0.085000 ms MarkObjects: 3.381500 ms  DeleteObjects: 0.031400 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3379.
+Total: 2.810500 ms (FindLiveObjects: 0.349000 ms CreateObjectMapping: 0.144500 ms MarkObjects: 2.300100 ms  DeleteObjects: 0.015400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -502,307 +447,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007769 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.985 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3002ms)
-		BeginReloadAssembly (374ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (50ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (2ms)
-			CreateAndSetChildDomain (187ms)
-		EndReloadAssembly (2527ms)
-			LoadAssemblies (162ms)
-			RebuildTransferFunctionScriptingTraits (2ms)
-			SetupTypeCache (336ms)
-			ReleaseScriptCaches (17ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (1785ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (166ms)
-				ProcessInitializeOnLoadAttributes (1463ms)
-				ProcessInitializeOnLoadMethodAttributes (135ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 5.70 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3445 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 324.8 MB.
-System memory in use after: 325.0 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4206.
-Total: 62.094200 ms (FindLiveObjects: 2.137400 ms CreateObjectMapping: 0.332000 ms MarkObjects: 59.254600 ms  DeleteObjects: 0.348200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 17386.753311 seconds.
-  path: Assets/章節/第二章/Scripts/AutoTurn.cs
-  artifactKey: Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/Scripts/AutoTurn.cs using Guid(6e525b03a3618734bb02b1177a13910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb47b4b09bea5954e6593a14fea9b8a') in 0.852047 seconds 
-  Import took 1.398736 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 294.180443 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/SequencerCommandTemplate.cs
-  artifactKey: Guid(553d1f42adf5def42b890603fdf2a212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/SequencerCommandTemplate.cs using Guid(553d1f42adf5def42b890603fdf2a212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3701198ddeab5036c7f39eba0421bd') in 0.006401 seconds 
-  Import took 0.016826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.037059 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/PersistentDataTemplate.cs
-  artifactKey: Guid(d1b59f13b2589734cbdee766ea9e9e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/PersistentDataTemplate.cs using Guid(d1b59f13b2589734cbdee766ea9e9e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b5189dde703ec7ad12e976ff2b6f20') in 0.003528 seconds 
-  Import took 0.011856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.286251 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateBarkUI.cs
-  artifactKey: Guid(deb95395c295e9447839c0c54739cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateBarkUI.cs using Guid(deb95395c295e9447839c0c54739cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d47832eb50692eef52f6aea83f84c73') in 0.005561 seconds 
-  Import took 0.014019 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.262986 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateCustomLua.cs
-  artifactKey: Guid(b08e616564adeb8408035f738dba07d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateCustomLua.cs using Guid(b08e616564adeb8408035f738dba07d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da398f9aaf5a3f3e538ffc8b6ea07b2e') in 0.003561 seconds 
-  Import took 0.012165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.110180 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateDialogueUI.cs
-  artifactKey: Guid(99d49d35774572746a3108815cb17ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateDialogueUI.cs using Guid(99d49d35774572746a3108815cb17ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d2190c80e00ee336615d0ecebcbd17b') in 0.003643 seconds 
-  Import took 0.011811 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.607982 seconds.
-  path: Assets/Plugins/SceneSwitch.cs
-  artifactKey: Guid(4a3fe0619ffa1f7468262d8eef73530e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/SceneSwitch.cs using Guid(4a3fe0619ffa1f7468262d8eef73530e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de10803eab096cbe392e2fbfa97c7a9') in 0.004156 seconds 
-  Import took 0.012575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 197.959145 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Standard UI Prefabs/Templates/Focus/Focus Template Standard Dialogue UI.prefab
-  artifactKey: Guid(e242d40773918c04ba724d6ebc8ace30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Standard UI Prefabs/Templates/Focus/Focus Template Standard Dialogue UI.prefab using Guid(e242d40773918c04ba724d6ebc8ace30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a033689f4a2d8a90b202f2434e01ba0a') in 0.886382 seconds 
-  Import took 0.900154 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Tree10/Tree10_3_Textures/normal_specular.png
-  artifactKey: Guid(8f8ccb2b839cc834baf89aacb88b4efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree10/Tree10_3_Textures/normal_specular.png using Guid(8f8ccb2b839cc834baf89aacb88b4efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '254215c68360bed8f84bf42c5fae2b55') in 0.172743 seconds 
-  Import took 0.179740 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000560 seconds.
-  path: Assets/Tree10/Tree10_2_Textures/normal_specular.png
-  artifactKey: Guid(1491c7e658794584bba2b2e2af787693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree10/Tree10_2_Textures/normal_specular.png using Guid(1491c7e658794584bba2b2e2af787693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '613b73f9a3ea4ffcb77e380d229a6ced') in 0.012720 seconds 
-  Import took 0.019414 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Tree10/Tree10_5_Textures/normal_specular.png
-  artifactKey: Guid(6dee18743126756489e181e59eec7015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree10/Tree10_5_Textures/normal_specular.png using Guid(6dee18743126756489e181e59eec7015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a523e7955d56cc0adda65b1e76b92c76') in 0.011188 seconds 
-  Import took 0.018308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Tree10/Tree10_1_Textures/normal_specular.png
-  artifactKey: Guid(c8f794f2dbcf03b4a949d126dba87325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree10/Tree10_1_Textures/normal_specular.png using Guid(c8f794f2dbcf03b4a949d126dba87325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f366f80dbaf01d470c89bc25b698e26') in 0.013058 seconds 
-  Import took 0.020689 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Tree10/Tree10_4_Textures/normal_specular.png
-  artifactKey: Guid(43579ecc9c0bf2b4f9f9c616ad0eb5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree10/Tree10_4_Textures/normal_specular.png using Guid(43579ecc9c0bf2b4f9f9c616ad0eb5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5462fc0ab0cf149caf6cbd05feaf23') in 0.010577 seconds 
-  Import took 0.018232 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.819289 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/CustomFieldType.cs
-  artifactKey: Guid(c8509e23d9d3fda439d0e8535af277da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/CustomFieldType.cs using Guid(c8509e23d9d3fda439d0e8535af277da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164a479df97944f81659aa84f644cba8') in 0.003739 seconds 
-  Import took 0.012107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.848494 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Actor.cs
-  artifactKey: Guid(d7eb8166b97034d7caf146b85c1ae88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Actor.cs using Guid(d7eb8166b97034d7caf146b85c1ae88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad096db4b6a3a2a36b18f882f23960e6') in 0.003810 seconds 
-  Import took 0.010190 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.805980 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Boolean.cs
-  artifactKey: Guid(4a1d9e20456fb4a769e6e93a7c128bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Boolean.cs using Guid(4a1d9e20456fb4a769e6e93a7c128bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f597924ecab2644f11f0f91d070b0181') in 0.003562 seconds 
-  Import took 0.010861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.555148 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Files.cs
-  artifactKey: Guid(c0c663dee975ab3419e493992c431a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Files.cs using Guid(c0c663dee975ab3419e493992c431a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451aa00d1c25d81141ba1b3e2b9182a6') in 0.004172 seconds 
-  Import took 0.011489 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.869596 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Item.cs
-  artifactKey: Guid(0fdff2422143f4827a55cdb24d91b24d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Item.cs using Guid(0fdff2422143f4827a55cdb24d91b24d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9afe33435a1ace6779e10bb6d6c5988e') in 0.003272 seconds 
-  Import took 0.009711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.895334 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Localization.cs
-  artifactKey: Guid(fca031c9aad134054bf8a5a67316b689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Localization.cs using Guid(fca031c9aad134054bf8a5a67316b689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f10ed0f1cd50b08fe70913f02b3d8d9') in 0.003594 seconds 
-  Import took 0.009324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.781142 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Location.cs
-  artifactKey: Guid(17d677d3d03c0473c9b2be4ad1c2aaf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Location.cs using Guid(17d677d3d03c0473c9b2be4ad1c2aaf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2223bb7aec012ab9924f5649dcb7d90') in 0.003259 seconds 
-  Import took 0.009184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.686279 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Number.cs
-  artifactKey: Guid(ff26dd0fc4a0248b3b1c05167f59b098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Number.cs using Guid(ff26dd0fc4a0248b3b1c05167f59b098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1846d7d44f5f514a0e62f67ead7f977d') in 0.004060 seconds 
-  Import took 0.011253 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.629214 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_QuestState.cs
-  artifactKey: Guid(a8fac7d90adf54ab29ebfdf8d88cf6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_QuestState.cs using Guid(a8fac7d90adf54ab29ebfdf8d88cf6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd239d86c4dcd6d072933086edbe11e') in 0.003930 seconds 
-  Import took 0.010461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.557351 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Examples/CustomFieldType_SceneType.cs
-  artifactKey: Guid(58f665b118aab2940966905353abba57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Examples/CustomFieldType_SceneType.cs using Guid(58f665b118aab2940966905353abba57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb0f1ccf6524fc12a1f29432ae10f7f') in 0.003830 seconds 
-  Import took 0.010219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.069716 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/Editor/CustomFieldType_TemplateType.cs
-  artifactKey: Guid(60fc43ee2336d9b44bbd4f570aa54340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/Editor/CustomFieldType_TemplateType.cs using Guid(60fc43ee2336d9b44bbd4f570aa54340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7811dd2cff0322df03455ba6cf374869') in 0.003831 seconds 
-  Import took 0.011626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.380424 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Text.cs
-  artifactKey: Guid(f26cb47f35f75424498d4638a7070995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/Base/CustomFieldType_Text.cs using Guid(f26cb47f35f75424498d4638a7070995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a924c8df0e9b890ebe33a7a8f32f6b') in 0.003517 seconds 
-  Import took 0.009976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.670730 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/CustomFieldTypeService.cs
-  artifactKey: Guid(34620cda9066ca44dbd916f43e6dbf0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Fields/CustomFieldTypeService.cs using Guid(34620cda9066ca44dbd916f43e6dbf0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed047651a826aa6abe1638b83f0b3111') in 0.003764 seconds 
-  Import took 0.010966 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
