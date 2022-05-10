@@ -1,78 +1,913 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19044.1645; Version 2009; 64bit' Language: 'zh' Physical Memory: 16224 MB
+OS: 'Windows 10 Home; OS build 19043.1645; Version 2009; 64bit' Language: 'zh' Physical Memory: 7834 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\Download\2020.3.21f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/IM23-4/Unity/First version
+C:/To/IM23-4/Unity/First version
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51703
-Successfully changed project path to: D:/IM23-4/Unity/First version
-D:/IM23-4/Unity/First version
+63014
+Successfully changed project path to: C:/To/IM23-4/Unity/First version
+C:/To/IM23-4/Unity/First version
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 55.05 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 173.03 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
-[Subsystems] Discovering subsystems at path D:/Unity/Download/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/IM23-4/Unity/First version/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/To/IM23-4/Unity/First version/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 Ti with Max-Q Design (ID=0x2191)
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   30.0.15.1215
+    VRAM:     3917 MB
+    Driver:   27.20.100.9664
 Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
 Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
 Initialize mono
-Mono path[0] = 'D:/Unity/Download/2020.3.21f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/Download/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Unity/Download/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/Download/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.026165 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003246 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 72.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 125.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 16.529 seconds
+- Completed reload, in  3.244 seconds
 Domain Reload Profiling:
-	ReloadAssembly (16529ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (3245ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (546ms)
-			LoadAssemblies (52ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (172ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (724ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (220ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (239ms)
+			SetupLoadedEditorAssemblies (298ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (72ms)
-				BeforeProcessingInitializeOnLoad (28ms)
-				ProcessInitializeOnLoadAttributes (84ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				RefreshPlugins (126ms)
+				BeforeProcessingInitializeOnLoad (21ms)
+				ProcessInitializeOnLoadAttributes (107ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.045561 seconds.
+Registered in 0.005897 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 107.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.831 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2833ms)
+		BeginReloadAssembly (242ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (2467ms)
+			LoadAssemblies (166ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (342ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (1662ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (107ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (1323ms)
+				ProcessInitializeOnLoadMethodAttributes (93ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3754 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 333.2 MB.
+System memory in use after: 333.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4256.
+Total: 4.742100 ms (FindLiveObjects: 0.345200 ms CreateObjectMapping: 0.113100 ms MarkObjects: 3.976100 ms  DeleteObjects: 0.305500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/字幕底.png
+  artifactKey: Guid(dbd92b2d230c0ad4c947733c3cf78909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/字幕底.png using Guid(dbd92b2d230c0ad4c947733c3cf78909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8143199d10c54542b46a796c21f33c86') in 0.132380 seconds 
+  Import took 0.139383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassStar.obj
+  artifactKey: Guid(95ef26e11d36bd643b99aeea379d1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassStar.obj using Guid(95ef26e11d36bd643b99aeea379d1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e1971f7c269ee2feae3b21f6da67b5') in 0.974845 seconds 
+  Import took 0.980935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/TerrainData_039aed9c-4acb-4a45-8cb7-ab0fbe80d93c.asset
+  artifactKey: Guid(76d28cbc814bd7644a11eb7ed4dcf3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_039aed9c-4acb-4a45-8cb7-ab0fbe80d93c.asset using Guid(76d28cbc814bd7644a11eb7ed4dcf3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '037dd57550fced30a035622e037c1539') in 0.034850 seconds 
+  Import took 0.041687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(a61201a8db535a34e9bfc8e76970e691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(a61201a8db535a34e9bfc8e76970e691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f28a509d6670247ac2b5e398951190') in 0.191209 seconds 
+  Import took 0.198540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/TerrainData_84320890-1fe2-47dc-8ca4-a3c3f7d47fa4.asset
+  artifactKey: Guid(24b1605b5f700e6439f4b64cd96a8f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_84320890-1fe2-47dc-8ca4-a3c3f7d47fa4.asset using Guid(24b1605b5f700e6439f4b64cd96a8f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ab1bae4a17409d25f47a78972671c4') in 0.037715 seconds 
+  Import took 0.045880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/TerrainData_323fc2f9-14f2-4fe9-bd9c-b00b991d42fe.asset
+  artifactKey: Guid(6f3d994b188e0a34ba19c74e1a543b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_323fc2f9-14f2-4fe9-bd9c-b00b991d42fe.asset using Guid(6f3d994b188e0a34ba19c74e1a543b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427db4379de1151f8a263cb5ff724145') in 0.019735 seconds 
+  Import took 0.028399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/TerrainData_db02b8f4-35b9-41bc-ade9-181551a9243a.asset
+  artifactKey: Guid(f7a52119faaa029418373eef22088cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_db02b8f4-35b9-41bc-ade9-181551a9243a.asset using Guid(f7a52119faaa029418373eef22088cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fefd2842c7580051fbbca5bee3a4f59a') in 0.040450 seconds 
+  Import took 0.048965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/TerrainData_436e0e32-38ee-4fb0-8aa8-26821efa6047.asset
+  artifactKey: Guid(f1621c32e92f7c54ab9cb2f99fd79a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_436e0e32-38ee-4fb0-8aa8-26821efa6047.asset using Guid(f1621c32e92f7c54ab9cb2f99fd79a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c0d276ece032af24132b256a725ec5') in 0.019742 seconds 
+  Import took 0.026383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/字幕底 1.png
+  artifactKey: Guid(e81ff383c564a1348a45f261b99bafd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/字幕底 1.png using Guid(e81ff383c564a1348a45f261b99bafd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6db68259ca435f831c46b57b3b987c5') in 0.016670 seconds 
+  Import took 0.026069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/TerrainData_a0d49df3-e726-49a9-aff3-36b95a9bf566.asset
+  artifactKey: Guid(38a0bdf60a68dbf4c95fd21b4db0f784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_a0d49df3-e726-49a9-aff3-36b95a9bf566.asset using Guid(38a0bdf60a68dbf4c95fd21b4db0f784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a5eedd12f571bccb43ec0cabec676e') in 0.021091 seconds 
+  Import took 0.029296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/TerrainData_f579f941-387b-422b-906d-04f6743de1c5.asset
+  artifactKey: Guid(5b76c5f343aa48a41964851ee0cd9356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_f579f941-387b-422b-906d-04f6743de1c5.asset using Guid(5b76c5f343aa48a41964851ee0cd9356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79dec70dc72f12249352704cbf3ff03') in 0.023677 seconds 
+  Import took 0.031999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassQuad.obj
+  artifactKey: Guid(a691cc7ece3d97040879e0809c58b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassQuad.obj using Guid(a691cc7ece3d97040879e0809c58b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f851817d021595627c2f3aedf834248') in 0.027605 seconds 
+  Import took 0.033877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/TerrainData_b6c673fb-3713-4520-ad64-e37438ee5b25.asset
+  artifactKey: Guid(a31ca84dffe3dba4cbab2c64f74d7e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_b6c673fb-3713-4520-ad64-e37438ee5b25.asset using Guid(a31ca84dffe3dba4cbab2c64f74d7e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dbf7df32c46442bd1ef26af28b1c516') in 0.032992 seconds 
+  Import took 0.041177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/TerrainData_d524d947-d185-4eef-bbe9-43bd8625d6e6.asset
+  artifactKey: Guid(99240b7b4f24bb746a60ef017da10374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_d524d947-d185-4eef-bbe9-43bd8625d6e6.asset using Guid(99240b7b4f24bb746a60ef017da10374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe5d1e0e7c1b17276d156009df8ccf5') in 0.033186 seconds 
+  Import took 0.042709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000522 seconds.
+  path: Assets/TerrainData_9be022cb-29b8-438a-9d6b-88ae12aae076.asset
+  artifactKey: Guid(97eb17abf9defce408c74c6a72c137ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_9be022cb-29b8-438a-9d6b-88ae12aae076.asset using Guid(97eb17abf9defce408c74c6a72c137ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d96b83797e926263348a59ccd070ba0') in 0.027883 seconds 
+  Import took 0.036316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/TerrainData_859d6de5-b778-4c28-8b32-091e282a85a9.asset
+  artifactKey: Guid(fdfe7797c1c4f75429e26e193c59c193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_859d6de5-b778-4c28-8b32-091e282a85a9.asset using Guid(fdfe7797c1c4f75429e26e193c59c193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd828936497dd8028449b29c3b69814d7') in 0.020356 seconds 
+  Import took 0.030020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/TerrainData_8387397f-1b6e-4f82-9609-93b0a3848932.asset
+  artifactKey: Guid(db09463611cebd641b0d3239c71e6624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_8387397f-1b6e-4f82-9609-93b0a3848932.asset using Guid(db09463611cebd641b0d3239c71e6624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f713f6666d333ac8f3015e916a3edf') in 0.017435 seconds 
+  Import took 0.024042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/TerrainData_57f2a94c-6a86-4731-b84b-5d918fb8b0f8.asset
+  artifactKey: Guid(8b04b4b8046b20745be383aaa4cdad0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_57f2a94c-6a86-4731-b84b-5d918fb8b0f8.asset using Guid(8b04b4b8046b20745be383aaa4cdad0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af10b4a041e7ddd8a78c65232f9dce41') in 0.018688 seconds 
+  Import took 0.024998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/TerrainData_fd1bc2fd-104f-4511-a2bd-22fed03061cf.asset
+  artifactKey: Guid(28cce258fb540004fab656f07b9eae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_fd1bc2fd-104f-4511-a2bd-22fed03061cf.asset using Guid(28cce258fb540004fab656f07b9eae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b1ececb75f18499ae49ee8db3e0f33') in 0.018998 seconds 
+  Import took 0.025702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/TerrainData_50a9b299-04f5-4ced-a139-42f32637a9ff.asset
+  artifactKey: Guid(4f66908bb66297e47877fa4d120b15a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_50a9b299-04f5-4ced-a139-42f32637a9ff.asset using Guid(4f66908bb66297e47877fa4d120b15a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3e2fe9ef31f9045d3a48f7d9f6373a') in 0.017537 seconds 
+  Import took 0.023641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.304445 seconds.
+  path: Assets/章節/第一章
+  artifactKey: Guid(a28111f0eb3771143a5ca6adb355adc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章 using Guid(a28111f0eb3771143a5ca6adb355adc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f038b95623550b6a01fc73e98d97f7ea') in 0.005021 seconds 
+  Import took 0.017292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032672 seconds.
+  path: Assets/章節/第一章/FirstPerson.prefab
+  artifactKey: Guid(a4fc52df7b9bf8b46b54f13532ddf12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/FirstPerson.prefab using Guid(a4fc52df7b9bf8b46b54f13532ddf12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5870fa23ab60d87799a0948bccc130') in 1.304385 seconds 
+  Import took 1.312820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/章節/第一章/圍牆.fbx
+  artifactKey: Guid(687f0547415bc984bab6a2471ea294be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/圍牆.fbx using Guid(687f0547415bc984bab6a2471ea294be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85666321d21e236480d704abbbcc61d') in 0.155706 seconds 
+  Import took 0.162708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/章節/第一章/裝飾建築二.fbx
+  artifactKey: Guid(6c31a5cc649108c4a980f434a61aad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/裝飾建築二.fbx using Guid(6c31a5cc649108c4a980f434a61aad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e109c1c409f81fafa6af1875ebe997f5') in 0.922218 seconds 
+  Import took 0.930268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/章節/第一章/裝飾建築1.fbx
+  artifactKey: Guid(582504c4c3465ed49808c385ee72d944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/裝飾建築1.fbx using Guid(582504c4c3465ed49808c385ee72d944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd16c3588bee44d12d7a791cebdc44cef') in 0.582294 seconds 
+  Import took 0.591228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/章節/第一章/裝飾建築3.fbx
+  artifactKey: Guid(0f0a876a523b2fc459be5af40d18490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/裝飾建築3.fbx using Guid(0f0a876a523b2fc459be5af40d18490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06b5ef0eb41987ac51e17a6651127ce') in 0.318911 seconds 
+  Import took 0.326864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/章節/第一章/教室.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad8b410dfc72d1d571482642b79ebaf') in 0.003766 seconds 
+  Import took 0.010045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/章節/第一章/裝飾建築4.fbx
+  artifactKey: Guid(117aefb46a884bd4d83d105127404c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/裝飾建築4.fbx using Guid(117aefb46a884bd4d83d105127404c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e828c7014e54e490dcfa47796938e1a') in 0.428930 seconds 
+  Import took 0.438850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.336571 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Dialogue Manager.prefab
+  artifactKey: Guid(58ac37417e60e534f91138088a3e6f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Dialogue Manager.prefab using Guid(58ac37417e60e534f91138088a3e6f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427e612640d1bac4d3de2c821bb77d18') in 0.162599 seconds 
+  Import took 0.174098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.092010 seconds.
+  path: Assets/Dialogue Database.asset
+  artifactKey: Guid(9ec2ada99cbd1ec4fa9c544dced454b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database.asset using Guid(9ec2ada99cbd1ec4fa9c544dced454b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5528620a6d327df08fa51db62289ecd8') in 0.025993 seconds 
+  Import took 0.036141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 506.449471 seconds.
+  path: Assets/Dialogue Database (Auto-Backup).asset
+  artifactKey: Guid(da3aaf4feff8cc34ea08bbdac229d359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(da3aaf4feff8cc34ea08bbdac229d359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c2679720b61eb80d876d1a8071b601') in 0.023758 seconds 
+  Import took 0.047128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 600.048433 seconds.
+  path: Assets/Dialogue Database (Auto-Backup).asset
+  artifactKey: Guid(94ef89924429d8d499132ac43f04e6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(94ef89924429d8d499132ac43f04e6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb5d899a24751c4bc9b208c4e5dd81e') in 0.017955 seconds 
+  Import took 0.029820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 600.008203 seconds.
+  path: Assets/Dialogue Database (Auto-Backup).asset
+  artifactKey: Guid(1243b8a3f129453459f7190035e8f407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(1243b8a3f129453459f7190035e8f407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9faf5064ea28176b60ba2dbc0e249d26') in 0.014606 seconds 
+  Import took 0.025110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 600.055042 seconds.
+  path: Assets/Dialogue Database (Auto-Backup).asset
+  artifactKey: Guid(aece500e15d03fa4daa17535c48ef42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(aece500e15d03fa4daa17535c48ef42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95451f03aba48ef69470d78c737402df') in 0.034465 seconds 
+  Import took 0.046402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 599.994392 seconds.
+  path: Assets/Dialogue Database (Auto-Backup).asset
+  artifactKey: Guid(f05b74e701fd00940add0c9bac6ac035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(f05b74e701fd00940add0c9bac6ac035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc720449313f1fe37ddefe04b53c4ec3') in 0.017079 seconds 
+  Import took 0.030741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 600.023986 seconds.
+  path: Assets/Dialogue Database (Auto-Backup).asset
+  artifactKey: Guid(efa02720ab6b5484091e4ad5b6cd3789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(efa02720ab6b5484091e4ad5b6cd3789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9df238ea4681e24b1843132c3879945') in 0.015594 seconds 
+  Import took 0.026849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 599.997989 seconds.
+  path: Assets/Dialogue Database (Auto-Backup).asset
+  artifactKey: Guid(8c8cf8212d815454cb5cfd788f136086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(8c8cf8212d815454cb5cfd788f136086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f87d4e1ead4faecd49ed957d966d4c5') in 0.028761 seconds 
+  Import took 0.038445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 599.998902 seconds.
+  path: Assets/Dialogue Database (Auto-Backup).asset
+  artifactKey: Guid(693564d72138e164db9fe3f79040ff89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(693564d72138e164db9fe3f79040ff89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a9a92d72d201869b948c70596c8d409') in 0.018388 seconds 
+  Import took 0.030251 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013207 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.442 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5457ms)
+		BeginReloadAssembly (1326ms)
+			ExecutionOrderSort (1ms)
+			DisableScriptedObjects (289ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (717ms)
+		EndReloadAssembly (3987ms)
+			LoadAssemblies (282ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (642ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (2616ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (173ms)
+				ProcessInitializeOnLoadAttributes (2273ms)
+				ProcessInitializeOnLoadMethodAttributes (138ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3520 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 345.2 MB.
+System memory in use after: 345.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4323.
+Total: 5.535900 ms (FindLiveObjects: 0.454600 ms CreateObjectMapping: 0.209600 ms MarkObjects: 3.835500 ms  DeleteObjects: 1.033800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 949.896772 seconds.
+  path: Assets/章節
+  artifactKey: Guid(b5e791299f20974448b41c44dd9240cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節 using Guid(b5e791299f20974448b41c44dd9240cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966596c202fe150602c0f031cec00937') in 0.018373 seconds 
+  Import took 0.040541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.090961 seconds.
+  path: Assets/章節/第二章
+  artifactKey: Guid(070f4fc48acc8cc43ab63143391f4362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章 using Guid(070f4fc48acc8cc43ab63143391f4362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a5252fae39b5239b781dc993c98f63') in 0.002490 seconds 
+  Import took 0.009514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084684 seconds.
+  path: Assets/章節/第二章/0326家 1.fbx
+  artifactKey: Guid(831f0a0e3978faa4ab651f98ac027e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/0326家 1.fbx using Guid(831f0a0e3978faa4ab651f98ac027e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8f8621229ab899d925ff753193d54e0') in 4.256516 seconds 
+  Import took 4.268282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/章節/第二章/吉他(reduce).fbx
+  artifactKey: Guid(abd4c86e1acb98c45b3d67f7b38428ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/吉他(reduce).fbx using Guid(abd4c86e1acb98c45b3d67f7b38428ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59628f290f0bc2517bf37520552789c') in 1.023502 seconds 
+  Import took 1.031510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/章節/第二章/小熊玩偶(reduce).fbx
+  artifactKey: Guid(2b30e87c1b9712042943d45bee7138be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/小熊玩偶(reduce).fbx using Guid(2b30e87c1b9712042943d45bee7138be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3321a3839419ec68092ba37e44cb95a') in 0.249202 seconds 
+  Import took 0.256734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/章節/第二章/滑鼠(reduce).fbx
+  artifactKey: Guid(df4e2f410c615bb4982db0c32688bb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/滑鼠(reduce).fbx using Guid(df4e2f410c615bb4982db0c32688bb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc8b3048265f21933c39390629437d9') in 0.047246 seconds 
+  Import took 0.054016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/章節/第二章/相框(設計圖)(reduce).fbx
+  artifactKey: Guid(0197c1e0fd9976e44b6704cc66b0f90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/相框(設計圖)(reduce).fbx using Guid(0197c1e0fd9976e44b6704cc66b0f90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2993c517764bc1b30d58bcab7797122') in 0.025255 seconds 
+  Import took 0.033604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/章節/第二章/天堂鳥.fbx
+  artifactKey: Guid(e6ed0a67fff44da4a8a05f92a3b3742c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/天堂鳥.fbx using Guid(e6ed0a67fff44da4a8a05f92a3b3742c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b1f32c3f34658ee50664d51a6432e4') in 0.141493 seconds 
+  Import took 0.149196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/章節/第二章/垃圾桶.fbx
+  artifactKey: Guid(c39371dd851874b4ab9dd5f5708c608a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/垃圾桶.fbx using Guid(c39371dd851874b4ab9dd5f5708c608a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb43986d37482e2b82582e1de1510fd4') in 0.093766 seconds 
+  Import took 0.101870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/章節/第二章/家.unity
+  artifactKey: Guid(40ea545a2027dc44581e947f99049d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/家.unity using Guid(40ea545a2027dc44581e947f99049d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d3322e83ecebe7c08d042e8a37ea83') in 0.004302 seconds 
+  Import took 0.012637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/章節/第二章/洗手台(reduce).fbx
+  artifactKey: Guid(b3aa108802efbdf4e98a037cf2b2d396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/洗手台(reduce).fbx using Guid(b3aa108802efbdf4e98a037cf2b2d396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed8705a7a46ffa69c41ed590a6873f3') in 0.093627 seconds 
+  Import took 0.100464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/章節/第二章/laptop.fbx
+  artifactKey: Guid(05fdc694ab61b0c4aa9218769b869f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/laptop.fbx using Guid(05fdc694ab61b0c4aa9218769b869f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e039af0f145e6fb9a5ef97fa66c3a288') in 0.049551 seconds 
+  Import took 0.058260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/章節/第二章/檯燈(reduce).fbx
+  artifactKey: Guid(72f0d9fadbf2fef47ae35d12ad6b7565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/檯燈(reduce).fbx using Guid(72f0d9fadbf2fef47ae35d12ad6b7565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1b653b35fcdb98c5d35ba657c84dfa') in 0.083668 seconds 
+  Import took 0.092577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/章節/第二章/藥袋(reduce).fbx
+  artifactKey: Guid(bfe91f3290059e140868f5dd20e97a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/藥袋(reduce).fbx using Guid(bfe91f3290059e140868f5dd20e97a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3e90b5d5fbc65907a64a5c85f0ae2f') in 0.024476 seconds 
+  Import took 0.032427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/章節/第二章/立可帶.fbx
+  artifactKey: Guid(f69cd9c5d71af2c4faf18b0dfcc28eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/立可帶.fbx using Guid(f69cd9c5d71af2c4faf18b0dfcc28eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b38d19055ba37f2242d7d8ba9605f55') in 0.029410 seconds 
+  Import took 0.036505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/章節/第二章/筆記本.fbx
+  artifactKey: Guid(895bd8e1e05017644ade3bf45c9e0b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/筆記本.fbx using Guid(895bd8e1e05017644ade3bf45c9e0b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c865c8ebb75a0cb138a25d2ac19f05a') in 0.185222 seconds 
+  Import took 0.192007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.947177 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs
+  artifactKey: Guid(a53905e94ae5caf4688b53dccfc26b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs using Guid(a53905e94ae5caf4688b53dccfc26b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d56db86df262a8bdfe1ad1a9389239') in 0.002664 seconds 
+  Import took 0.010664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.411186 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Data/Demo Database.asset
+  artifactKey: Guid(c1cc03cd82f6cdb40afbc0575be25564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Data/Demo Database.asset using Guid(c1cc03cd82f6cdb40afbc0575be25564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6217a0b0d94695af9350cb871b5dfc8b') in 0.031433 seconds 
+  Import took 0.040553 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004921 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.539 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3540ms)
+		BeginReloadAssembly (292ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (150ms)
+		EndReloadAssembly (3135ms)
+			LoadAssemblies (184ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (519ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (2134ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (1865ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3514 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 345.9 MB.
+System memory in use after: 346.1 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4395.
+Total: 6.933500 ms (FindLiveObjects: 0.314400 ms CreateObjectMapping: 0.102500 ms MarkObjects: 6.463300 ms  DeleteObjects: 0.051000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 208.486349 seconds.
+  path: Assets/章節/第一章/教室.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1703de158d81091d02671b7eb3818d') in 0.023095 seconds 
+  Import took 0.033631 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002474 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.281 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3282ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (3035ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (463ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (2137ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (1873ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3514 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 345.9 MB.
+System memory in use after: 346.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4398.
+Total: 5.430000 ms (FindLiveObjects: 0.769700 ms CreateObjectMapping: 0.304100 ms MarkObjects: 4.318200 ms  DeleteObjects: 0.036400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
