@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Selection_ob : MonoBehaviour
 {
-    public static string name;
+    public static string name ;
     [SerializeField] private string selectableTag = "Selectable";
     [SerializeField] private AudioSource selectob_music;
     private Transform _selection;
@@ -12,7 +12,7 @@ public class Selection_ob : MonoBehaviour
     
     /// <summary>
     /// list裡面代表:
-    /// [0] 日記本
+    /// [0] 筆記本
     /// [1] 藥袋
     /// [2] 筆電
     /// [3] 天堂鳥
@@ -56,7 +56,6 @@ public class Selection_ob : MonoBehaviour
                     name = gb.name;
                     if (Input.GetMouseButtonUp(0))
                     {
-                        Debug.Log(name);
                         if (name == "藥袋")
                         {
                             important_ob[1] = 1;
@@ -73,8 +72,34 @@ public class Selection_ob : MonoBehaviour
                                 ob_count++;
                                 take_bear = true;
                             }
+                        }                        
+                        else if (name == "筆記本")
+                        {
+                            important_ob[0] = 1;
+                            if (!take_notebook)
+                            {
+                                ob_count++;
+                                take_notebook = true;
+                            }
+                        }                        
+                        else if (name == "筆電")
+                        {
+                            important_ob[2] = 1;
+                            if (!take_computer)
+                            {
+                                ob_count++;
+                                take_computer = true;
+                            }
+                        }                       
+                        else if (name == "天堂鳥")
+                        {
+                            important_ob[3] = 1;
+                            if (!take_flower)
+                            {
+                                ob_count++;
+                                take_flower = true;
+                            }
                         }
-                        
                         selectob_music.Play();                  //播放音效
                     }
                 }

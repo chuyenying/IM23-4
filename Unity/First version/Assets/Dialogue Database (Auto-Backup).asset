@@ -6003,6 +6003,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 0058cafb-db4c-48c8-9341-929af466e1b4
+        type: 0
+        typeString: 
       conversationID: 8
       isRoot: 0
       isGroup: 0
@@ -6420,7 +6424,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: "Fade(stay,1);SetActive(\u6559\u5BA4,false)@1;\r\nLoadLevel(\u5BB6);Continue()"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -6430,7 +6434,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 35
+        destinationConversationID: 10
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -6443,8 +6453,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 38, y: 564}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 416.12335}
+    canvasZoom: 0.6100004
   - id: 9
     fields:
     - title: Title
@@ -7078,7 +7088,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: "SetActive(\u5BB6,true)@1;\r\nFade(in,1)@1"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 10
@@ -8261,7 +8271,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 19, y: 230}
+    canvasScrollPosition: {x: 7, y: 0}
     canvasZoom: 1
   - id: 11
     fields:

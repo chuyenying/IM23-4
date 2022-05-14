@@ -9,7 +9,6 @@ public class Delete_eyes : MonoBehaviour
     void Start()
     {
         GameObject.Find("Camera-¸ò¤Hª«").GetComponent<followpeople>().enabled = false;
-        GameObject.Find("FirstPerson").GetComponent<flashlight>().enabled = false;
         GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
         StartCoroutine(wait6sec());
     }
