@@ -813,6 +813,14 @@ PrefabInstance:
       propertyPath: displaySettings.cameraSettings.sequencerCamera
       value: 
       objectReference: {fileID: 8597803835556408123}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: displaySettings.inputSettings.alwaysForceResponseMenu
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: displaySettings.subtitleSettings.showPCSubtitlesDuringLine
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
 --- !u!1 &513891843
@@ -1359,7 +1367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overrideName: "\u59B9\u59B9-\u8CDC\u751F"
-  overrideUseMessage: "(\u8ACB\u7528E\u9375\u89F8\u767C\u5C0D\u8A71)"
+  overrideUseMessage: "(\u8ACB\u7528\u6ED1\u9F20\u5DE6\u9375\u89F8\u767C\u5C0D\u8A71)"
   maxUseDistance: 1
   events:
     onSelect:
@@ -1726,7 +1734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overrideName: "\u5C0F\u718A\u73A9\u5076"
-  overrideUseMessage: "(\u8ACB\u7528\u6ED1\u9F20\u5DE6\u9375\u9375\u89F8\u767C\u5C0D\u8A71)"
+  overrideUseMessage: "(\u8ACB\u7528\u6ED1\u9F20\u5DE6\u9375\u89F8\u767C\u5C0D\u8A71)"
   maxUseDistance: 1
   events:
     onSelect:
