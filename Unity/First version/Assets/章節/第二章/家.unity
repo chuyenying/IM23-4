@@ -814,6 +814,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8597803835556408123}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: displaySettings.subtitleSettings.continueButton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.inputSettings.alwaysForceResponseMenu
       value: 0
       objectReference: {fileID: 0}
@@ -1368,7 +1372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overrideName: "\u59B9\u59B9-\u8CDC\u751F"
   overrideUseMessage: "(\u8ACB\u7528\u6ED1\u9F20\u5DE6\u9375\u89F8\u767C\u5C0D\u8A71)"
-  maxUseDistance: 1
+  maxUseDistance: 2
   events:
     onSelect:
       m_PersistentCalls:
@@ -1434,8 +1438,8 @@ MonoBehaviour:
   skipIfNoValidEntries: 1
   stopConversationOnTriggerExit: 1
   stopConversationIfTooFar: 1
-  maxConversationDistance: 1
-  monitorConversationDistanceFrequency: 1
+  maxConversationDistance: 2
+  monitorConversationDistanceFrequency: 2
   showCursorDuringConversation: 1
   pauseGameDuringConversation: 0
   setActiveActions: []
@@ -1735,7 +1739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overrideName: "\u5C0F\u718A\u73A9\u5076"
   overrideUseMessage: "(\u8ACB\u7528\u6ED1\u9F20\u5DE6\u9375\u89F8\u767C\u5C0D\u8A71)"
-  maxUseDistance: 1
+  maxUseDistance: 2
   events:
     onSelect:
       m_PersistentCalls:
@@ -1827,8 +1831,8 @@ MonoBehaviour:
   skipIfNoValidEntries: 1
   stopConversationOnTriggerExit: 1
   stopConversationIfTooFar: 1
-  maxConversationDistance: 1
-  monitorConversationDistanceFrequency: 1
+  maxConversationDistance: 2
+  monitorConversationDistanceFrequency: 2
   showCursorDuringConversation: 1
   pauseGameDuringConversation: 0
   setActiveActions: []
@@ -2352,7 +2356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overrideName: "\u85E5\u888B"
   overrideUseMessage: "(\u8ACB\u7528\u6ED1\u9F20\u5DE6\u9375\u89F8\u767C\u5C0D\u8A71)"
-  maxUseDistance: 1
+  maxUseDistance: 2
   events:
     onSelect:
       m_PersistentCalls:
@@ -2418,8 +2422,8 @@ MonoBehaviour:
   skipIfNoValidEntries: 1
   stopConversationOnTriggerExit: 1
   stopConversationIfTooFar: 1
-  maxConversationDistance: 1
-  monitorConversationDistanceFrequency: 1
+  maxConversationDistance: 2
+  monitorConversationDistanceFrequency: 2
   showCursorDuringConversation: 1
   pauseGameDuringConversation: 0
   setActiveActions: []
@@ -29906,7 +29910,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 8597803836330947954}
+        - m_Target: {fileID: 8597803835556408118}
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
@@ -29933,7 +29937,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 8597803836330947954}
+        - m_Target: {fileID: 8597803835556408118}
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
@@ -30035,7 +30039,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   distanceFrom: 0
-  maxSelectionDistance: 1
+  maxSelectionDistance: 2
   runRaycasts: 1
   raycastAll: 0
   useDefaultGUI: 1
