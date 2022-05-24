@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class WhenConversaction : MonoBehaviour
 {
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject walk_run_music;
+
     public void close()
     {
-        GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
-        GameObject.Find("walk_run_music").SetActive(false);
+        player.GetComponent<controlpeople>().enabled = false;
+        walk_run_music.SetActive(false);
     }    
     public void open()
     {
-        GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
-        GameObject.Find("walk_run_music").SetActive(true);
+        player.GetComponent<controlpeople>().enabled = true;
+        walk_run_music.SetActive(true);
     }
 }
