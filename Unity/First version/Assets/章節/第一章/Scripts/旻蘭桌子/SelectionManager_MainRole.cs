@@ -13,12 +13,13 @@ public class SelectionManager_MainRole : MonoBehaviour
     [SerializeField] private Animator SelectOB_anim;
     private Transform _selection;
     public static bool read_info = false;
-    public static bool take_phone=false, take_candy=true;
+    public static bool take_phone=false, take_candy=true , take_book=false , take_omori = false;
     private Ray ray;
     // Start is called before the first frame update
     void Start()
     {
         PlayerPrefs.DeleteKey("Cellphone");
+        PlayerPrefs.DeleteKey("Candy");
         bg.SetActive(false);
         focus_info.SetActive(false);
         SelectOB_anim.gameObject.SetActive(false);
@@ -61,13 +62,41 @@ public class SelectionManager_MainRole : MonoBehaviour
                     {
                         take_phone = true;
                         PlayerPrefs.SetInt("Cellphone", 1);
+
+                        int PlayerPrefscore = PlayerPrefs.GetInt("score2");
+                        PlayerPrefscore += 3;
+                        PlayerPrefs.SetInt("score2", PlayerPrefscore);
+                        Debug.Log($"score2: {PlayerPrefs.GetInt("score2")}");
+
                         Destroy(gb);
                     }
                     else if(gb.name =="candy")
                     {
                         take_candy = true;
                         PlayerPrefs.SetInt("Candy", 1);
+
+                        int PlayerPrefscore = PlayerPrefs.GetInt("score2");
+                        PlayerPrefscore += 3;
+                        PlayerPrefs.SetInt("score2", PlayerPrefscore);
+                        Debug.Log($"score2: {PlayerPrefs.GetInt("score2")}");
+
                         Destroy(gb);
+                    }
+                    else if (gb.name == "化學" && !take_book) //避免化學課本一直被重複加分
+                    {
+                        take_book = true;
+                        int PlayerPrefscore = PlayerPrefs.GetInt("score2");
+                        PlayerPrefscore += 1;
+                        PlayerPrefs.SetInt("score2", PlayerPrefscore);
+                        Debug.Log($"score2: {PlayerPrefs.GetInt("score2")}");
+                    }
+                    else if (gb.name == "御守" && !take_omori) //避免化學課本一直被重複加分
+                    {
+                        take_omori = true;
+                        int PlayerPrefscore = PlayerPrefs.GetInt("score2");
+                        PlayerPrefscore += 3;
+                        PlayerPrefs.SetInt("score2", PlayerPrefscore); 
+                        Debug.Log($"score2: {PlayerPrefs.GetInt("score2")}");
                     }
                     selectob_music.Play();                  //播放音效
                     read_info = true;

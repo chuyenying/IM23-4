@@ -13,6 +13,7 @@ public class SelectionManager_bro : MonoBehaviour
     [SerializeField] private Animator SelectOB_anim;
     private Transform _selection;
     private bool read_info = false;
+    private bool take_book = false;
     private Ray ray;
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,14 @@ public class SelectionManager_bro : MonoBehaviour
                     //gb.layer = LayerMask.NameToLayer("highlight");     // 使用shader用layer控制
                     if (Input.GetMouseButtonUp(0) && !read_info)
                     {
+                        if (name == "卡片" && !take_book)
+                        {
+                            take_book = true;
+                            int PlayerPrefscore = PlayerPrefs.GetInt("score2");
+                            PlayerPrefscore += 3;
+                            PlayerPrefs.SetInt("score2", PlayerPrefscore);
+                            Debug.Log($"score2: {PlayerPrefs.GetInt("score2")}");
+                        }
                         selectob_music.Play();                  //播放音效
                         SelectOB_anim.gameObject.SetActive(true);    //播放動畫
                         read_info = true;                            

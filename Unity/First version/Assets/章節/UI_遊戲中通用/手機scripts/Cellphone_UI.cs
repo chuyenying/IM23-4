@@ -21,6 +21,11 @@ public class Cellphone_UI : MonoBehaviour
     {
         if (input.text == "0714")
         {
+            int PlayerPrefscore = PlayerPrefs.GetInt("score2");
+            PlayerPrefscore += 5;
+            PlayerPrefs.SetInt("score2", PlayerPrefscore);
+            Debug.Log($"score2: {PlayerPrefs.GetInt("score2")}");
+
             password_wrong_anim.SetTrigger("open_Lock");
             StartCoroutine(wait());
         }
