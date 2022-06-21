@@ -236,6 +236,90 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+  - id: 12
+    fields:
+    - title: Name
+      value: select_half
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 13
+    fields:
+    - title: Name
+      value: take_notebook
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 14
+    fields:
+    - title: Name
+      value: take_flower
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 15
+    fields:
+    - title: Name
+      value: take_medic
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 16
+    fields:
+    - title: Name
+      value: take_bear
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 17
+    fields:
+    - title: Name
+      value: sister_GoDown
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -8033,7 +8117,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: None()
+        value: 
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
+        value: 
         type: 0
         typeString: 
       conversationID: 10
@@ -8041,7 +8129,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 10
@@ -9485,7 +9573,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 120
+        y: 118.82353
         width: 160
         height: 30
     - id: 20
@@ -10099,7 +10187,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: "Timeline(play,Timeline-\u59B9\u59B9\u4E0B\u6A13)"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 10
@@ -10117,15 +10205,15 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: "Variable[\"\u7B2C\u4E8C\u6BB5\u5C0D\u8A71_\u7B2C\u4E8C\u7AE0_\u59B9\u59B9_\"]
-        == true"
-      userScript: 
+        == true and (Variable[\"select_half\"] >= 3) and "
+      userScript: Variable["sister_GoDown"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1260
-        y: 70
+        x: 1390.7008
+        y: 46.470596
         width: 160
         height: 30
     - id: 29
@@ -10195,8 +10283,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1290
-        y: 120
+        x: 1393.5294
+        y: 117.647064
         width: 160
         height: 30
     - id: 30
@@ -10266,8 +10354,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1140
-        y: 170
+        x: 1416.4706
+        y: 188.82355
         width: 160
         height: 30
     - id: 31
@@ -10337,8 +10425,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1020
-        y: 220
+        x: 1415.2941
+        y: 252.9412
         width: 160
         height: 30
     - id: 32
@@ -10408,8 +10496,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1020
-        y: 270
+        x: 1394.1177
+        y: 307.64706
         width: 160
         height: 30
     - id: 33
@@ -10479,8 +10567,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1020
-        y: 320
+        x: 1415.2941
+        y: 352.9412
         width: 160
         height: 30
     - id: 34
@@ -10556,8 +10644,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1020
-        y: 370
+        x: 1415.2941
+        y: 402.9412
         width: 160
         height: 30
     - id: 35
@@ -10698,8 +10786,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1140
-        y: 420
+        x: 1382.3529
+        y: 484.7059
         width: 160
         height: 30
     - id: 37
@@ -10769,8 +10857,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1200
-        y: 470
+        x: 1243.5294
+        y: 574.7059
         width: 160
         height: 30
     - id: 38
@@ -10846,8 +10934,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1020
-        y: 520
+        x: 1063.5294
+        y: 624.7059
         width: 160
         height: 30
     - id: 39
@@ -10988,8 +11076,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1140
-        y: 570
+        x: 1183.5294
+        y: 674.7059
         width: 160
         height: 30
     - id: 41
@@ -11059,8 +11147,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1140
-        y: 620
+        x: 1183.5294
+        y: 724.7059
         width: 160
         height: 30
     - id: 42
@@ -11126,13 +11214,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1020
-        y: 670
+        x: 1063.5294
+        y: 774.7059
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 620.5477, y: 397.25995}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 203.93301, y: 0}
+    canvasZoom: 0.76000017
   - id: 11
     fields:
     - title: Title
@@ -11374,8 +11462,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 20
+        x: 121
+        y: 18
         width: 160
         height: 30
     - id: 1
@@ -11432,8 +11520,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_medic"] == true
+      userScript: 'Variable["take_medic"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -11497,8 +11588,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_medic"] == true
+      userScript: 'Variable["take_medic"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -11688,8 +11782,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_notebook"] == true
+      userScript: 'Variable["take_notebook"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -11891,8 +11988,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_flower"] == true
+      userScript: 'Variable["take_flower"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -11956,8 +12056,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_flower"] == true
+      userScript: 'Variable["take_flower"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12021,8 +12124,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_flower"] == true
+      userScript: 'Variable["take_flower"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12167,7 +12273,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 20
+        y: 21
         width: 160
         height: 30
     - id: 1
@@ -12224,8 +12330,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_bear"] == true
+      userScript: 'Variable["take_bear"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12289,8 +12398,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_bear"] == true
+      userScript: 'Variable["take_bear"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12354,8 +12466,11 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["take_bear"] == true
+      userScript: 'Variable["take_bear"] = false;
+
+        Variable["select_half"]
+        = Variable["select_half"] + 1;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
