@@ -10199,7 +10199,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: "Variable[\"\u7B2C\u4E8C\u6BB5\u5C0D\u8A71_\u7B2C\u4E8C\u7AE0_\u59B9\u59B9_\"]
-        == true and (Variable[\"select_half\"] >= 3) and "
+        == true and (Variable[\"select_half\"] >= 3) "
       userScript: Variable["sister_GoDown"] = true
       onExecute:
         m_PersistentCalls:
@@ -10211,8 +10211,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 285.52856, y: 74.99997}
-    canvasZoom: 0.76000017
+    canvasScrollPosition: {x: 523.2876, y: 12.328758}
+    canvasZoom: 0.7300002
   - id: 11
     fields:
     - title: Title
@@ -11478,7 +11478,7 @@ MonoBehaviour:
   - id: 16
     fields:
     - title: Title
-      value: "\u7B2C\u4E8C\u7AE0-\u623F\u9580\u628A\u624B"
+      value: "\u7B2C\u4E8C\u7AE0-\u9580\u628A"
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -11654,7 +11654,7 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["sister_GoDown"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -12595,8 +12595,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 306.09753}
-    canvasZoom: 0.8200002
+    canvasScrollPosition: {x: 0, y: 326.06738}
+    canvasZoom: 1.03
   - id: 17
     fields:
     - title: Title
