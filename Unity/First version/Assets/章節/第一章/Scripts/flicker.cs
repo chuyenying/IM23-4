@@ -7,25 +7,37 @@ public class flicker : MonoBehaviour
 {
     private Light light;
 
-    int intensity_zero= 0;
+    float sec_end;
+    float sec = 0;
+    public float  sec_min ,sec_max;
+    public float  light_min ,light_max;
+    public Material flicker_material;
     void Start()
     {
         light = this.GetComponent<Light>();
-        light.intensity = 1f;
+        light.intensity = Random.Range(light_min, light_max);
+        sec_end = Random.Range(sec_min, sec_max);
     }
 
     private void Update()
     {
-        if(light.intensity <= 0f)
+        if(sec < sec_end)
         {
-            light.intensity = Random.Range(0, 1f);
+            sec += Time.deltaTime;
         }
-        
-        if(light.intensity > intensity_zero)
+        else if(sec >= sec_end)
         {
-            
-            float random_sec = Random.Range(0.2f, 0.5f);
-            light.intensity -= Time.deltaTime * random_sec;
+            light.intensity = Random.Range(light_min, light_max);
+            if(light.intensity > (light_min+ light_max)/2)
+            {
+                flicker_material.SetColor("_EmissionColor",new Color(5, 5, 5));
+            }
+            else
+            {
+                flicker_material.SetColor("_EmissionColor", new Color(0.5f, 0.5f, 0.5f));
+            }
+            sec = 0;
+            sec_end = Random.Range(sec_min, sec_max);
         }
     }
 }
