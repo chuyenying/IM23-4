@@ -18,8 +18,6 @@ public class SelectionManager_MainRole : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteKey("Cellphone");
-        PlayerPrefs.DeleteKey("Candy");
         bg.SetActive(false);
         focus_info.SetActive(false);
         SelectOB_anim.gameObject.SetActive(false);

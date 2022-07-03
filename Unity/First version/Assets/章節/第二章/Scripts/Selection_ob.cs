@@ -24,7 +24,7 @@ public class Selection_ob : MonoBehaviour
     /// </summary>
     private List<int> important_ob = new List<int> { 0, 0, 0, 0, 0};
     public int ob_count = 0;
-    private bool take_notebook = false, take_medicine = false, take_computer=false, take_flower = false,take_bear=false;
+    public static bool take_notebook = false, take_medicine = false, take_computer=false, take_flower = false,take_bear=false;
     void Start()
     {
 

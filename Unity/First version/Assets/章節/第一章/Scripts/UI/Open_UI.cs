@@ -5,12 +5,19 @@ using UnityEngine;
 
 public class Open_UI : MonoBehaviour
 {
+
     [SerializeField] private GameObject walk_and_run;
-    [SerializeField] private Animator MainMenu;
+    [SerializeField] private GameObject MainMenu,SettingMenu;
+    //[SerializeField] private Animator MainMenu;
     public static bool open = false;
     private bool Open_SM=false;
     //Open_SM為打開設定與幫助菜單
 
+    private void Awake()
+    {
+        MainMenu.SetActive(false);
+        SettingMenu.SetActive(false);
+    }
     public void QuitGame()
     {
         Application.Quit();
@@ -18,7 +25,9 @@ public class Open_UI : MonoBehaviour
     public void ContinueGame()
     {
         open = false;
-        MainMenu.SetTrigger("FlyOut");
+        MainMenu.SetActive(false);
+        SettingMenu.SetActive(false);
+        //MainMenu.SetTrigger("FlyOut");
         Cursor.lockState = CursorLockMode.Locked;
         GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = true;
         GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
@@ -37,7 +46,8 @@ public class Open_UI : MonoBehaviour
             open = !open;
             if (open && !Open_SM)
             {
-                MainMenu.SetTrigger("FlyIn");
+                //MainMenu.SetTrigger("FlyIn");
+                MainMenu.SetActive(true);
                 GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = false;
                 GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
                 walk_and_run.SetActive(false);

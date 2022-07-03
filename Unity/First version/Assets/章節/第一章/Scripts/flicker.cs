@@ -40,4 +40,5 @@ public class flicker : MonoBehaviour
             sec_end = Random.Range(sec_min, sec_max);
         }
     }
+
 }

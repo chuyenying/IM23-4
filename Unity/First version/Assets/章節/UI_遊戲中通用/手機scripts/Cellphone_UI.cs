@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Cellphone_UI : MonoBehaviour
 {
-    [SerializeField] private GameObject MainScreen,Lock_Screen;
+    [SerializeField] private GameObject MainScreen, Lock_Screen;
     [SerializeField] private GameObject Remove_Button;
     [SerializeField] private InputField input;
     [SerializeField] private Animator password_wrong_anim;
@@ -15,7 +15,7 @@ public class Cellphone_UI : MonoBehaviour
     }
     public void EraseNum()
     {
-            input.text = input.text.Remove(input.text.Length-1);
+        input.text = input.text.Remove(input.text.Length - 1);
     }
     public void checkPassword()
     {
@@ -26,27 +26,39 @@ public class Cellphone_UI : MonoBehaviour
             PlayerPrefs.SetInt("score2", PlayerPrefscore);
             Debug.Log($"score2: {PlayerPrefs.GetInt("score2")}");
 
+            PlayerPrefs.SetInt("Cellphone_Unlock", 1);    //PlayerPref紀錄有沒有解鎖
+
             password_wrong_anim.SetTrigger("open_Lock");
             StartCoroutine(wait());
         }
         else
         {
-            input.text="";
+            input.text = "";
             lock_wrong_sound.Play();
             password_wrong_anim.SetTrigger("wrong_password");
         }
     }
+
+    private void Awake()
+    {
+        if (PlayerPrefs.GetInt("Cellphone_Unlock") == 1)
+        {
+            Lock_Screen.SetActive(false);
+            MainScreen.SetActive(true);
+        }
+    }
     public void Update()
     {
-        if (input.text.Length != 0){Remove_Button.SetActive(true);}
-        else{Remove_Button.SetActive(false);}
+        if (input.text.Length != 0) { Remove_Button.SetActive(true); }
+        else { Remove_Button.SetActive(false); }
+
     }
 
     IEnumerator wait()
     {
         Unlock_sound.Play();
         yield return new WaitForSeconds(1.5f);
-        
+
         Lock_Screen.SetActive(false);
         MainScreen.SetActive(true);
     }

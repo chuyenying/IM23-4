@@ -6,8 +6,6 @@ public class PlayerPref_Score : MonoBehaviour
 {
     private void Start()
     {
-        PlayerPrefs.DeleteKey("score1");
-        PlayerPrefs.DeleteKey("score2");
         PlayerPrefs.SetInt("score1", 0);    
         PlayerPrefs.SetInt("score2", 0);    
     }

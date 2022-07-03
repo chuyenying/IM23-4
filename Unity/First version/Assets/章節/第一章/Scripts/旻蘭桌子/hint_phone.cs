@@ -25,7 +25,7 @@ public class hint_phone : MonoBehaviour
     IEnumerator CloseHint()
     {
         do_once = false;
-        SelectionManager_MainRole.take_phone = false;
+        //SelectionManager_MainRole.take_phone = false;
         yield return new WaitForSeconds(5);
         hint_cellphone.SetActive(false);
     }

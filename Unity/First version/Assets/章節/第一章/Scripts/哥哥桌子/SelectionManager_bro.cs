@@ -13,7 +13,7 @@ public class SelectionManager_bro : MonoBehaviour
     [SerializeField] private Animator SelectOB_anim;
     private Transform _selection;
     private bool read_info = false;
-    private bool take_book = false;
+    public static bool take_book = false;
     private Ray ray;
     // Start is called before the first frame update
     void Start()
