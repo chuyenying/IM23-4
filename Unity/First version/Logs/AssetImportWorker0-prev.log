@@ -15,11 +15,11 @@ D:/IM23-4/IM23-4/Unity/First version
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54456
+61419
 Successfully changed project path to: D:/IM23-4/IM23-4/Unity/First version
 D:/IM23-4/IM23-4/Unity/First version
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 77.94 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 76.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
 [Subsystems] Discovering subsystems at path D:/unityhub/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -37,48 +37,48 @@ Initialize mono
 Mono path[0] = 'D:/unityhub/2020.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unityhub/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/unityhub/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unityhub/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000751 seconds.
+Registered in 0.000821 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.02 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 82.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.889 seconds
+- Completed reload, in  0.767 seconds
 Domain Reload Profiling:
-	ReloadAssembly (889ms)
+	ReloadAssembly (768ms)
 		BeginReloadAssembly (42ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (471ms)
-			LoadAssemblies (42ms)
+		EndReloadAssembly (396ms)
+			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
+			SetupTypeCache (117ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (173ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (178ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
+				RefreshPlugins (83ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (61ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				ProcessInitializeOnLoadAttributes (59ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001781 seconds.
+Registered in 0.001627 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 84.60 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 84.61 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -118,47 +118,47 @@ System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.Runti
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.498 seconds
+- Completed reload, in  1.966 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1499ms)
-		BeginReloadAssembly (103ms)
+	ReloadAssembly (1972ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (1353ms)
+		EndReloadAssembly (1825ms)
 			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (211ms)
+			SetupTypeCache (217ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (892ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (1298ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (85ms)
-				BeforeProcessingInitializeOnLoad (57ms)
-				ProcessInitializeOnLoadAttributes (691ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (935ms)
+				ProcessInitializeOnLoadMethodAttributes (198ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
 Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3779 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 331.8 MB.
 System memory in use after: 331.8 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4281.
-Total: 4.748400 ms (FindLiveObjects: 0.560900 ms CreateObjectMapping: 0.219500 ms MarkObjects: 3.578700 ms  DeleteObjects: 0.387100 ms)
+Total: 3.276100 ms (FindLiveObjects: 0.404000 ms CreateObjectMapping: 0.127300 ms MarkObjects: 2.485300 ms  DeleteObjects: 0.257300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -173,49 +173,433 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/字幕底.png
-  artifactKey: Guid(dbd92b2d230c0ad4c947733c3cf78909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/字幕底.png using Guid(dbd92b2d230c0ad4c947733c3cf78909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8143199d10c54542b46a796c21f33c86') in 0.097371 seconds 
-  Import took 0.105696 seconds .
+  path: Assets/章節/第二章/Particle System.prefab
+  artifactKey: Guid(853bee5408393db41b958135cbaf5204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/Particle System.prefab using Guid(853bee5408393db41b958135cbaf5204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ed7ea5e84a78e81b4bab43338a9f81') in 0.189480 seconds 
+  Import took 0.195847 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000437 seconds.
-  path: Assets/Dialogue Database.asset
-  artifactKey: Guid(9ec2ada99cbd1ec4fa9c544dced454b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dialogue Database.asset using Guid(9ec2ada99cbd1ec4fa9c544dced454b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd74b6132d8c57870062c5c6a0c2784c') in 0.042922 seconds 
-  Import took 0.049627 seconds .
+  Time since last request: 0.000251 seconds.
+  path: Assets/章節/第二章/吉他(reduce).fbx
+  artifactKey: Guid(abd4c86e1acb98c45b3d67f7b38428ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/吉他(reduce).fbx using Guid(abd4c86e1acb98c45b3d67f7b38428ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59628f290f0bc2517bf37520552789c') in 0.965474 seconds 
+  Import took 0.972638 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassStar.obj
-  artifactKey: Guid(95ef26e11d36bd643b99aeea379d1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassStar.obj using Guid(95ef26e11d36bd643b99aeea379d1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e1971f7c269ee2feae3b21f6da67b5') in 0.821093 seconds 
-  Import took 0.828643 seconds .
+  Time since last request: 0.000243 seconds.
+  path: Assets/章節/第二章/小熊玩偶(reduce).fbx
+  artifactKey: Guid(2b30e87c1b9712042943d45bee7138be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/小熊玩偶(reduce).fbx using Guid(2b30e87c1b9712042943d45bee7138be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3321a3839419ec68092ba37e44cb95a') in 0.380026 seconds 
+  Import took 0.387128 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/字幕底 1.png
-  artifactKey: Guid(e81ff383c564a1348a45f261b99bafd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/字幕底 1.png using Guid(e81ff383c564a1348a45f261b99bafd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6db68259ca435f831c46b57b3b987c5') in 0.014211 seconds 
-  Import took 0.020150 seconds .
+  Time since last request: 0.000419 seconds.
+  path: Assets/章節/第二章/滑鼠(reduce).fbx
+  artifactKey: Guid(df4e2f410c615bb4982db0c32688bb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/滑鼠(reduce).fbx using Guid(df4e2f410c615bb4982db0c32688bb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc8b3048265f21933c39390629437d9') in 0.071022 seconds 
+  Import took 0.079431 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Dialogue Database (Auto-Backup).asset
-  artifactKey: Guid(07abfcfe04f981148ab15633a6121060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dialogue Database (Auto-Backup).asset using Guid(07abfcfe04f981148ab15633a6121060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d17a4d69436d1f91527620ee7b4f25f') in 0.014573 seconds 
-  Import took 0.021248 seconds .
+  Time since last request: 0.000403 seconds.
+  path: Assets/章節/第二章/相框(設計圖)(reduce).fbx
+  artifactKey: Guid(0197c1e0fd9976e44b6704cc66b0f90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/相框(設計圖)(reduce).fbx using Guid(0197c1e0fd9976e44b6704cc66b0f90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2993c517764bc1b30d58bcab7797122') in 0.072797 seconds 
+  Import took 0.081600 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassQuad.obj
-  artifactKey: Guid(a691cc7ece3d97040879e0809c58b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassQuad.obj using Guid(a691cc7ece3d97040879e0809c58b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f851817d021595627c2f3aedf834248') in 0.029695 seconds 
-  Import took 0.037212 seconds .
+  Time since last request: 0.000319 seconds.
+  path: Assets/章節/第二章/天堂鳥.fbx
+  artifactKey: Guid(e6ed0a67fff44da4a8a05f92a3b3742c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/天堂鳥.fbx using Guid(e6ed0a67fff44da4a8a05f92a3b3742c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b1f32c3f34658ee50664d51a6432e4') in 0.156826 seconds 
+  Import took 0.163666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/章節/第二章/垃圾桶.fbx
+  artifactKey: Guid(c39371dd851874b4ab9dd5f5708c608a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/垃圾桶.fbx using Guid(c39371dd851874b4ab9dd5f5708c608a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb43986d37482e2b82582e1de1510fd4') in 0.127004 seconds 
+  Import took 0.136435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000578 seconds.
+  path: Assets/章節/第二章/家.unity
+  artifactKey: Guid(40ea545a2027dc44581e947f99049d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/家.unity using Guid(40ea545a2027dc44581e947f99049d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a307a83bd8c232b770e3d061db9a96f') in 0.022031 seconds 
+  Import took 0.035737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000616 seconds.
+  path: Assets/章節/第二章
+  artifactKey: Guid(070f4fc48acc8cc43ab63143391f4362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章 using Guid(070f4fc48acc8cc43ab63143391f4362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a5252fae39b5239b781dc993c98f63') in 0.002876 seconds 
+  Import took 0.018121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/章節
+  artifactKey: Guid(b5e791299f20974448b41c44dd9240cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節 using Guid(b5e791299f20974448b41c44dd9240cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966596c202fe150602c0f031cec00937') in 0.005079 seconds 
+  Import took 0.016466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/章節/第二章/洗手台(reduce).fbx
+  artifactKey: Guid(b3aa108802efbdf4e98a037cf2b2d396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/洗手台(reduce).fbx using Guid(b3aa108802efbdf4e98a037cf2b2d396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed8705a7a46ffa69c41ed590a6873f3') in 0.112654 seconds 
+  Import took 0.122685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/章節/第二章/laptop.fbx
+  artifactKey: Guid(05fdc694ab61b0c4aa9218769b869f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/laptop.fbx using Guid(05fdc694ab61b0c4aa9218769b869f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e039af0f145e6fb9a5ef97fa66c3a288') in 0.107602 seconds 
+  Import took 0.116393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/章節/第二章/檯燈(reduce).fbx
+  artifactKey: Guid(72f0d9fadbf2fef47ae35d12ad6b7565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/檯燈(reduce).fbx using Guid(72f0d9fadbf2fef47ae35d12ad6b7565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1b653b35fcdb98c5d35ba657c84dfa') in 0.082474 seconds 
+  Import took 0.089674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/章節/第二章/0326家 1.fbx
+  artifactKey: Guid(831f0a0e3978faa4ab651f98ac027e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/0326家 1.fbx using Guid(831f0a0e3978faa4ab651f98ac027e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8f8621229ab899d925ff753193d54e0') in 2.214492 seconds 
+  Import took 2.227640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/章節/第二章/藥袋(reduce).fbx
+  artifactKey: Guid(bfe91f3290059e140868f5dd20e97a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/藥袋(reduce).fbx using Guid(bfe91f3290059e140868f5dd20e97a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3e90b5d5fbc65907a64a5c85f0ae2f') in 0.029920 seconds 
+  Import took 0.036715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/章節/第二章/立可帶.fbx
+  artifactKey: Guid(f69cd9c5d71af2c4faf18b0dfcc28eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/立可帶.fbx using Guid(f69cd9c5d71af2c4faf18b0dfcc28eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b38d19055ba37f2242d7d8ba9605f55') in 0.026572 seconds 
+  Import took 0.033761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/章節/第二章/筆記本.fbx
+  artifactKey: Guid(895bd8e1e05017644ade3bf45c9e0b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/筆記本.fbx using Guid(895bd8e1e05017644ade3bf45c9e0b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c865c8ebb75a0cb138a25d2ac19f05a') in 0.203664 seconds 
+  Import took 0.211661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 215.435737 seconds.
+  path: Assets/章節/第二章/MIRROR.fbx
+  artifactKey: Guid(af055508eed98f047994db349ee74d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/MIRROR.fbx using Guid(af055508eed98f047994db349ee74d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e3c1885f0bce7a552bbf634224b332') in 0.133704 seconds 
+  Import took 0.142048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.790670 seconds.
+  path: Assets/章節/第二章/MIRROR.fbx
+  artifactKey: Guid(af055508eed98f047994db349ee74d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/MIRROR.fbx using Guid(af055508eed98f047994db349ee74d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b256e4da092e621f519a5e94f11d22') in 0.090433 seconds 
+  Import took 0.099378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.347233 seconds.
+  path: Assets/章節/第二章/鏡子
+  artifactKey: Guid(9c6b626273792d846a1151f6766190d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/鏡子 using Guid(9c6b626273792d846a1151f6766190d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349a3eb43a7205656b81d87c9d06bc02') in 0.001629 seconds 
+  Import took 0.008969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.132731 seconds.
+  path: Assets/章節/第二章/建模
+  artifactKey: Guid(149631bfb37109841bd5a4b5117bb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模 using Guid(149631bfb37109841bd5a4b5117bb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8436f255c4c24ac3ad9e4ee4d6a7552b') in 0.002130 seconds 
+  Import took 0.010439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.947922 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
+  artifactKey: Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9010882f9c901cb35f480a3b750d6b86') in 0.023150 seconds 
+  Import took 0.032075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.661986 seconds.
+  path: Assets/章節/第二章/鏡子/New Material.mat
+  artifactKey: Guid(408e4456f136dc2478de34023e5fe571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/鏡子/New Material.mat using Guid(408e4456f136dc2478de34023e5fe571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c0a05a57ca07f5d256307fcef09429') in 0.021603 seconds 
+  Import took 0.032047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 225.529064 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖
+  artifactKey: Guid(531885365f006c84da233b5b3255934c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖 using Guid(531885365f006c84da233b5b3255934c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c265099314da97f5d54ca0ae95be926') in 0.001550 seconds 
+  Import took 0.009587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.923813 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book1.fbx
+  artifactKey: Guid(a4b6f1b9c53673244a36ab1f8d3c128c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book1.fbx using Guid(a4b6f1b9c53673244a36ab1f8d3c128c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1625256d1a4940cd2ed52222b8ad75b') in 0.073747 seconds 
+  Import took 0.082654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000521 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖5.fbx
+  artifactKey: Guid(079e41e60d248e64086d146668ae5f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖5.fbx using Guid(079e41e60d248e64086d146668ae5f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75bd6a4d761276ff15ed4e2901765bcf') in 0.041116 seconds 
+  Import took 0.047193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖2.fbx
+  artifactKey: Guid(285928fb84ce6ec4fad149cfbd6998b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖2.fbx using Guid(285928fb84ce6ec4fad149cfbd6998b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df82dcba4ad9dbc59d11ffb6fce9d113') in 0.050649 seconds 
+  Import took 0.056769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖4.fbx
+  artifactKey: Guid(c42366fd7f3459b48838eff7ee761e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖4.fbx using Guid(c42366fd7f3459b48838eff7ee761e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1669db37d54c9d70ee54e5346af7e7a2') in 0.018960 seconds 
+  Import took 0.025135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book4.fbx
+  artifactKey: Guid(720aa16c863cc9f42ac79de023f5d2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book4.fbx using Guid(720aa16c863cc9f42ac79de023f5d2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbed206afa2431c5e88b538ce279b6f') in 0.071310 seconds 
+  Import took 0.078191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000503 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖3.fbx
+  artifactKey: Guid(a42d622c7c8f78e44b9c166bdf603c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖3.fbx using Guid(a42d622c7c8f78e44b9c166bdf603c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e4a19d3dba5de2629104a09eeac2d8') in 0.028695 seconds 
+  Import took 0.034837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book3.fbx
+  artifactKey: Guid(4967029e86bf43846a528d92666a18e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book3.fbx using Guid(4967029e86bf43846a528d92666a18e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3c05f0e0d0e24b57bb02e0b3911f4e') in 0.034892 seconds 
+  Import took 0.040782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000526 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book5.fbx
+  artifactKey: Guid(39de847646dc572439aedc5bc3e8df4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book5.fbx using Guid(39de847646dc572439aedc5bc3e8df4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8331687e6c6290d41e247ebf600dfbc4') in 0.064143 seconds 
+  Import took 0.072955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book2.fbx
+  artifactKey: Guid(f4cc2bfe588e83e4c946330cc46b2393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book2.fbx using Guid(f4cc2bfe588e83e4c946330cc46b2393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5c11b6d97878144ca4a532d91faaca') in 0.033828 seconds 
+  Import took 0.041298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖1.fbx
+  artifactKey: Guid(1b5a1a26fc9f1ec45852d2451ddae6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖1.fbx using Guid(1b5a1a26fc9f1ec45852d2451ddae6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c77ba612184fdb1942cbbdaff177fc') in 0.021239 seconds 
+  Import took 0.027364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.772623 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book1.fbx
+  artifactKey: Guid(a4b6f1b9c53673244a36ab1f8d3c128c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book1.fbx using Guid(a4b6f1b9c53673244a36ab1f8d3c128c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280d28304d17502e05308292b5b8259c') in 0.093323 seconds 
+  Import took 0.100330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.393225 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book2.fbx
+  artifactKey: Guid(f4cc2bfe588e83e4c946330cc46b2393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book2.fbx using Guid(f4cc2bfe588e83e4c946330cc46b2393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64250db46446a4d3523b6ba7460c1049') in 0.050646 seconds 
+  Import took 0.057056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.461312 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book3.fbx
+  artifactKey: Guid(4967029e86bf43846a528d92666a18e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book3.fbx using Guid(4967029e86bf43846a528d92666a18e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c4947e096bd389645b9fb56156ad98') in 0.089768 seconds 
+  Import took 0.096681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.372284 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book4.fbx
+  artifactKey: Guid(720aa16c863cc9f42ac79de023f5d2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book4.fbx using Guid(720aa16c863cc9f42ac79de023f5d2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6f294c3363858d034ebc1360afc5b5') in 0.086987 seconds 
+  Import took 0.093028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.341618 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/book5.fbx
+  artifactKey: Guid(39de847646dc572439aedc5bc3e8df4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/book5.fbx using Guid(39de847646dc572439aedc5bc3e8df4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f573ee9bc1ad184bc688840962c6ace') in 0.065738 seconds 
+  Import took 0.072138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 388.037409 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖1.fbx
+  artifactKey: Guid(1b5a1a26fc9f1ec45852d2451ddae6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖1.fbx using Guid(1b5a1a26fc9f1ec45852d2451ddae6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af369892ff594b275347f75f2c88007c') in 0.048321 seconds 
+  Import took 0.057377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.495259 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖2.fbx
+  artifactKey: Guid(285928fb84ce6ec4fad149cfbd6998b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖2.fbx using Guid(285928fb84ce6ec4fad149cfbd6998b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47728fe42911a6888d6a4342ff685606') in 0.027368 seconds 
+  Import took 0.034227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.343620 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖3.fbx
+  artifactKey: Guid(a42d622c7c8f78e44b9c166bdf603c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖3.fbx using Guid(a42d622c7c8f78e44b9c166bdf603c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2593e1592a95361881e061d201c398c') in 0.072594 seconds 
+  Import took 0.080799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.830407 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖4.fbx
+  artifactKey: Guid(c42366fd7f3459b48838eff7ee761e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖4.fbx using Guid(c42366fd7f3459b48838eff7ee761e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e36e9e3cf8533797037b1585bd0522f') in 0.043444 seconds 
+  Import took 0.050416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.039452 seconds.
+  path: Assets/章節/第二章/建模/設計書、圖/設計圖5.fbx
+  artifactKey: Guid(079e41e60d248e64086d146668ae5f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/設計書、圖/設計圖5.fbx using Guid(079e41e60d248e64086d146668ae5f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90211024b6c0254946ce9d67d6eb8483') in 0.035455 seconds 
+  Import took 0.044552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 290.443803 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbx
+  artifactKey: Guid(1602b3cc61c7a3b47ac4bc6aac1e810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbx using Guid(1602b3cc61c7a3b47ac4bc6aac1e810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411c19c274946cf27844ad83781d74ef') in 0.266228 seconds 
+  Import took 0.274495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.616278 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbx
+  artifactKey: Guid(1602b3cc61c7a3b47ac4bc6aac1e810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbx using Guid(1602b3cc61c7a3b47ac4bc6aac1e810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9eebae4973452eb0eac439d8f40744') in 0.165680 seconds 
+  Import took 0.174726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.775684 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbm
+  artifactKey: Guid(e85f1e1b5ed374747a79b4173fb734d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbm using Guid(e85f1e1b5ed374747a79b4173fb734d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c38e299ac91faee017dbf7ef982e5d0') in 0.001990 seconds 
+  Import took 0.009809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.111298 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbm/bump.jpg
+  artifactKey: Guid(1c9183a7dfa9c5149a6e29b6ac83cbc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbm/bump.jpg using Guid(1c9183a7dfa9c5149a6e29b6ac83cbc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c645c665657744039c7cad086f423d') in 0.026965 seconds 
+  Import took 0.032869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbm/螢幕擷取畫面 2022-04-29 153409.jpg
+  artifactKey: Guid(90f85346c0768d144b166fc64bfd301c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbm/螢幕擷取畫面 2022-04-29 153409.jpg using Guid(90f85346c0768d144b166fc64bfd301c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e999723390cf29d5f12fa046d6700d') in 0.010567 seconds 
+  Import took 0.017586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbm/下載 (1).jpg
+  artifactKey: Guid(c3832e58c1e807d49ae57abad53569de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbm/下載 (1).jpg using Guid(c3832e58c1e807d49ae57abad53569de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fc925a6bec5c017045a57488b0326e') in 0.012643 seconds 
+  Import took 0.023212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbm/Screen.jpg
+  artifactKey: Guid(2458662682535be4098e2761b5af0b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbm/Screen.jpg using Guid(2458662682535be4098e2761b5af0b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e59a6f4b58b1f94be0a7208449b380c') in 0.030003 seconds 
+  Import took 0.037992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbm/螢幕擷取畫面 2022-04-29 153033.jpg
+  artifactKey: Guid(e6835eeb159dfa44cac54556d55ce8dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbm/螢幕擷取畫面 2022-04-29 153033.jpg using Guid(e6835eeb159dfa44cac54556d55ce8dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b48a2d1ffc491ce507803f1a870a39') in 0.024930 seconds 
+  Import took 0.033698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbm/螢幕擷取畫面 2022-04-29 154934.jpg
+  artifactKey: Guid(94845af6afa86cc4abf5af4b87753c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbm/螢幕擷取畫面 2022-04-29 154934.jpg using Guid(94845af6afa86cc4abf5af4b87753c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaed7e511524cc6a9de5c952bb9050d5') in 0.018689 seconds 
+  Import took 0.026878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/章節/第二章/建模/laptop.fbm/螢幕擷取畫面 2022-04-29 153351.jpg
+  artifactKey: Guid(b0475a1d1e9fb9442b8279643b405026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第二章/建模/laptop.fbm/螢幕擷取畫面 2022-04-29 153351.jpg using Guid(b0475a1d1e9fb9442b8279643b405026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4568bd7f159213ca3160fe953cd396e9') in 0.015115 seconds 
+  Import took 0.021989 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -23,7 +23,7 @@ public class Selection_ob : MonoBehaviour
     /// 1代表點過
     /// </summary>
     private List<int> important_ob = new List<int> { 0, 0, 0, 0, 0};
-    public int ob_count = 0;
+    public static int ob_count = 0;
     public static bool take_notebook = false, take_medicine = false, take_computer=false, take_flower = false,take_bear=false;
     void Start()
     {

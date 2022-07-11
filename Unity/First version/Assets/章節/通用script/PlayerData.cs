@@ -24,6 +24,10 @@ public class PlayerData
     public bool Take_Notebook , Take_Medicine, Take_Computer, Take_Flower , Take_Bear;
     //Selection_ob (Script)
 
+
+    //[第二章重要物品數量]
+    public int importantOb_count;
+
     public string Scene_Name;
 
 

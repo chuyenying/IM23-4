@@ -14,6 +14,8 @@ public class SaveLoadSystem2 : MonoBehaviour
     }
     public void Save()
     {
+        PixelCrushers.SaveSystem.SaveToSlot(1);     // Dialogue System ªº¦sÀÉ
+
         PlayerData data = new PlayerData();
 
         data.PlayerPosition = FirstPerson.transform.position;
@@ -27,6 +29,8 @@ public class SaveLoadSystem2 : MonoBehaviour
         {
             data.Cellphone_Unlock = false;
         }
+
+        data.importantOb_count = Selection_ob.ob_count;
 
         data.Take_MainRoleBook = SelectionManager_MainRole.take_book;
         data.Take_Omori = SelectionManager_MainRole.take_omori;
@@ -52,6 +56,8 @@ public class SaveLoadSystem2 : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("Automatically_LoadScene") == 1)
         {
+            PixelCrushers.SaveSystem.LoadFromSlot(1);   // DialogueSystem ÅªÀÉ®×
+
             string json_data = File.ReadAllText(Application.dataPath + "/PlayerData.sav");
 
             PlayerData data = JsonUtility.FromJson<PlayerData>(json_data);
@@ -60,6 +66,8 @@ public class SaveLoadSystem2 : MonoBehaviour
             cellphone_LockPage.SetActive(!data.Cellphone_Unlock);
             cellphone_MainPage.SetActive(data.Cellphone_Unlock);
 
+
+            Selection_ob.ob_count = data.importantOb_count;
 
             SelectionManager_MainRole.take_book = data.Take_MainRoleBook;
             SelectionManager_MainRole.take_omori = data.Take_Omori;

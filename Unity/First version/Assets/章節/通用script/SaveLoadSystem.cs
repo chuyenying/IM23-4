@@ -15,6 +15,8 @@ public class SaveLoadSystem : MonoBehaviour
     }
     public void Save()
     {
+        PixelCrushers.SaveSystem.SaveToSlot(1); // Dialogue System ªº¦sÀÉ
+
         PlayerData data = new PlayerData();
 
         data.PlayerPosition = FirstPerson.transform.position;
@@ -53,6 +55,8 @@ public class SaveLoadSystem : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("Automatically_LoadScene") == 1)
         {
+            PixelCrushers.SaveSystem.LoadFromSlot(1);   // DialogueSystem ÅªÀÉ®×
+
             string json_data = File.ReadAllText(Application.dataPath + "/PlayerData.sav");
 
             PlayerData data = JsonUtility.FromJson<PlayerData>(json_data);

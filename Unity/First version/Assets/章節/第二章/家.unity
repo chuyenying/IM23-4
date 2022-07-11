@@ -1437,7 +1437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458942134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -33.399994, z: 0}
+  m_LocalPosition: {x: 0.528, y: -18.86, z: 1.287}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1448584038}
@@ -1454,9 +1454,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.7735849, g: 0.70004606, b: 0.5874866, a: 1}
+  m_Color: {r: 0.9056604, g: 0.86873287, b: 0.7390531, a: 1}
   m_Intensity: 1
-  m_Range: 20
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1587,6 +1587,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+--- !u!1 &485065995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 125852, guid: 58ac37417e60e534f91138088a3e6f70,
+    type: 3}
+  m_PrefabInstance: {fileID: 485065994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &485065996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485065995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4d3f2fce70b2441bd76f6c5777e8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_playerPrefsKeyBase: DialogueSystem_Save
+  encrypt: 0
+  encryptionPassword: My Password
+  m_debug: 0
+--- !u!114 &485065997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485065995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbafe64f40b0694b8d4ec9c082f8bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_prettyPrint: 0
+--- !u!114 &485065998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485065995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689b4b1238e337d4590a91183947bcd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: 
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  skipApplyDataAfterFramesIfApplyImmediate: 1
+  saveRawData: 0
+--- !u!114 &485065999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485065995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc03036aad05c334eab057a96938959a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_version: 0
+  m_saveCurrentScene: 0
+  m_framesToWaitBeforeApplyData: 1
+  m_debug: 0
 --- !u!1 &513891843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,6 +1872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SettingMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951735226336214758, guid: aae290faef6f9c64da4139fbb72c91f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6951735226959904876, guid: aae290faef6f9c64da4139fbb72c91f9,
         type: 3}
@@ -4838,7 +4912,7 @@ GameObject:
   - component: {fileID: 1448584036}
   - component: {fileID: 1448584035}
   m_Layer: 0
-  m_Name: "\u59B9\u59B9\u623F\u9593\u71C8"
+  m_Name: "\u54E5\u54E5\u623F\u9593\u71C8"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4914,7 +4988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448584034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -158.015, y: 8.879, z: 12.491}
+  m_LocalPosition: {x: -158.015, y: 8.879, z: 13.309}
   m_LocalScale: {x: 0.71809, y: 0.042679872, z: 0.79984}
   m_Children:
   - {fileID: 458942135}
@@ -5422,6 +5496,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7434367317959801466, guid: 540cf99bcde63ed4db6ce67cd33960a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7434367317959801470, guid: 540cf99bcde63ed4db6ce67cd33960a2,
         type: 3}
@@ -6296,7 +6375,7 @@ GameObject:
   - component: {fileID: 1797694470}
   - component: {fileID: 1797694469}
   m_Layer: 0
-  m_Name: "\u54E5\u54E5\u623F\u9593\u71C8 "
+  m_Name: "\u59B9\u59B9\u623F\u9593\u71C8 "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6824,7 +6903,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectableTag: Selectable
   selectob_music: {fileID: 1903178457}
-  ob_count: 0
 --- !u!4 &1903178456
 Transform:
   m_ObjectHideFlags: 0
@@ -25660,6 +25738,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8597803836330947978}
     m_Modifications:
+    - target: {fileID: 5226267702479789171, guid: f9eb71635e62f8e44854813f2171e2d5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0008208491
+      objectReference: {fileID: 0}
     - target: {fileID: 5226267702990793378, guid: f9eb71635e62f8e44854813f2171e2d5,
         type: 3}
       propertyPath: m_RootOrder
@@ -25724,6 +25807,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226267703974774339, guid: f9eb71635e62f8e44854813f2171e2d5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0008208491
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9eb71635e62f8e44854813f2171e2d5, type: 3}

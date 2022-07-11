@@ -24,7 +24,7 @@ public class SelectHalf_OpenDoor : MonoBehaviour
     }
     void FixedUpdate()
     {
-        count = GameObject.Find("Selection_ob").GetComponent<Selection_ob>().ob_count;
+        count = Selection_ob.ob_count;
         Debug.Log($"count: {count}");
     }
 }
