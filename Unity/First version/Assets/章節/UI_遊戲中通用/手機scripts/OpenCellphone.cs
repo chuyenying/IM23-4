@@ -24,16 +24,16 @@ public class OpenCellphone : MonoBehaviour
             Cursor.lockState=CursorLockMode.Confined;
             cellphone_OB.gameObject.SetActive(true);
             cellphone = !cellphone;
-            GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = false;
-            GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
+            GameObject.Find("Camera-主角").GetComponent<followpeople>().enabled = false;
+            GameObject.Find("主角").GetComponent<controlpeople>().enabled = false;
             walk_and_run.SetActive(false);
         }
         else if(PlayerPrefs.GetInt("Cellphone") ==1 && Input.GetKeyDown(KeyCode.Tab) && cellphone && !DeskInteractive_bro.E_use && !DeskInteractive_Main.E_use)
         {
             Cursor.lockState = CursorLockMode.Locked;
             cellphone_OB.gameObject.SetActive(false);
-            GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = true;
-            GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
+            GameObject.Find("Camera-主角").GetComponent<followpeople>().enabled = true;
+            GameObject.Find("主角").GetComponent<controlpeople>().enabled = true;
             walk_and_run.SetActive(true);
             cellphone = !cellphone;
         }
