@@ -10,8 +10,8 @@ public class Delete_eyes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = false;
-        GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
+        GameObject.Find("Camera-主角跟人物").GetComponent<followpeople>().enabled = false;
+        GameObject.Find("主角").GetComponent<controlpeople>().enabled = false;
         walk_run_music.SetActive(false);
 
         StartCoroutine(wait6sec());
@@ -21,8 +21,8 @@ public class Delete_eyes : MonoBehaviour
     {
         yield return new WaitForSeconds(6);
         Destroy(eyes);
-        GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = true;
-        GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
+        GameObject.Find("Camera-主角跟人物").GetComponent<followpeople>().enabled = true;
+        GameObject.Find("主角").GetComponent<controlpeople>().enabled = true;
         walk_run_music.SetActive(true);
 
     }

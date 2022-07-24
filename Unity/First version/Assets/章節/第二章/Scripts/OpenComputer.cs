@@ -35,7 +35,7 @@ public class OpenComputer : MonoBehaviour
                 Text_OpenComputer.SetActive(true);
                 Text_CloseComputer.SetActive(false);
                 Cursor.lockState = CursorLockMode.Locked;
-                GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
+                GameObject.Find("主角").GetComponent<controlpeople>().enabled = true;
                 walk_run_music.SetActive(true);
             }
             else if (open)  //已經打開電腦
@@ -44,7 +44,7 @@ public class OpenComputer : MonoBehaviour
                 Text_OpenComputer.SetActive(false);
                 Text_CloseComputer.SetActive(true);
                 Cursor.lockState = CursorLockMode.Confined;
-                GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
+                GameObject.Find("主角").GetComponent<controlpeople>().enabled = false;
                 walk_run_music.SetActive(false);
 
             }

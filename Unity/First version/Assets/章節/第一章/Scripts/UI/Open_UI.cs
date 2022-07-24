@@ -29,8 +29,8 @@ public class Open_UI : MonoBehaviour
         SettingMenu.SetActive(false);
         //MainMenu.SetTrigger("FlyOut");
         Cursor.lockState = CursorLockMode.Locked;
-        GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = true;
-        GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = true;
+        GameObject.Find("Camera-主角跟人物").GetComponent<followpeople>().enabled = true;
+        GameObject.Find("主角").GetComponent<controlpeople>().enabled = true;
         walk_and_run.SetActive(true);
 
     }
@@ -48,8 +48,8 @@ public class Open_UI : MonoBehaviour
             {
                 //MainMenu.SetTrigger("FlyIn");
                 MainMenu.SetActive(true);
-                GameObject.Find("Camera-跟人物").GetComponent<followpeople>().enabled = false;
-                GameObject.Find("FirstPerson").GetComponent<controlpeople>().enabled = false;
+                GameObject.Find("Camera-主角跟人物").GetComponent<followpeople>().enabled = false;
+                GameObject.Find("主角").GetComponent<controlpeople>().enabled = false;
                 walk_and_run.SetActive(false);
                 Cursor.lockState = CursorLockMode.Confined;
             }
