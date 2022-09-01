@@ -19,13 +19,14 @@ public class Cloud : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //被子彈打到
-        if(collision.name == "Bullet(Clone)")
+        if(collision.tag == "Bullet")
         {
             Score.score = Score.score + 1;
             CloudDisappear();
+            Destroy(collision.gameObject);
         }
         //碰到左邊牆壁
-        else if (collision.name == "wall2")
+        else if (collision.name == "wall3")
         {
             //雲消失
             Destroy(this.gameObject);

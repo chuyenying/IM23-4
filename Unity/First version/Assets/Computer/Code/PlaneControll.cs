@@ -38,7 +38,7 @@ public class PlaneControll : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //如果碰到雲，扣一顆愛心
-        if (collision.name == "cloud(Clone)")
+        if (collision.tag == "Cloud")
         {
             Destroy(collision.gameObject);
             //血量-1
@@ -54,7 +54,7 @@ public class PlaneControll : MonoBehaviour
             else if (HeartNum <= 0) //沒有心
             {
                 Heart03.SetActive(false);
-                Time.timeScale = 0f;
+                //Time.timeScale = 0f;
                 Instantiate(canvasPrefab, Vector2.zero, Quaternion.identity);
 
             }

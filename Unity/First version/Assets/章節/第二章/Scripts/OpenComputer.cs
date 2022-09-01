@@ -22,6 +22,15 @@ public class OpenComputer : MonoBehaviour
             open = !open;
             camera_computer.SetActive(open);
             camera_peo.SetActive(!open);
+
+            if (open)
+            {
+                GameObject.Find("еDид").GetComponent<controlpeople>().enabled = false;
+            }
+            else
+            {
+                GameObject.Find("еDид").GetComponent<controlpeople>().enabled = true;
+            }
         }
 
     }

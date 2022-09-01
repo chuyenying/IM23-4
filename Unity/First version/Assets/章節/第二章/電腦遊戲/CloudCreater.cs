@@ -5,6 +5,7 @@ using UnityEngine;
 public class CloudCreater : MonoBehaviour
 {
     public GameObject cloud;
+    public GameObject Plane;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,13 +25,8 @@ public class CloudCreater : MonoBehaviour
             //宣告生成Y座標，設定隨機13到83間
             float y;
             y = Random.Range(13, 83);
-            Instantiate(cloud, new Vector3(-9, y, 0), Quaternion.identity, GameObject.FindGameObjectWithTag("GameController").transform);
+            Instantiate(cloud, new Vector3(-9, y, Plane.transform.position.z), Quaternion.identity);
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         //脫離父物件
@@ -26,12 +19,10 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
 
     {
-
-        //如果碰到左邊牆壁，摧毀子彈
-
-        if (collision.name == "wall1")
-
+        if (collision.name == "wall4")
+        {
             Destroy(this.gameObject);
+        }
 
     }
 }
