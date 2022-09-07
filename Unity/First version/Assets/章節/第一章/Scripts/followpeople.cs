@@ -5,12 +5,13 @@ using UnityEngine;
 public class followpeople : MonoBehaviour
 {
     public Transform playerbody;
-    public float mousespeed = 100f;    //視角移動的速度
+    public float mousespeed;    //視角移動的速度
     float xrotation = 0f;
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1;
         //鎖定鼠標不出現
     }
 
@@ -19,6 +20,8 @@ public class followpeople : MonoBehaviour
         //利用input.GetAxis取得滑鼠往X、Y方向的值
         float mouse_x = Input.GetAxis("Mouse X") * mousespeed * Time.deltaTime;
         float mouse_y = Input.GetAxis("Mouse Y") * mousespeed * Time.deltaTime;
+
+        
 
         xrotation -= mouse_y;
         xrotation = Mathf.Clamp(xrotation, -90f, 90f);

@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerData
 {
-    public Vector3 PlayerPosition ;
+    public Vector3 PlayerPosition ; //角色座標
 
     //[通用]
     public bool Take_Cellphone , Cellphone_Unlock;

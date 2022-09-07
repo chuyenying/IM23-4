@@ -86,11 +86,11 @@ public class SaveLoadSystem : MonoBehaviour
         PlayerPrefs.SetInt("Automatically_LoadScene", 0);   //下次不會自動load。
     }
 
-    public void ChangeScene()
+    public void ChangeScene()   //按下MainMenu的載入進度
     {
         string json_data = File.ReadAllText(Application.dataPath + "/PlayerData.sav");
-        PlayerData data = JsonUtility.FromJson<PlayerData>(json_data);
-        PlayerPrefs.SetInt("Automatically_LoadScene", 1);
+        PlayerData data = JsonUtility.FromJson<PlayerData>(json_data);  //為了讀scene的值
+        PlayerPrefs.SetInt("Automatically_LoadScene", 1);   //換scene要不要讀檔全靠這個playerpref
         SceneManager.LoadScene(data.Scene_Name);
     }
 }

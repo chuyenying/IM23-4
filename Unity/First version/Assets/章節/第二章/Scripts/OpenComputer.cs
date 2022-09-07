@@ -16,7 +16,7 @@ public class OpenComputer : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log($"Open:{open} , ClickGameButton:{ClickGameButton}");
+        //Debug.Log($"Open:{open} , ClickGameButton:{ClickGameButton}");
         if (Input.GetKeyDown(KeyCode.E) && trigger && !ClickGameButton)
         {
             open = !open;
