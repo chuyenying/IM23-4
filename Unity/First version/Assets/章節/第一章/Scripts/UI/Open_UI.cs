@@ -22,12 +22,12 @@ public class Open_UI : MonoBehaviour
     {
         Application.Quit();
     }
+
     public void ContinueGame()
     {
         open = false;
         MainMenu.SetActive(false);
         SettingMenu.SetActive(false);
-        //MainMenu.SetTrigger("FlyOut");
         Cursor.lockState = CursorLockMode.Locked;
         GameObject.Find("Camera-еDид").GetComponent<followpeople>().enabled = true;
         GameObject.Find("еDид").GetComponent<controlpeople>().enabled = true;
