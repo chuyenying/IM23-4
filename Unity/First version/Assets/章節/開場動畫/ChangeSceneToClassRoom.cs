@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 using UnityEngine.SceneManagement;
 
 public class ChangeSceneToClassRoom : MonoBehaviour
@@ -13,6 +14,7 @@ public class ChangeSceneToClassRoom : MonoBehaviour
     IEnumerator wait()
     {
         yield return new  WaitForSeconds(32f);
-        SceneManager.LoadScene("БаЋЧ");
+        //SceneManager.LoadScene("БаЋЧ");
+        PixelCrushers.SaveSystem.LoadScene("БаЋЧ");
     }
 }
