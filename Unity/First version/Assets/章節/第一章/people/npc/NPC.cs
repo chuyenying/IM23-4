@@ -7,15 +7,11 @@ public class NPC : MonoBehaviour
 {
     public GameObject destination;
     [SerializeField] NavMeshAgent theAgent;
-    /*
-    void Update()
-    {
-        theAgent.SetDestination(destination.transform.position);
-        Debug.Log(destination.transform.position);
-    }
-    */
+
     public void GoTarget()
     {
+        theAgent.speed = 1;
         theAgent.SetDestination(destination.transform.position);
     }
+
 }

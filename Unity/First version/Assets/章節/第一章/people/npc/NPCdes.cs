@@ -8,67 +8,61 @@ using UnityEngine.Events;
 
 public class NPCdes : MonoBehaviour
 {
+    Animator anim;
 
-    public int pivopoint;
     NavMeshHit hit;
-    Vector3 point0, point1;
-    public UnityEvent GoTarget;
+
+    Vector3 NewPos, OldPos, FirstRandomPos; //新舊點
+
+    [SerializeField] NavMeshAgent theAgent;     //對應的NPC
 
     [SerializeField] private float x1, z1, x2, z2, TwoPointDistance, MaxDistance;
 
     private void Start()
     {
-        GoTarget.Invoke();
-        point1 = this.transform.position;
+        anim = theAgent.gameObject.GetComponent<Animator>();
+
+        FirstRandomPos = new Vector3(Random.Range(x1, x2), 2.702f, Random.Range(z1, z2));
+        NavMesh.SamplePosition(FirstRandomPos, out hit, MaxDistance, 1);
+        this.gameObject.transform.position = new Vector3(hit.position.x, 2.702f, hit.position.z);
+
+        OldPos = FirstRandomPos;
+        anim.SetTrigger("Walk");    //在該動畫的event裡面使用npc腳本的GoTarget()。
+
     }
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger觸發");
         if (other.tag == "NPC")
         {
-            if (pivopoint == 0)
+            do
             {
-                do
-                {
-                    point0 = new Vector3(Random.Range(x1, x2), 2.702f, Random.Range(z1, z2));
-                    //Debug.Log(point0);
-                } while (Vector3.Distance(point0, point1) < TwoPointDistance);
+                NewPos = new Vector3(Random.Range(x1, x2), 2.702f, Random.Range(z1, z2));
+                Debug.Log("在迴圈中");
+            } while (Vector3.Distance(NewPos, OldPos) < TwoPointDistance);
 
-                NavMesh.SamplePosition(point0, out hit, MaxDistance, 1);
-                this.gameObject.transform.position = new Vector3(hit.position.x, 2.702f, hit.position.z);
-                GoTarget.Invoke();
-                pivopoint = 1;
-            }
-            if (pivopoint == 1)
-            {
-                do
-                {
-                    point1 = new Vector3(Random.Range(x1, x2), 2.702f, Random.Range(z1, z2));
-                } while (Vector3.Distance(point1, point0) < TwoPointDistance);
-
-                NavMesh.SamplePosition(point1, out hit, MaxDistance, 1);
-                this.gameObject.transform.position = new Vector3(hit.position.x, 2.702f, hit.position.z);
-                GoTarget.Invoke();
-                pivopoint = 0;
-            }
+            NavMesh.SamplePosition(NewPos, out hit, MaxDistance, 1);    //尋找在藍色區域內離NewPos最近的點
+            this.gameObject.transform.position = new Vector3(hit.position.x, 2.702f, hit.position.z); //將這個位置給巡路方塊
+            OldPos = NewPos;
+            StartCoroutine("AfterGoingTakeARest");
         }
     }
-
-    private void OnTriggerExit(Collider other)
+    IEnumerator AfterGoingTakeARest()
     {
-        Debug.Log("Trigger離開");
-        if (other.tag == "NPC")
-        {
-            StartCoroutine("WaitForSec");
-        }
-    }
+        //Idle
+        
+        theAgent.speed = 0;
+        anim.ResetTrigger("Walk");
+        anim.SetTrigger("Idle");
+        
+        float sec = Random.Range(4f, 7f);
+        Debug.Log($"等待{sec}秒");
 
-    IEnumerable WaitForSec()
-    {
-        float sec = Random.Range(2f, 5f);
-        gameObject.GetComponent<NPC>().enabled = false;
         yield return new WaitForSeconds(sec);
-        gameObject.GetComponent<NPC>().enabled = true;
-        gameObject.GetComponent<NPC>().GoTarget();
+
+        // walk
+        anim.ResetTrigger("Idle");
+        anim.SetTrigger("Walk");    //在該動畫的event裡面使用npc腳本的GoTarget()。
     }
 }
