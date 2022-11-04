@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlowerToChildOb : MonoBehaviour
 {
-    [SerializeField] private GameObject HeavenFlower , RightHand , SunFlower;
+    [SerializeField] private GameObject HeavenFlower , RightHand , SunFlower , LeftHand;
 
     public void LetHeavenFlowerBeChildOb()  //讓天堂鳥變成右手的子物件，這樣花就可以平順的跟著右手移動
     {

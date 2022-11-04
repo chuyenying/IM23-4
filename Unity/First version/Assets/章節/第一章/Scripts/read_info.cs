@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 public class read_info : MonoBehaviour
 {
     [SerializeField] private GameObject paper1, paper2, paper3, paper4, paper5,paper6,paper7, card,bg,flower;
     [SerializeField] private GameObject Omamori, Chemical, candy,phone; //Omamori¬O±s¦u
     [SerializeField] private Text info;
+    [SerializeField] private UnityEvent ChangeFlowerTimeline_UnityEvent , CloseFlowerAnim_UnityEvent;
+    private bool PlayOnce = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -187,6 +191,12 @@ public class read_info : MonoBehaviour
             Chemical.SetActive(false);
             candy.SetActive(false);
             phone.SetActive(false);
+            if (PlayOnce)
+            {
+                ChangeFlowerTimeline_UnityEvent.Invoke();
+                StartCoroutine("AnimStopAndCloseCamera");
+            }
+            
         }
         else if (SelectionManager_MainRole.name == "±s¦u")
         {
@@ -260,5 +270,12 @@ public class read_info : MonoBehaviour
             candy.SetActive(true);
             phone.SetActive(false);
         }
+    }
+
+    IEnumerator AnimStopAndCloseCamera()
+    {
+        PlayOnce = false;
+        yield return new WaitForSeconds(7.5f);
+        CloseFlowerAnim_UnityEvent.Invoke();
     }
 }
