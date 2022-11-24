@@ -5,20 +5,16 @@ using UnityEngine.UI;
 public class DeskInteractive_bro : MonoBehaviour
 {
     private Vector3 FirstPerson_position;
-    [SerializeField] private GameObject focus_people, focus_table, focus_info, bg;  //carema
-    [SerializeField] private GameObject E_button, F_button, left_click;   //button
+    [SerializeField] private GameObject focus_people, focus_table,focus_info,bg;  //carema
+    [SerializeField] private GameObject E_button,F_button, left_click;   //button
     [SerializeField] private GameObject FirstPerson;//角色
     [SerializeField] private GameObject selectionManager;
     //[SerializeField] private GameObject selectionManager;
-    [SerializeField] private GameObject HeavenFlower;
 
-    public static bool E_use = false, read_info = false;
+    public static bool E_use=false, read_info=false;
 
     private void Start()
     {
-        HeavenFlower.gameObject.transform.position = new Vector3(-0.864000022f, 3.95900011f, 23.0760002f);
-        HeavenFlower.gameObject.transform.rotation = new Quaternion(0.382250458f, -0.505371988f, -0.730798364f, -0.253805995f);
-        HeavenFlower.gameObject.transform.SetParent(null);
         focus_table.SetActive(false);
         F_button.SetActive(false);
         E_button.SetActive(false);
@@ -29,14 +25,14 @@ public class DeskInteractive_bro : MonoBehaviour
     {
         if (E_use)
         {
-            FirstPerson.transform.position = FirstPerson_position;
+            FirstPerson.transform.position=FirstPerson_position;
             //selectionManager.SetActive(true);
             if (Input.GetKey(KeyCode.F) && !read_info)
             {
                 F_button.SetActive(false);
                 FirstPerson.SetActive(true);
                 focus_people.SetActive(true);
-                focus_table.SetActive(false);
+                focus_table.SetActive(false) ;
                 Cursor.lockState = CursorLockMode.Locked;
                 E_use = false;
                 left_click.SetActive(false);
