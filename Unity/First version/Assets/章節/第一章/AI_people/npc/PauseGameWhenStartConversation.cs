@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PauseGameWhenStartConversation : MonoBehaviour
 {
+    public GameObject еDид;
+
     public void PauseGame()
     {
         Time.timeScale = 0;
