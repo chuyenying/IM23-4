@@ -18,6 +18,8 @@ public class NPCdes : MonoBehaviour
 
     [SerializeField] private float x1, z1, x2, z2, TwoPointDistance, MaxDistance;
 
+    [SerializeField] private string NPCTag;
+
     private void Start()
     {
         anim = theAgent.gameObject.GetComponent<Animator>();
@@ -31,15 +33,27 @@ public class NPCdes : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
+            theAgent.speed = 0;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger觸發");
-        if (other.tag == "NPC")
+        if (other.tag == NPCTag)
         {
+            //Idle 
+            anim.ResetTrigger("Walk");
+            anim.SetTrigger("Idle");
+            //theAgent.speed = 0;
+
+            //確保新生成的點不會離舊的點太近
             do
             {
                 NewPos = new Vector3(Random.Range(x1, x2), 2.702f, Random.Range(z1, z2));
-                Debug.Log("在迴圈中");
             } while (Vector3.Distance(NewPos, OldPos) < TwoPointDistance);
 
             NavMesh.SamplePosition(NewPos, out hit, MaxDistance, 1);    //尋找在藍色區域內離NewPos最近的點
@@ -49,20 +63,13 @@ public class NPCdes : MonoBehaviour
         }
     }
     IEnumerator AfterGoingTakeARest()
-    {
-        //Idle
-        
-        theAgent.speed = 0;
-        anim.ResetTrigger("Walk");
-        anim.SetTrigger("Idle");
-        
-        float sec = Random.Range(4f, 7f);
-        Debug.Log($"等待{sec}秒");
+    {        
+        float sec = Random.Range(5f, 10f);
 
         yield return new WaitForSeconds(sec);
 
         // walk
         anim.ResetTrigger("Idle");
-        anim.SetTrigger("Walk");    //在該動畫的event裡面使用npc腳本的GoTarget()。
+        anim.SetTrigger("Walk");    //在該動畫的event裡面使用npc腳本的GoTarget()。只有在播走路動的時候人物才會走動
     }
 }

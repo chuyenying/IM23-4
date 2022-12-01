@@ -10,8 +10,7 @@ public class NPC : MonoBehaviour
 
     public void GoTarget()
     {
-        theAgent.speed = 1;
+        theAgent.speed = 0.8f;
         theAgent.SetDestination(destination.transform.position);
     }
-
 }
