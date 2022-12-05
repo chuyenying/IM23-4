@@ -15,11 +15,11 @@ C:/To/IM23-4/Unity/First version
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62407
+50754
 Successfully changed project path to: C:/To/IM23-4/Unity/First version
 C:/To/IM23-4/Unity/First version
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 220.81 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 361.99 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -37,48 +37,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003376 seconds.
+Registered in 0.003439 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 189.49 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 197.12 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.703 seconds
+- Completed reload, in  3.828 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3703ms)
-		BeginReloadAssembly (120ms)
+	ReloadAssembly (3828ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (901ms)
-			LoadAssemblies (114ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (976ms)
+			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (407ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (441ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (190ms)
-				BeforeProcessingInitializeOnLoad (32ms)
-				ProcessInitializeOnLoadAttributes (133ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				RefreshPlugins (197ms)
+				BeforeProcessingInitializeOnLoad (34ms)
+				ProcessInitializeOnLoadAttributes (137ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008304 seconds.
+Registered in 0.009866 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 162.33 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 192.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -118,47 +118,70 @@ System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.Runti
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  4.273 seconds
+- Completed reload, in  4.832 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4275ms)
-		BeginReloadAssembly (210ms)
-			ExecutionOrderSort (1ms)
-			DisableScriptedObjects (5ms)
+	ReloadAssembly (4836ms)
+		BeginReloadAssembly (202ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (3940ms)
-			LoadAssemblies (199ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (4516ms)
+			LoadAssemblies (259ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (424ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (3018ms)
+			SetupTypeCache (355ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (113ms)
+			SetupLoadedEditorAssemblies (3535ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (162ms)
-				BeforeProcessingInitializeOnLoad (135ms)
-				ProcessInitializeOnLoadAttributes (2599ms)
-				ProcessInitializeOnLoadMethodAttributes (104ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (192ms)
+				BeforeProcessingInitializeOnLoad (164ms)
+				ProcessInitializeOnLoadAttributes (2893ms)
+				ProcessInitializeOnLoadMethodAttributes (265ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
 Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.48 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 345.0 MB.
-System memory in use after: 345.0 MB.
+Unloading 4028 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 347.3 MB.
+System memory in use after: 347.3 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4528.
-Total: 9.345700 ms (FindLiveObjects: 0.578600 ms CreateObjectMapping: 0.218700 ms MarkObjects: 8.267600 ms  DeleteObjects: 0.277300 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4534.
+Total: 10.866700 ms (FindLiveObjects: 1.990000 ms CreateObjectMapping: 0.179500 ms MarkObjects: 7.708900 ms  DeleteObjects: 0.985500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 6.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 251.1 MB.
+System memory in use after: 251.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 4534.
+Total: 4.248900 ms (FindLiveObjects: 0.575000 ms CreateObjectMapping: 0.132900 ms MarkObjects: 3.520800 ms  DeleteObjects: 0.018800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -172,1783 +195,959 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassStar.obj
-  artifactKey: Guid(95ef26e11d36bd643b99aeea379d1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassStar.obj using Guid(95ef26e11d36bd643b99aeea379d1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e1971f7c269ee2feae3b21f6da67b5') in 1.032177 seconds 
-  Import took 1.042468 seconds .
+  path: Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset
+  artifactKey: Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset using Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce865adfb4ab5ac53d5c378e69fa79e') in 0.123330 seconds 
+  Import took 0.133509 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005496 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.981 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3989ms)
+		BeginReloadAssembly (658ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (57ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (3ms)
+			CreateAndSetChildDomain (367ms)
+		EndReloadAssembly (3221ms)
+			LoadAssemblies (179ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (439ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (2369ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (2058ms)
+				ProcessInitializeOnLoadMethodAttributes (137ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (3ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 2.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 341.4 MB.
+System memory in use after: 341.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4537.
+Total: 8.850000 ms (FindLiveObjects: 0.778800 ms CreateObjectMapping: 0.378900 ms MarkObjects: 7.638300 ms  DeleteObjects: 0.051600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2663.648539 seconds.
+  path: Assets/章節/第三章/第三章
+  artifactKey: Guid(956aa347ab318d349a401c4c88088213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章 using Guid(956aa347ab318d349a401c4c88088213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ce210913bbd31efb370cc7f1936b51') in 0.012968 seconds 
+  Import took 0.025889 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000461 seconds.
-  path: Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassQuad.obj
-  artifactKey: Guid(a691cc7ece3d97040879e0809c58b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshTerrainEditor/Plugins/Resources/Grass/Prototype_GrassQuad.obj using Guid(a691cc7ece3d97040879e0809c58b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f851817d021595627c2f3aedf834248') in 0.027371 seconds 
-  Import took 0.037996 seconds .
+  Time since last request: 0.055029 seconds.
+  path: Assets/章節/第三章/第三章/LightingData.asset
+  artifactKey: Guid(c9855aabe3071ca4bacae6b49e134a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/LightingData.asset using Guid(c9855aabe3071ca4bacae6b49e134a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66c2eebc60f293e5cdeaf6ce1f19c5b') in 0.014397 seconds 
+  Import took 0.022740 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 842.904020 seconds.
-  path: Assets/章節/第二章/0326家 1.fbx
-  artifactKey: Guid(831f0a0e3978faa4ab651f98ac027e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/0326家 1.fbx using Guid(831f0a0e3978faa4ab651f98ac027e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a076b2da95eaab37ec510205424942f') in 3.848711 seconds 
-  Import took 3.864103 seconds .
+  Time since last request: 0.000284 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-0_comp_dir.png
+  artifactKey: Guid(a64be1f758f224949b3f7ef25b717e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-0_comp_dir.png using Guid(a64be1f758f224949b3f7ef25b717e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f720176a243acf53d18009cee10b97b1') in 0.063789 seconds 
+  Import took 0.071931 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000370 seconds.
-  path: Assets/章節/第二章/家.unity
-  artifactKey: Guid(40ea545a2027dc44581e947f99049d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/家.unity using Guid(40ea545a2027dc44581e947f99049d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbbbf9fa73165cbdc54588d40d258be') in 0.013277 seconds 
-  Import took 0.021589 seconds .
+  Time since last request: 0.000500 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-5_comp_light.exr
+  artifactKey: Guid(7af24208cb76119489f6b18cadb6e7a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-5_comp_light.exr using Guid(7af24208cb76119489f6b18cadb6e7a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89ad1c02dc520f85721e6b4d6087141') in 0.026328 seconds 
+  Import took 0.038556 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/章節/第二章/laptop.fbx
-  artifactKey: Guid(05fdc694ab61b0c4aa9218769b869f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/laptop.fbx using Guid(05fdc694ab61b0c4aa9218769b869f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bfae3901b66612e0094fc146a220fe') in 0.056428 seconds 
-  Import took 0.064360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 119.192019 seconds.
-  path: Assets/章節/第二章/timeline/妹妹上樓.playable
-  artifactKey: Guid(d0b4b19da3956eb41b5ce97d860a1e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/妹妹上樓.playable using Guid(d0b4b19da3956eb41b5ce97d860a1e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5676e5af4167b8775ee2a00fd27742a') in 0.105069 seconds 
-  Import took 0.114794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/章節/第二章/timeline/妹妹下樓.playable
-  artifactKey: Guid(363d412fe4a377c498433fd66feee9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/妹妹下樓.playable using Guid(363d412fe4a377c498433fd66feee9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ae543ccd4334b807142c50f860a263') in 0.007602 seconds 
-  Import took 0.014388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.526521 seconds.
-  path: Assets/章節/第二章/timeline/Walk (1).fbx
-  artifactKey: Guid(b5236c05ea958034bacea653924b95cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/Walk (1).fbx using Guid(b5236c05ea958034bacea653924b95cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6dccc024e1642524103f565f63df97b') in 0.276047 seconds 
-  Import took 0.287423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/章節/第二章/timeline/妹妹下樓.playable
-  artifactKey: Guid(363d412fe4a377c498433fd66feee9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/妹妹下樓.playable using Guid(363d412fe4a377c498433fd66feee9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09871b44040c2c7f5d1dcf0fefc3fb3') in 0.008485 seconds 
-  Import took 0.018892 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.072015 seconds.
-  path: Assets/章節/第二章/timeline/mixamo.com.anim
-  artifactKey: Guid(d8af0dff6c8496b4d801ead97f191cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/mixamo.com.anim using Guid(d8af0dff6c8496b4d801ead97f191cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0667ded0970af2ee9320a6e8772f405a') in 0.011851 seconds 
-  Import took 0.022928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.493694 seconds.
-  path: Assets/章節/第二章/timeline/Walk.anim
-  artifactKey: Guid(d8af0dff6c8496b4d801ead97f191cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/Walk.anim using Guid(d8af0dff6c8496b4d801ead97f191cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272b0c5c2166c3b993b23a1703331e18') in 0.007672 seconds 
-  Import took 0.015461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.107651 seconds.
-  path: Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Art/Recon Troop/Model/mReconTroop.fbx
-  artifactKey: Guid(a9cfab5a8b4a0a0448926ba5ca880442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Art/Recon Troop/Model/mReconTroop.fbx using Guid(a9cfab5a8b4a0a0448926ba5ca880442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97aa8398b0385bc78aecbef2a78f5b7d') in 1.012012 seconds 
-  Import took 1.022382 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle02.fbx
-  artifactKey: Guid(69d59c13a83a7c74a8cc0607ded391ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle02.fbx using Guid(69d59c13a83a7c74a8cc0607ded391ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe50d7eeab186ee7b44534198996976e') in 0.025639 seconds 
-  Import took 0.034738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000382 seconds.
-  path: Assets/章節/結局二/動畫/給信.fbx
-  artifactKey: Guid(9cc59a8624a94364f828472c6b22129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/動畫/給信.fbx using Guid(9cc59a8624a94364f828472c6b22129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7781531830644097469a14c4ba66296') in 0.012685 seconds 
-  Import took 0.022726 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000526 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
-  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9317e7ea58d2afe309c51e5a6a91a3a') in 0.020200 seconds 
-  Import took 0.034958 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000428 seconds.
-  path: Assets/章節/結局二/動畫/SitSleep.fbx
-  artifactKey: Guid(2cbc3aafb82053e48ae9b142e30ef70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/動畫/SitSleep.fbx using Guid(2cbc3aafb82053e48ae9b142e30ef70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db63688495525c07b97f671bf743f162') in 0.014165 seconds 
-  Import took 0.029521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Jump01.fbx
-  artifactKey: Guid(067cc188e25b78b4a940a9fa67cd6ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Jump01.fbx using Guid(067cc188e25b78b4a940a9fa67cd6ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4fed7c806c8af7f77322e6d91ad6f59') in 0.028299 seconds 
-  Import took 0.045405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01 [RM].fbx
-  artifactKey: Guid(154a724602422044c91070a5f3c67c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01 [RM].fbx using Guid(154a724602422044c91070a5f3c67c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198b6a4a8cea3117bc3b40d057b2c53f') in 0.027050 seconds 
-  Import took 0.036048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000409 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx
-  artifactKey: Guid(46d5b47e60163f148ada32ff97c7aa32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx using Guid(46d5b47e60163f148ada32ff97c7aa32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62216925b5f5c698dc3c3fd91bdccbb2') in 0.028571 seconds 
-  Import took 0.038335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.478966 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx
-  artifactKey: Guid(98d8219075968bd43b75fdba6b4463d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx using Guid(98d8219075968bd43b75fdba6b4463d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4b26cdb2625908bf021f34305e1d5c') in 0.016790 seconds 
-  Import took 0.024625 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000315 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx
-  artifactKey: Guid(7eebd174ff53112419b27f9d903573d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx using Guid(7eebd174ff53112419b27f9d903573d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb79743a01f955e954d7255ba7161a7b') in 0.020402 seconds 
-  Import took 0.030382 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.048266 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx
-  artifactKey: Guid(0536f044bd409ff419dd726bc69d2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx using Guid(0536f044bd409ff419dd726bc69d2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97f3bdab272d3832681e46e7657a492') in 0.019727 seconds 
-  Import took 0.027992 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01 [RM].fbx
-  artifactKey: Guid(bd1c2e9064da28e4fb0fe4a3f6ff4e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01 [RM].fbx using Guid(bd1c2e9064da28e4fb0fe4a3f6ff4e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d7169f552b89285d2711757058ad4fb') in 0.026644 seconds 
-  Import took 0.036192 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.072555 seconds.
-  path: Assets/parkchair/parkchair.fbx
-  artifactKey: Guid(36353b1e3515cf54aa56170c68ed3d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/parkchair/parkchair.fbx using Guid(36353b1e3515cf54aa56170c68ed3d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '519e199fcb2195e40e8f97cc240c4d63') in 0.033573 seconds 
-  Import took 0.041376 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.058499 seconds.
-  path: Assets/章節/第一章/AI_people/主/standing idle.fbx
-  artifactKey: Guid(e19b5e8283742164a9bc1df221bee46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/主/standing idle.fbx using Guid(e19b5e8283742164a9bc1df221bee46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0afd1f13db5753c8301c7709ac2287') in 0.138807 seconds 
-  Import took 0.148120 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/章節/第一章/AI_people/sis/有骨架的妹妹.fbx
-  artifactKey: Guid(05078ecc81ff9294a872bc81aa710788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/sis/有骨架的妹妹.fbx using Guid(05078ecc81ff9294a872bc81aa710788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42523f6b56774bdcc8b784e08f3ea9f') in 0.141634 seconds 
-  Import took 0.154283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000549 seconds.
-  path: Assets/章節/第一章/AI_people/bro/哥哥走路動畫.fbx
-  artifactKey: Guid(2d9c143127a4e1b4ea23ab912e8059ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/bro/哥哥走路動畫.fbx using Guid(2d9c143127a4e1b4ea23ab912e8059ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adea3e261e74925d99f9f2cbb9cd4396') in 0.015838 seconds 
-  Import took 0.025367 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000396 seconds.
-  path: Assets/章節/第一章/AI_people/npc/第一章同學/同學C/export_ec16f061-b448-49f9-8c9f-dff2b973fe56.fbx
-  artifactKey: Guid(9ce8081686f43db45a377d6bd95b2dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/npc/第一章同學/同學C/export_ec16f061-b448-49f9-8c9f-dff2b973fe56.fbx using Guid(9ce8081686f43db45a377d6bd95b2dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d3d7ed31a91a0b7ca941612f9cb76c') in 0.134909 seconds 
-  Import took 0.145184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/章節/第一章/AI_people/sis/妹妹idle.fbx
-  artifactKey: Guid(4e44eb08cb57d7240b902cb1640f83a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/sis/妹妹idle.fbx using Guid(4e44eb08cb57d7240b902cb1640f83a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab4355c10a0501fefe1643e58b52c384') in 0.013018 seconds 
-  Import took 0.021633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000460 seconds.
-  path: Assets/章節/第一章/AI_people/sis/妹妹idle 1.fbx
-  artifactKey: Guid(ba71fe7f474a5be429fb5500184c3b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/sis/妹妹idle 1.fbx using Guid(ba71fe7f474a5be429fb5500184c3b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfcf801d937dbd80efaa2244643b9ff7') in 0.122685 seconds 
-  Import took 0.135231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/timeline管理Timeline.playable
-  artifactKey: Guid(26cf28241c4e68c47b66fd3ad9ce3302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/timeline管理Timeline.playable using Guid(26cf28241c4e68c47b66fd3ad9ce3302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572541f13f72a103adf494eeb031a61a') in 0.031057 seconds 
-  Import took 0.041626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000496 seconds.
-  path: Assets/章節/結局二/Script/對話後動畫Timeline.playable
-  artifactKey: Guid(7c31a402ccc31fc4a88305c0b3b14305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/Script/對話後動畫Timeline.playable using Guid(7c31a402ccc31fc4a88305c0b3b14305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23dafe36eb8394dc91b3231ccc19120') in 0.013232 seconds 
-  Import took 0.022292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000579 seconds.
-  path: Assets/章節/第三章/走到家的動畫Timeline.playable
-  artifactKey: Guid(c41a2c7515d85054faaf937cd2005401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/走到家的動畫Timeline.playable using Guid(c41a2c7515d85054faaf937cd2005401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7abb911ab7a2122edc29cdd3880b5f9') in 0.008761 seconds 
-  Import took 0.018954 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/章節/結局二/動畫/結局二衣櫃動畫Timeline.playable
-  artifactKey: Guid(91e4a9d5ec01ea4438a99aee15bb90e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/動畫/結局二衣櫃動畫Timeline.playable using Guid(91e4a9d5ec01ea4438a99aee15bb90e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cef32aa3de370f26813f1fe43b8dbcd') in 0.026790 seconds 
-  Import took 0.034569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000376 seconds.
-  path: Assets/Animation/Turn.fbx
-  artifactKey: Guid(fef80d82020148d49b2efde8637895c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Turn.fbx using Guid(fef80d82020148d49b2efde8637895c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56da69730af52b0d6deec8f8639aa6b9') in 0.444486 seconds 
-  Import took 0.455969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/章節/結局一/Timeline/Timeline01/Timeline.playable
-  artifactKey: Guid(1e1deb11fb5157947b2752d6f1141420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局一/Timeline/Timeline01/Timeline.playable using Guid(1e1deb11fb5157947b2752d6f1141420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7837d376e34a6584b54bd0e42cdca1') in 0.017584 seconds 
-  Import took 0.026594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000466 seconds.
-  path: Assets/章節/第一章/AI_people/sis/走路動畫.fbx
-  artifactKey: Guid(5537bd1bb5ab2c9409742825adb15cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/sis/走路動畫.fbx using Guid(5537bd1bb5ab2c9409742825adb15cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40958733d24ae6ab2ec66b97a80f236e') in 0.014370 seconds 
-  Import took 0.023994 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/章節/結局一/媽媽/媽媽站立.fbx
-  artifactKey: Guid(25f2ba122b5777247a79149cce514482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局一/媽媽/媽媽站立.fbx using Guid(25f2ba122b5777247a79149cce514482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008556ab7cc81b33e050e5f3a3ee7075') in 0.152736 seconds 
-  Import took 0.162511 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000502 seconds.
-  path: Assets/章節/結局二/Sitting Idle-哥哥.fbx
-  artifactKey: Guid(9964f4c90c47812418507dec73edaaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/Sitting Idle-哥哥.fbx using Guid(9964f4c90c47812418507dec73edaaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc51ce546cc5ce29a4eb8dcac562db2') in 0.220781 seconds 
-  Import took 0.229454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000410 seconds.
-  path: Assets/旻蘭伸手開門動畫Timeline.playable
-  artifactKey: Guid(6800f99b8854fa54a92a64dbeabd70eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/旻蘭伸手開門動畫Timeline.playable using Guid(6800f99b8854fa54a92a64dbeabd70eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb8e8dba420f6a6ce9fd53c14933fae') in 0.008332 seconds 
-  Import took 0.017588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000708 seconds.
-  path: Assets/章節/第一章/AI_people/maincharacter/export_9785477b-4535-4376-8e35-d439614aa48e.fbx
-  artifactKey: Guid(bc3a37c9dc753ec4faccc07d0f43759b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/maincharacter/export_9785477b-4535-4376-8e35-d439614aa48e.fbx using Guid(bc3a37c9dc753ec4faccc07d0f43759b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183e43939a95e84f97acdcf37bc52787') in 0.120992 seconds 
-  Import took 0.131712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/章節/第一章/AI_people/npc/第一章同學/同學E/export_fcf1a31d-d6cb-48b2-a95f-d2eabd451c8d.fbx
-  artifactKey: Guid(c16b34a7196799c4ca8690a996c72013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/npc/第一章同學/同學E/export_fcf1a31d-d6cb-48b2-a95f-d2eabd451c8d.fbx using Guid(c16b34a7196799c4ca8690a996c72013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70698bdb880b7a2802726380ca29a251') in 0.141400 seconds 
-  Import took 0.150708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/章節/第一章/AI_people/主/tpose.fbx
-  artifactKey: Guid(27336576393043e44a8ad1d7b3c3e4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/主/tpose.fbx using Guid(27336576393043e44a8ad1d7b3c3e4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd894f6a0ead3bb68fead5455e4b4c534') in 0.124622 seconds 
-  Import took 0.136254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/章節/第一章/Animation/妹妹手拉手跑到樓梯/SisterRunToChangeScene_Timeline.playable
-  artifactKey: Guid(c4f03982ef3735246bbb89cb1c3132db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/Animation/妹妹手拉手跑到樓梯/SisterRunToChangeScene_Timeline.playable using Guid(c4f03982ef3735246bbb89cb1c3132db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed70af4b454260c6af24cb5854ba1423') in 0.004864 seconds 
-  Import took 0.015866 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/章節/結局一/Timeline/媽媽撐起身，睜開眼timeline/媽媽撐起身，睜開眼timeline.playable
-  artifactKey: Guid(e2e2691cfd9a4f846b89a5392b2ae604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局一/Timeline/媽媽撐起身，睜開眼timeline/媽媽撐起身，睜開眼timeline.playable using Guid(e2e2691cfd9a4f846b89a5392b2ae604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3292213ebad5641efde3f50148eabd') in 0.049640 seconds 
-  Import took 0.060186 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/章節/第一章/AI_people/npc/第一章同學/同學D/export_c86a6df3-e5d1-4800-b0b7-f4ae537f5fd9.fbx
-  artifactKey: Guid(0b5d016047fdd0a48b85a3e103d83a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/npc/第一章同學/同學D/export_c86a6df3-e5d1-4800-b0b7-f4ae537f5fd9.fbx using Guid(0b5d016047fdd0a48b85a3e103d83a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fe09021cb88da0be21aa4ed782491b') in 0.129368 seconds 
-  Import took 0.139362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/章節/第三章/Animation/Opening.fbx
-  artifactKey: Guid(ca2e3b98e85d70d4cb269bad324cf9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/Opening.fbx using Guid(ca2e3b98e85d70d4cb269bad324cf9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c38b93bc10001045d7d6f42e2f99ce') in 0.017757 seconds 
-  Import took 0.028569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000448 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Stand To Sit.fbx
-  artifactKey: Guid(4eaeca3faa1f73c4e98943a9d50c1c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Stand To Sit.fbx using Guid(4eaeca3faa1f73c4e98943a9d50c1c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a272b1615dd05c0341bbe75e0293643') in 0.012368 seconds 
-  Import took 0.022197 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000493 seconds.
-  path: Assets/章節/第一章/AI_people/npc/第一章同學/同學A/export_0b8346e1-b7a0-4502-8a32-915cbff30fe4.fbx
-  artifactKey: Guid(9d6f5da2edfcc554d8cbf61377751fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/npc/第一章同學/同學A/export_0b8346e1-b7a0-4502-8a32-915cbff30fe4.fbx using Guid(9d6f5da2edfcc554d8cbf61377751fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '949c63b0a8cf6cce1986a9416f40e722') in 0.136642 seconds 
-  Import took 0.148752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000315 seconds.
-  path: Assets/章節/第一章/AI_people/npc/第一章同學/同學F/export_189fb84a-f42d-4ba0-bb05-e1f5600b8f64.fbx
-  artifactKey: Guid(eb85507f8b3a9f144acdfc13fac2a4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/npc/第一章同學/同學F/export_189fb84a-f42d-4ba0-bb05-e1f5600b8f64.fbx using Guid(eb85507f8b3a9f144acdfc13fac2a4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e26b3d5187d9dbd1789b11682aa3023') in 0.125792 seconds 
-  Import took 0.136244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/章節/結局二/動畫/timelineManagementTimeline.playable
-  artifactKey: Guid(d4922b1c55f828948a67cee106a8b162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/動畫/timelineManagementTimeline.playable using Guid(d4922b1c55f828948a67cee106a8b162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1609bb32590b9ee9e3c76cb68d0d4f') in 0.010378 seconds 
-  Import took 0.020574 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000574 seconds.
-  path: Assets/章節/第一章/AI_people/npc/第一章同學/同學B/export_22325e2a-d313-4bd2-a9fc-da8c5914e7e5.fbx
-  artifactKey: Guid(c8b11b1b613d490498bb6ada64ae76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/npc/第一章同學/同學B/export_22325e2a-d313-4bd2-a9fc-da8c5914e7e5.fbx using Guid(c8b11b1b613d490498bb6ada64ae76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7cde21cd0de10d8ca40294e104214d') in 0.135309 seconds 
-  Import took 0.149053 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000450 seconds.
-  path: Assets/章節/結局一/建模/醫院.fbx
-  artifactKey: Guid(8f8aad1f2a48bb54faca915589a91d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局一/建模/醫院.fbx using Guid(8f8aad1f2a48bb54faca915589a91d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e64c9de179d0c884dba5d8f4da24a5a') in 0.673121 seconds 
-  Import took 0.683022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000480 seconds.
-  path: Assets/章節/第三章/建模/碗.fbx
-  artifactKey: Guid(06cd6fff49301e14ab8e8e8af4b3be46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/建模/碗.fbx using Guid(06cd6fff49301e14ab8e8e8af4b3be46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297c012b873aa626b065660aa827afad') in 0.048856 seconds 
-  Import took 0.056429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/章節/結局一/建模/沙發.fbx
-  artifactKey: Guid(da2faae6f20708e4ca2e1744a07c2080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局一/建模/沙發.fbx using Guid(da2faae6f20708e4ca2e1744a07c2080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc24afa5baf855c4614d1339a04010e') in 0.190446 seconds 
-  Import took 0.198266 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/章節/第二章/建模/設計書、圖/book4.fbx
-  artifactKey: Guid(720aa16c863cc9f42ac79de023f5d2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/建模/設計書、圖/book4.fbx using Guid(720aa16c863cc9f42ac79de023f5d2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d034cfe666944f81a9ccbbaa47455be') in 0.062557 seconds 
-  Import took 0.072816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000521 seconds.
-  path: Assets/章節/第二章/建模/設計書、圖/book1.fbx
-  artifactKey: Guid(a4b6f1b9c53673244a36ab1f8d3c128c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/建模/設計書、圖/book1.fbx using Guid(a4b6f1b9c53673244a36ab1f8d3c128c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8655e7e37f1cddb7cb0ea4a5297009c') in 0.056133 seconds 
-  Import took 0.064838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/章節/結局一/建模/病床.fbx
-  artifactKey: Guid(e925f56f520a9474a88e1d5f491d65c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局一/建模/病床.fbx using Guid(e925f56f520a9474a88e1d5f491d65c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf86191bbc4c6283cce59ffaa8f9defc') in 0.686518 seconds 
-  Import took 0.696002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000490 seconds.
-  path: Assets/章節/第一章/教室/太陽花.fbx
-  artifactKey: Guid(79694a4e0ad307b44bdf3b069821fc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室/太陽花.fbx using Guid(79694a4e0ad307b44bdf3b069821fc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de5a76d271e0c72b4b8ba007ea4e930') in 1.134349 seconds 
-  Import took 1.142452 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/章節/第一章/教室/三層樓梯.fbx
-  artifactKey: Guid(ee298b4110df4704eb5ffb3674dc1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室/三層樓梯.fbx using Guid(ee298b4110df4704eb5ffb3674dc1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b6b70a9b73d4d050b896238099b8b7f') in 0.141947 seconds 
-  Import took 0.150564 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000655 seconds.
-  path: Assets/章節/結局二/家/白黃衣服.fbx
-  artifactKey: Guid(61234c65adc856a49985ea943ead875c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/家/白黃衣服.fbx using Guid(61234c65adc856a49985ea943ead875c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '072c7b8b637cf7687f370e8256da3beb') in 0.042316 seconds 
-  Import took 0.053356 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000601 seconds.
-  path: Assets/章節/第二章/建模/設計書、圖/book3.fbx
-  artifactKey: Guid(4967029e86bf43846a528d92666a18e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/建模/設計書、圖/book3.fbx using Guid(4967029e86bf43846a528d92666a18e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f704d7c7555a6b14878fc24925e869') in 0.054900 seconds 
-  Import took 0.063391 seconds .
+  Time since last request: 0.000407 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-1_comp_dir.png
+  artifactKey: Guid(a31ef62269c05634397f9e2fe5f5571f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-1_comp_dir.png using Guid(a31ef62269c05634397f9e2fe5f5571f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d2009c18c3b5693c0c0f607b72fc2a') in 0.011970 seconds 
+  Import took 0.025786 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000331 seconds.
-  path: Assets/章節/第一章/教室/兩層樓梯.fbx
-  artifactKey: Guid(c91436d17d826d448b91bb75a4b7525d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室/兩層樓梯.fbx using Guid(c91436d17d826d448b91bb75a4b7525d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a03aef594747e1439cc4052ee39149') in 0.187802 seconds 
-  Import took 0.194490 seconds .
+  path: Assets/章節/第三章/第三章/Lightmap-2_comp_light.exr
+  artifactKey: Guid(fb33b96491ce0374cab274140cb53eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-2_comp_light.exr using Guid(fb33b96491ce0374cab274140cb53eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b961941a65cb3ef7f25ff53ca891a29') in 0.016088 seconds 
+  Import took 0.027981 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000290 seconds.
-  path: Assets/章節/第一章/教室/玩家桌子/課本/化學課本.fbx
-  artifactKey: Guid(195937340c2ceea4ea2f4b1f23b15dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室/玩家桌子/課本/化學課本.fbx using Guid(195937340c2ceea4ea2f4b1f23b15dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d17d4ab6c7931745198c58cd073f3c') in 0.040205 seconds 
-  Import took 0.048306 seconds .
+  Time since last request: 0.000478 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-8_comp_dir.png
+  artifactKey: Guid(db6bb4b02730a904bbe944777bd1c71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-8_comp_dir.png using Guid(db6bb4b02730a904bbe944777bd1c71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73fb35960da591082b180112ad26d55') in 0.015682 seconds 
+  Import took 0.028207 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/章節/第二章/建模/設計書、圖/book5.fbx
-  artifactKey: Guid(39de847646dc572439aedc5bc3e8df4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/建模/設計書、圖/book5.fbx using Guid(39de847646dc572439aedc5bc3e8df4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea852abf2eca75738e7eba7dad67096') in 0.053267 seconds 
-  Import took 0.062246 seconds .
+  Time since last request: 0.000311 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-0_comp_light.exr
+  artifactKey: Guid(70f3a9f73319d474bade9835b47c9b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-0_comp_light.exr using Guid(70f3a9f73319d474bade9835b47c9b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42f02c758f0c315d4c92ee60b75b54b') in 0.012924 seconds 
+  Import took 0.025277 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000505 seconds.
-  path: Assets/章節/第二章/建模/設計書、圖/book2.fbx
-  artifactKey: Guid(f4cc2bfe588e83e4c946330cc46b2393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/建模/設計書、圖/book2.fbx using Guid(f4cc2bfe588e83e4c946330cc46b2393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4f19a9375d1159b64c205cfcdf7a37') in 0.062486 seconds 
-  Import took 0.070071 seconds .
+  Time since last request: 0.000320 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-1_comp_light.exr
+  artifactKey: Guid(9f5b21e24edf0964082436ef27f65fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-1_comp_light.exr using Guid(9f5b21e24edf0964082436ef27f65fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7ad431c861435611e1b13b085a0e42') in 0.016237 seconds 
+  Import took 0.025807 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/章節/第一章/裝飾建築二.fbx
-  artifactKey: Guid(6c31a5cc649108c4a980f434a61aad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/裝飾建築二.fbx using Guid(6c31a5cc649108c4a980f434a61aad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90352f64742d8c3ccd34c5fbb154d6f5') in 0.710739 seconds 
-  Import took 0.724697 seconds .
+  Time since last request: 0.000279 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-4_comp_dir.png
+  artifactKey: Guid(abffc2834a2cfda46affb05714912079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-4_comp_dir.png using Guid(abffc2834a2cfda46affb05714912079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ded72a857a87e28b9bae794483a052') in 0.012957 seconds 
+  Import took 0.021726 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000454 seconds.
-  path: Assets/章節/結局二/家/衣櫃2.fbx
-  artifactKey: Guid(602d713a9fe001241a33deab1bfb31d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/家/衣櫃2.fbx using Guid(602d713a9fe001241a33deab1bfb31d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba23f9492ff661f776e875745605e37') in 0.125575 seconds 
-  Import took 0.135625 seconds .
+  Time since last request: 0.000228 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-2_comp_dir.png
+  artifactKey: Guid(799867adef7376d458c1c3ee0a1de17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-2_comp_dir.png using Guid(799867adef7376d458c1c3ee0a1de17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cddc6d3cddec0058cc61d1408725bcfb') in 0.010752 seconds 
+  Import took 0.019963 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000475 seconds.
-  path: Assets/章節/結局二/家/衣架.fbx
-  artifactKey: Guid(4600de7a9fbf83347a2eed87bf5105ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/家/衣架.fbx using Guid(4600de7a9fbf83347a2eed87bf5105ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1081f172acbdccad91a2edd7c7044019') in 0.041236 seconds 
-  Import took 0.050708 seconds .
+  Time since last request: 0.000245 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-4_comp_light.exr
+  artifactKey: Guid(247a850252c6f15438e06432344b1496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-4_comp_light.exr using Guid(247a850252c6f15438e06432344b1496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94cf842cfdb2e0fcf3b0c89c8ac205c') in 0.012355 seconds 
+  Import took 0.021055 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/章節/結局二/家/紅衣服.fbx
-  artifactKey: Guid(e82c906adae376c4fa3d95db86dcf2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/家/紅衣服.fbx using Guid(e82c906adae376c4fa3d95db86dcf2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80bf8f98c569e5016ec356003321c55f') in 0.045746 seconds 
-  Import took 0.053105 seconds .
+  Time since last request: 0.000242 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-7_comp_light.exr
+  artifactKey: Guid(eef950a9d615146439ee8107a27fc1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-7_comp_light.exr using Guid(eef950a9d615146439ee8107a27fc1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99933341b87f0ec750c83421eb5f4703') in 0.012693 seconds 
+  Import took 0.020474 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/章節/結局二/家/衣櫃.fbx
-  artifactKey: Guid(8d7e1f08820d91342aac175b0e3b640c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/家/衣櫃.fbx using Guid(8d7e1f08820d91342aac175b0e3b640c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9621ad426e674bd18a889f1a4f70ee') in 0.078808 seconds 
-  Import took 0.086398 seconds .
+  Time since last request: 0.000243 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-6_comp_light.exr
+  artifactKey: Guid(cf44bdfdc7f93bd4c8f67d5fe70962c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-6_comp_light.exr using Guid(cf44bdfdc7f93bd4c8f67d5fe70962c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c79e19c7de5ac0e049188ed347d4fb') in 0.011208 seconds 
+  Import took 0.019117 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/章節/第一章/裝飾建築3.fbx
-  artifactKey: Guid(0f0a876a523b2fc459be5af40d18490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/裝飾建築3.fbx using Guid(0f0a876a523b2fc459be5af40d18490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1e4d14cbfabefe0e908bf748e02cd0') in 0.360464 seconds 
-  Import took 0.368320 seconds .
+  Time since last request: 0.000394 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-5_comp_dir.png
+  artifactKey: Guid(0aeb3df99fdc61d4c94b89b12c30d5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-5_comp_dir.png using Guid(0aeb3df99fdc61d4c94b89b12c30d5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd604af251be4e0373483b8c1b33abd9') in 0.010847 seconds 
+  Import took 0.019035 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/章節/第三章/建模/咖啡廳.fbx
-  artifactKey: Guid(5382724a8709d2d42a24f7073e16e66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/建模/咖啡廳.fbx using Guid(5382724a8709d2d42a24f7073e16e66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c941f5bc3f51d3009a7f3e7e5e20610') in 2.561395 seconds 
-  Import took 2.579864 seconds .
+  Time since last request: 0.000342 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-6_comp_dir.png
+  artifactKey: Guid(074d00fce704619439ac9c88e67f2744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-6_comp_dir.png using Guid(074d00fce704619439ac9c88e67f2744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda822079c27de884a3c757d79a54a99') in 0.011648 seconds 
+  Import took 0.019506 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000623 seconds.
-  path: Assets/章節/第一章/教室/壓面後一間教室.fbx
-  artifactKey: Guid(9668579d4c16c864786ecb437a56cc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室/壓面後一間教室.fbx using Guid(9668579d4c16c864786ecb437a56cc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f053d53211f23dca6aa6b95e887bc9') in 7.783637 seconds 
-  Import took 7.801269 seconds .
+  Time since last request: 0.000269 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-8_comp_light.exr
+  artifactKey: Guid(00b3c16e2d635654cb25d73bf594b505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-8_comp_light.exr using Guid(00b3c16e2d635654cb25d73bf594b505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4025abf91ef40b0f4665681b204bab77') in 0.012704 seconds 
+  Import took 0.020161 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000555 seconds.
-  path: Assets/章節/第一章/教室/布告欄504500100.fbx
-  artifactKey: Guid(185ec4e0646726c429ead109ea1314c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室/布告欄504500100.fbx using Guid(185ec4e0646726c429ead109ea1314c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1c2c3cb07335977caf2f1efc3fa855') in 0.048544 seconds 
-  Import took 0.057988 seconds .
+  Time since last request: 0.000226 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-3_comp_dir.png
+  artifactKey: Guid(b5b33812e028d0a4cba91c912e1952ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-3_comp_dir.png using Guid(b5b33812e028d0a4cba91c912e1952ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f95466a7f8e2e6489f60e836dd552e4') in 0.011548 seconds 
+  Import took 0.018470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-7_comp_dir.png
+  artifactKey: Guid(56d5da234fdc0ba4bad2331c59e98da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-7_comp_dir.png using Guid(56d5da234fdc0ba4bad2331c59e98da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aed5a38a7904c123b6cfa213ae5e41a') in 0.011959 seconds 
+  Import took 0.019746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/章節/第三章/第三章/Lightmap-3_comp_light.exr
+  artifactKey: Guid(54f52f7b414ff4040aae338083a155b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/第三章/Lightmap-3_comp_light.exr using Guid(54f52f7b414ff4040aae338083a155b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f480cc079b72789fae83c80cddc6fb6') in 0.012937 seconds 
+  Import took 0.021275 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
+MTE.MTEDebug:LogWarning (string)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Initializing Mesh Terrain Editor...Done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
+_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.729 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2730ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (2507ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (338ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (1848ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (1621ms)
+				ProcessInitializeOnLoadMethodAttributes (96ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
+Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 341.5 MB.
+System memory in use after: 341.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4544.
+Total: 5.146000 ms (FindLiveObjects: 0.475500 ms CreateObjectMapping: 0.148500 ms MarkObjects: 4.475400 ms  DeleteObjects: 0.043900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1249.802969 seconds.
+  path: Assets/章節/第三章/Picking Up Object.fbx
+  artifactKey: Guid(c16aa8ed09a5d7c45a9d2aed1d778028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/Picking Up Object.fbx using Guid(c16aa8ed09a5d7c45a9d2aed1d778028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a23b4eb4323ab663a3eff32d3fc70d5e') in 2.368383 seconds 
+  Import took 3.143304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002343 seconds.
+  path: Assets/章節/第三章/哥哥拿書包轉身揮手Timeline.playable
+  artifactKey: Guid(17be91edd77e8fd4f803bad961a35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/哥哥拿書包轉身揮手Timeline.playable using Guid(17be91edd77e8fd4f803bad961a35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9db18262631ba13e4f5bc603ec24ab7') in 0.016386 seconds 
+  Import took 0.025397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.767948 seconds.
+  path: Assets/章節/第三章/mixamo.com.anim
+  artifactKey: Guid(1d2de7e93ec527445ace1b870705a0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/mixamo.com.anim using Guid(1d2de7e93ec527445ace1b870705a0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4102440398f1996ca7ea164ad2fb8374') in 0.011269 seconds 
+  Import took 0.022888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.210821 seconds.
+  path: Assets/章節/第三章/拿書包.anim
+  artifactKey: Guid(1d2de7e93ec527445ace1b870705a0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/拿書包.anim using Guid(1d2de7e93ec527445ace1b870705a0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc14f78554e041da7c4d9c334ea857e5') in 0.006791 seconds 
+  Import took 0.015045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 258.374659 seconds.
+  path: Assets/章節/第三章
+  artifactKey: Guid(45818108e33c3be419c52374eb1b86f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章 using Guid(45818108e33c3be419c52374eb1b86f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18530cced5591d0540e6c7f98f239b39') in 0.004701 seconds 
+  Import took 0.014667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.083009 seconds.
+  path: Assets/章節/第三章/Picking Up Object (1).fbx
+  artifactKey: Guid(9d3b1d55d52faf94a9eaedca7c1a9555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/Picking Up Object (1).fbx using Guid(9d3b1d55d52faf94a9eaedca7c1a9555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3953a945554a810359601c15d4f74f2') in 0.256497 seconds 
+  Import took 0.265933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.785744 seconds.
+  path: Assets/章節/第三章/mixamo.com.anim
+  artifactKey: Guid(38ad2d8145169c849976daa9e786366f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/mixamo.com.anim using Guid(38ad2d8145169c849976daa9e786366f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39def172c234ac33a55d7748d402b804') in 0.007636 seconds 
+  Import took 0.017774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.225307 seconds.
+  path: Assets/章節/第三章/拿書包.anim
+  artifactKey: Guid(38ad2d8145169c849976daa9e786366f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/拿書包.anim using Guid(38ad2d8145169c849976daa9e786366f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1b97de0c836442b7ca2b15c5969b2a') in 0.005798 seconds 
+  Import took 0.014855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.776574 seconds.
+  path: Assets/章節/第三章/Shoulder Rubbing.fbx
+  artifactKey: Guid(dac252900241d53408fd7ef2db1b8503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/Shoulder Rubbing.fbx using Guid(dac252900241d53408fd7ef2db1b8503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a003831133a1797afd4783b7d84e8ad') in 0.220680 seconds 
+  Import took 0.233998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.061535 seconds.
+  path: Assets/章節/第三章/mixamo.com.anim
+  artifactKey: Guid(5d65c3829d510c1459252f040976e550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/mixamo.com.anim using Guid(5d65c3829d510c1459252f040976e550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e25257394a71f249d7d254515d1b8a9') in 0.013130 seconds 
+  Import took 0.021069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.953916 seconds.
+  path: Assets/章節/第三章/放肩上.anim
+  artifactKey: Guid(5d65c3829d510c1459252f040976e550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/放肩上.anim using Guid(5d65c3829d510c1459252f040976e550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6748215374555614f821a5474837ea1a') in 0.014260 seconds 
+  Import took 0.022644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.492388 seconds.
+  path: Assets/章節/第三章/Standing W_Briefcase Idle.fbx
+  artifactKey: Guid(ae7426c035ff6eb4d806b14626c29405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/Standing W_Briefcase Idle.fbx using Guid(ae7426c035ff6eb4d806b14626c29405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb8e020171300b0d54ba330d31fbdd0') in 0.234270 seconds 
+  Import took 0.246872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.226029 seconds.
+  path: Assets/章節/第三章/mixamo.com.anim
+  artifactKey: Guid(d13f3226c8f1e304ba1b2cd779c2f705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/mixamo.com.anim using Guid(d13f3226c8f1e304ba1b2cd779c2f705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424d3480aaab914b6648b00819078d66') in 0.005171 seconds 
+  Import took 0.013980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.337184 seconds.
+  path: Assets/章節/第三章/提書包.anim
+  artifactKey: Guid(d13f3226c8f1e304ba1b2cd779c2f705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/提書包.anim using Guid(d13f3226c8f1e304ba1b2cd779c2f705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ddc1be8857326d8ca06c2819d59201') in 0.005454 seconds 
+  Import took 0.013843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.011448 seconds.
+  path: Assets/章節/第三章/曉鶴揮左手.fbx
+  artifactKey: Guid(a49b215924ca37c4a80a3fbc725a9b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/曉鶴揮左手.fbx using Guid(a49b215924ca37c4a80a3fbc725a9b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9835990803a04fb854b0e5c2e86d946b') in 0.209977 seconds 
+  Import took 0.224591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.306005 seconds.
+  path: Assets/章節/第三章/mixamo.com.anim
+  artifactKey: Guid(275cc4bc510259642bc9746ab6060b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/mixamo.com.anim using Guid(275cc4bc510259642bc9746ab6060b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a9c6a0ea76694f7d05722f62c93948') in 0.010942 seconds 
+  Import took 0.021771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.018148 seconds.
+  path: Assets/章節/第三章/揮左手.anim
+  artifactKey: Guid(275cc4bc510259642bc9746ab6060b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/揮左手.anim using Guid(275cc4bc510259642bc9746ab6060b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81083a7a8d212d9ae38db91b0af5793') in 0.009260 seconds 
+  Import took 0.018458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.513295 seconds.
+  path: Assets/章節/第三章/哥哥拿書包揮手Timeline.playable
+  artifactKey: Guid(17be91edd77e8fd4f803bad961a35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/哥哥拿書包揮手Timeline.playable using Guid(17be91edd77e8fd4f803bad961a35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86422716e9cb634bff29ca19631d3140') in 0.071024 seconds 
+  Import took 0.083736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 272.971032 seconds.
+  path: Assets/章節/第三章/哥哥拿書包揮手Timeline.playable
+  artifactKey: Guid(17be91edd77e8fd4f803bad961a35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/哥哥拿書包揮手Timeline.playable using Guid(17be91edd77e8fd4f803bad961a35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baae52b908fb649a922ec6fc813cef9e') in 0.004082 seconds 
+  Import took 0.012281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.066989 seconds.
+  path: Assets/章節/第三章/曉鶴拿書包揮手動畫Timeline.playable
+  artifactKey: Guid(01f16df14ddebe64c92fb49af765b1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/曉鶴拿書包揮手動畫Timeline.playable using Guid(01f16df14ddebe64c92fb49af765b1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c7008a93c77368262bd12e160618c7') in 0.004085 seconds 
+  Import took 0.013339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.712616 seconds.
+  path: Assets/章節/第三章/建模
+  artifactKey: Guid(b818bcb1aae4dd84c8fb14139ac260be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模 using Guid(b818bcb1aae4dd84c8fb14139ac260be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa3b6451bace54fc883c2c0a1b4095a') in 0.004053 seconds 
+  Import took 0.014394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065361 seconds.
+  path: Assets/章節/第三章/建模/cake1.fbx
+  artifactKey: Guid(331d02284d2b1eb4ea8db7966ec0aa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模/cake1.fbx using Guid(331d02284d2b1eb4ea8db7966ec0aa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af43ca7aff470df72d30425ccd7824bd') in 0.158138 seconds 
+  Import took 0.169759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000650 seconds.
+  path: Assets/章節/第三章/建模/拿鐵.fbx
+  artifactKey: Guid(c70662687cc17d9499e936d1cbef8353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模/拿鐵.fbx using Guid(c70662687cc17d9499e936d1cbef8353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312200613a8ab415362f1328e8b03e59') in 0.125735 seconds 
+  Import took 0.139981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/章節/第三章/建模/鮮奶茶.fbx
+  artifactKey: Guid(e7bc0a2a935462340b0bb7a5428c1a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模/鮮奶茶.fbx using Guid(e7bc0a2a935462340b0bb7a5428c1a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05928c8f4223c563e2a347173ac1a005') in 0.046361 seconds 
+  Import took 0.055310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/章節/第三章/建模/馬路2.fbx
+  artifactKey: Guid(e31edc983410ae04086a38e4faf8528b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模/馬路2.fbx using Guid(e31edc983410ae04086a38e4faf8528b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4afe3ce4fc19925a615d4193bbc1eec') in 0.028438 seconds 
+  Import took 0.035726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/章節/第三章/建模/人行道2.fbx
+  artifactKey: Guid(b7eda9c3f33956a4b89147fbdbb176d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模/人行道2.fbx using Guid(b7eda9c3f33956a4b89147fbdbb176d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a155726712f8822798f8b4c032fcd29') in 0.025100 seconds 
+  Import took 0.032243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/章節/第三章/建模/sugarcube (1).fbx
+  artifactKey: Guid(6363c2f1e3e0e2c409b706d8e4dff993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模/sugarcube (1).fbx using Guid(6363c2f1e3e0e2c409b706d8e4dff993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3905cda9e44aa7469e91d40e6f5548c1') in 0.044527 seconds 
+  Import took 0.053121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/章節/第三章/建模/紅茶 (1).fbx
+  artifactKey: Guid(d45561a4a3415f8408aeaf9bc6ba9789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模/紅茶 (1).fbx using Guid(d45561a4a3415f8408aeaf9bc6ba9789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694f0725a0a08c89b29992b618b46c38') in 0.045015 seconds 
+  Import took 0.053028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/章節/第三章/建模/Ep3_SKY.jpg
+  artifactKey: Guid(06c23b176e585f540b0d9d563069d76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/建模/Ep3_SKY.jpg using Guid(06c23b176e585f540b0d9d563069d76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3d8533956f3374a6cf8527bfeb3f8a') in 0.191231 seconds 
+  Import took 0.198965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.969833 seconds.
+  path: Assets/章節/第一章/教室
+  artifactKey: Guid(c4ab2e20f16fdbe4db1745cc2e2ffca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室 using Guid(c4ab2e20f16fdbe4db1745cc2e2ffca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75fbfd5c010069d02a0c176344b4b91') in 0.003446 seconds 
+  Import took 0.011312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.210093 seconds.
+  path: Assets/章節/第一章/教室/0328下樓梯.fbx
+  artifactKey: Guid(64470a2e4a2b913478ee59acf27b0d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/0328下樓梯.fbx using Guid(64470a2e4a2b913478ee59acf27b0d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b7d29d91310a16fc917d9926f4fd4e') in 0.035495 seconds 
+  Import took 0.046498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-0_comp_dir.png
+  artifactKey: Guid(95c397c7a22aa014796809e64bcd7fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-0_comp_dir.png using Guid(95c397c7a22aa014796809e64bcd7fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c0dd72aee543cde2a877b549303443') in 0.013513 seconds 
+  Import took 0.022016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/章節/第一章/教室/LightingData.asset
+  artifactKey: Guid(9e4af664a5d85a94784a6b7efc6afa6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/LightingData.asset using Guid(9e4af664a5d85a94784a6b7efc6afa6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd5ecaf5a8554f75af44fac8ab57041') in 0.017459 seconds 
+  Import took 0.025926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/章節/第一章/教室/0328樓踢.fbx
+  artifactKey: Guid(3bfb3b0784b8b1d49912d799bdf9f197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/0328樓踢.fbx using Guid(3bfb3b0784b8b1d49912d799bdf9f197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56b802b269179d8afd461ae85ea30b6') in 0.257994 seconds 
+  Import took 0.267420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029799 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-0_comp_light.exr
+  artifactKey: Guid(18758e3a88febd04a9aed064103b9983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-0_comp_light.exr using Guid(18758e3a88febd04a9aed064103b9983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e562c36d06b846e615096b0e6a715b') in 0.021278 seconds 
+  Import took 0.028990 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000260 seconds.
-  path: Assets/章節/第一章/教室/走廊牆.fbx
-  artifactKey: Guid(0fdb48c2136fe4b4fa4f68b069488af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室/走廊牆.fbx using Guid(0fdb48c2136fe4b4fa4f68b069488af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414460f695e8bf70a31a15a08a885559') in 0.044519 seconds 
-  Import took 0.054173 seconds .
+  path: Assets/章節/第一章/教室/Lightmap-0_comp_shadowmask.png
+  artifactKey: Guid(d892063e09b41cb4d858989116e97e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-0_comp_shadowmask.png using Guid(d892063e09b41cb4d858989116e97e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75e5dc50f399fb07d7a16fab6b0fd4c') in 0.015616 seconds 
+  Import took 0.024073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-3_comp_dir.png
+  artifactKey: Guid(1afe67f33c9baa34dbf7da7fef59fc67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-3_comp_dir.png using Guid(1afe67f33c9baa34dbf7da7fef59fc67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58412b916985311252bbb9a280b8c89c') in 0.017298 seconds 
+  Import took 0.024976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-1_comp_dir.png
+  artifactKey: Guid(8d8d203bee74dfe45928221632789dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-1_comp_dir.png using Guid(8d8d203bee74dfe45928221632789dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b51199c6a27f9a848101c630f25680') in 0.016347 seconds 
+  Import took 0.023797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-1_comp_light.exr
+  artifactKey: Guid(d97e19091276ec548a2fd56954a2114d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-1_comp_light.exr using Guid(d97e19091276ec548a2fd56954a2114d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8a6a5950ed77d485dee9f0895ca87b') in 0.014301 seconds 
+  Import took 0.023291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-4_comp_dir.png
+  artifactKey: Guid(5fc72cdf6669fad4e8f3a9e735a3cc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-4_comp_dir.png using Guid(5fc72cdf6669fad4e8f3a9e735a3cc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c9202e2f04fe21c73d47e83e4aba4d') in 0.012278 seconds 
+  Import took 0.020132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-2_comp_light.exr
+  artifactKey: Guid(01da82e3f4854c241a70aea4407438c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-2_comp_light.exr using Guid(01da82e3f4854c241a70aea4407438c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b5e5fb385d2ea8ac751a49966340406') in 0.016361 seconds 
+  Import took 0.023330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-3_comp_light.exr
+  artifactKey: Guid(87583242e385f8142a6967b52487bacf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-3_comp_light.exr using Guid(87583242e385f8142a6967b52487bacf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675bfc6aca4f9b8fc8339e3512ed7bee') in 0.012533 seconds 
+  Import took 0.020408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-3_comp_shadowmask.png
+  artifactKey: Guid(08da909706689f14e9e79103ff3845d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-3_comp_shadowmask.png using Guid(08da909706689f14e9e79103ff3845d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c315e0b1b285e2fb3e0f51925abe8c5d') in 0.014117 seconds 
+  Import took 0.022675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-1_comp_shadowmask.png
+  artifactKey: Guid(ec8f6b5d2fc918c49994302a5c6d47c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-1_comp_shadowmask.png using Guid(ec8f6b5d2fc918c49994302a5c6d47c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2c22e3e8dc2b45995d3a56efcad14a') in 0.016393 seconds 
+  Import took 0.024585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-2_comp_shadowmask.png
+  artifactKey: Guid(91be8998f5621ad43a5dc7eecd0ee759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-2_comp_shadowmask.png using Guid(91be8998f5621ad43a5dc7eecd0ee759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f113aeb6bb0020c7e11fa4611fc0a779') in 0.015199 seconds 
+  Import took 0.023021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-2_comp_dir.png
+  artifactKey: Guid(e4b9c01536345e948a581ce23e730d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-2_comp_dir.png using Guid(e4b9c01536345e948a581ce23e730d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc75bba05a67e048ad38648a2b30be7c') in 0.013478 seconds 
+  Import took 0.021747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.271729 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-4_comp_light.exr
+  artifactKey: Guid(ddcf7aced21382c408450472fbeeaada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-4_comp_light.exr using Guid(ddcf7aced21382c408450472fbeeaada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed1961444cb493170e5dde0c5a6db97') in 0.010741 seconds 
+  Import took 0.018616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-4_comp_shadowmask.png
+  artifactKey: Guid(5ea0f9d33bb577f4c90247bc8210d923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-4_comp_shadowmask.png using Guid(5ea0f9d33bb577f4c90247bc8210d923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fc11315cc521310047d08e721b9d36') in 0.011979 seconds 
+  Import took 0.021835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-5_comp_light.exr
+  artifactKey: Guid(12ca060f0bfbf244a93291d9cd56de76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-5_comp_light.exr using Guid(12ca060f0bfbf244a93291d9cd56de76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3133f838545b02b10e6a781749c6446c') in 0.010796 seconds 
+  Import took 0.018727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-5_comp_dir.png
+  artifactKey: Guid(8e78030a241444a4292ecebf22646a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-5_comp_dir.png using Guid(8e78030a241444a4292ecebf22646a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da459e8f68efb8cb92e853ac379ba32') in 0.012216 seconds 
+  Import took 0.020880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-7_comp_dir.png
+  artifactKey: Guid(2f160fd96cbdc9d40b021d2f4b01fea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-7_comp_dir.png using Guid(2f160fd96cbdc9d40b021d2f4b01fea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590771e688a6296b15f943fa157f0472') in 0.014239 seconds 
+  Import took 0.022196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000525 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-9_comp_shadowmask.png
+  artifactKey: Guid(9deabf42932869d4ebfd71c0fdbc4001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-9_comp_shadowmask.png using Guid(9deabf42932869d4ebfd71c0fdbc4001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1f76ba67e53473c6e01e9169b02017') in 0.014810 seconds 
+  Import took 0.024903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-8_comp_dir.png
+  artifactKey: Guid(4c48e4e25e4a70045a25b0909c525695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-8_comp_dir.png using Guid(4c48e4e25e4a70045a25b0909c525695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1adf8899f262fde0475e777e815788f8') in 0.012696 seconds 
+  Import took 0.021335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-8_comp_shadowmask.png
+  artifactKey: Guid(5ea406de39d58994bb2401c708c86c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-8_comp_shadowmask.png using Guid(5ea406de39d58994bb2401c708c86c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8121772533ab60cbe85f68dd555435b') in 0.013365 seconds 
+  Import took 0.021755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-9_comp_dir.png
+  artifactKey: Guid(f9869648f05bbaf4895fa33381a28f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-9_comp_dir.png using Guid(f9869648f05bbaf4895fa33381a28f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4106e05e65dd30a2cbbc3f7b2a79c458') in 0.013361 seconds 
+  Import took 0.021527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-6_comp_light.exr
+  artifactKey: Guid(6d430c103ccb4464aaf6e7d4f118bf40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-6_comp_light.exr using Guid(6d430c103ccb4464aaf6e7d4f118bf40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb41363140a47d847973796c6f6a7e81') in 0.013459 seconds 
+  Import took 0.022016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-7_comp_light.exr
+  artifactKey: Guid(89b49815a2c4511419b54e7641dd105b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-7_comp_light.exr using Guid(89b49815a2c4511419b54e7641dd105b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd14a8463543eb73fe59e4463436f0567') in 0.012263 seconds 
+  Import took 0.020259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-9_comp_light.exr
+  artifactKey: Guid(61ccdaa21cb5d7b4186780c81ac80a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-9_comp_light.exr using Guid(61ccdaa21cb5d7b4186780c81ac80a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1038baf6a4919e9394ac84c6eee0b6a') in 0.013510 seconds 
+  Import took 0.021604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-6_comp_shadowmask.png
+  artifactKey: Guid(0876ed47bee4e7b42ba39f972aa7824e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-6_comp_shadowmask.png using Guid(0876ed47bee4e7b42ba39f972aa7824e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc93b7245a46bf5e2d59a9572768c09') in 0.014387 seconds 
+  Import took 0.022458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-10_comp_dir.png
+  artifactKey: Guid(32574e8dc39632742b5592daa28f239e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-10_comp_dir.png using Guid(32574e8dc39632742b5592daa28f239e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae30cf38019c7144892b5d4189430a84') in 0.013922 seconds 
+  Import took 0.023262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-8_comp_light.exr
+  artifactKey: Guid(1550e0a4e571a874abd6ffcf0166ac2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-8_comp_light.exr using Guid(1550e0a4e571a874abd6ffcf0166ac2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5bb29d77137e6995cee34475d3af2b9') in 0.012711 seconds 
+  Import took 0.020567 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000281 seconds.
-  path: Assets/章節/第一章/AI_people/bro/哥哥idle.fbx
-  artifactKey: Guid(72153c00573e2524ba932af54e705437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/AI_people/bro/哥哥idle.fbx using Guid(72153c00573e2524ba932af54e705437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4800461888395b9a8b21cb536f62bab') in 0.123413 seconds 
-  Import took 0.133348 seconds .
+  path: Assets/章節/第一章/教室/Lightmap-6_comp_dir.png
+  artifactKey: Guid(c94f101418b60a54da95dc671697d6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-6_comp_dir.png using Guid(c94f101418b60a54da95dc671697d6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f21d99383e6a8c12bbcbf7abfb8dc3') in 0.014823 seconds 
+  Import took 0.022176 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000415 seconds.
-  path: Assets/章節/結局二/動畫/Sitting Idle.fbx
-  artifactKey: Guid(9716d289ba7172b49ba409a548fb53e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局二/動畫/Sitting Idle.fbx using Guid(9716d289ba7172b49ba409a548fb53e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533920dc6764b082cffcb0adea040493') in 0.018544 seconds 
-  Import took 0.028894 seconds .
+  Time since last request: 0.000259 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-7_comp_shadowmask.png
+  artifactKey: Guid(671c8da6f0f7e9d4bacc7b3d93494f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-7_comp_shadowmask.png using Guid(671c8da6f0f7e9d4bacc7b3d93494f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf15dce55164cd8224ae664f4ff0f994') in 0.018056 seconds 
+  Import took 0.025862 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000483 seconds.
-  path: Assets/章節/第三章/建模/盤子.fbx
-  artifactKey: Guid(6a9bd45a9df796946be9b32cb14ae28e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/建模/盤子.fbx using Guid(6a9bd45a9df796946be9b32cb14ae28e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1a81a697e907c561641d5f78a1974f') in 0.039079 seconds 
-  Import took 0.052092 seconds .
+  Time since last request: 0.000246 seconds.
+  path: Assets/章節/第一章/教室/Lightmap-5_comp_shadowmask.png
+  artifactKey: Guid(142680fc198999343823dd86f11c9f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第一章/教室/Lightmap-5_comp_shadowmask.png using Guid(142680fc198999343823dd86f11c9f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6f9aa11f3f026fa04fe518bd7ab4e0') in 0.014280 seconds 
+  Import took 0.022331 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/章節/結局一/媽媽/媽媽tpose.fbx
-  artifactKey: Guid(d960ede085cd3d74f9a87f627206cde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/結局一/媽媽/媽媽tpose.fbx using Guid(d960ede085cd3d74f9a87f627206cde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19468f3cf047db92c595e1b065d2203b') in 0.143204 seconds 
-  Import took 0.154673 seconds .
+  Time since last request: 27.574194 seconds.
+  path: Assets/章節/第三章/曉鶴拿書包揮手動畫Timeline.playable
+  artifactKey: Guid(01f16df14ddebe64c92fb49af765b1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/曉鶴拿書包揮手動畫Timeline.playable using Guid(01f16df14ddebe64c92fb49af765b1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03497b2796cde0137e079c9372b51c3') in 0.051087 seconds 
+  Import took 0.061173 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000569 seconds.
-  path: Assets/章節/第一章/Animation/換花/timeline換花動畫Timeline.playable
-  artifactKey: Guid(7182b010ffd1dca4b9279435aa20328f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/Animation/換花/timeline換花動畫Timeline.playable using Guid(7182b010ffd1dca4b9279435aa20328f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10066471bfe271ca2208886708cd4a0a') in 0.022176 seconds 
-  Import took 0.031953 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002394 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 4.31 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  6.055 seconds
-Domain Reload Profiling:
-	ReloadAssembly (6069ms)
-		BeginReloadAssembly (1352ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (268ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (722ms)
-		EndReloadAssembly (4452ms)
-			LoadAssemblies (233ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (533ms)
-			ReleaseScriptCaches (6ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (3289ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (5ms)
-				BeforeProcessingInitializeOnLoad (253ms)
-				ProcessInitializeOnLoadAttributes (2773ms)
-				ProcessInitializeOnLoadMethodAttributes (214ms)
-				AfterProcessingInitializeOnLoad (20ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (30ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 9.91 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.2 MB.
-System memory in use after: 361.4 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4613.
-Total: 182.828400 ms (FindLiveObjects: 3.984000 ms CreateObjectMapping: 0.729300 ms MarkObjects: 177.348400 ms  DeleteObjects: 0.756400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002839 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  7.673 seconds
-Domain Reload Profiling:
-	ReloadAssembly (7683ms)
-		BeginReloadAssembly (682ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (72ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (340ms)
-		EndReloadAssembly (6668ms)
-			LoadAssemblies (537ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1492ms)
-			ReleaseScriptCaches (8ms)
-			RebuildScriptCaches (151ms)
-			SetupLoadedEditorAssemblies (4142ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (228ms)
-				ProcessInitializeOnLoadAttributes (3710ms)
-				ProcessInitializeOnLoadMethodAttributes (170ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (34ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.04 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.0 MB.
-System memory in use after: 361.3 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4616.
-Total: 4.536700 ms (FindLiveObjects: 0.542000 ms CreateObjectMapping: 0.195800 ms MarkObjects: 3.746800 ms  DeleteObjects: 0.049700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 583.913703 seconds.
-  path: Assets/章節/第二章/timeline/妹妹上樓.playable
-  artifactKey: Guid(d0b4b19da3956eb41b5ce97d860a1e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/妹妹上樓.playable using Guid(d0b4b19da3956eb41b5ce97d860a1e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e60d4a6c6701595e45ffc6c6dd07ea6') in 0.063188 seconds 
-  Import took 0.085726 seconds .
+  Time since last request: 58.826674 seconds.
+  path: Assets/章節/第三章/側背包9.prefab
+  artifactKey: Guid(23c067fb473492c4c93c1fdc4bf3abf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/側背包9.prefab using Guid(23c067fb473492c4c93c1fdc4bf3abf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056649eb302369751b0cc3b690fec824') in 0.032912 seconds 
+  Import took 0.041657 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000888 seconds.
-  path: Assets/章節/第二章/timeline/妹妹下樓.playable
-  artifactKey: Guid(363d412fe4a377c498433fd66feee9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/妹妹下樓.playable using Guid(363d412fe4a377c498433fd66feee9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd895a4812c6cd3e0f9e9cd17d592e2d1') in 0.013227 seconds 
-  Import took 0.022258 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 107.349444 seconds.
-  path: Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset
-  artifactKey: Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset using Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eca8e9151b24f4aa76dce4585542989') in 0.062496 seconds 
-  Import took 0.072714 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 87.677512 seconds.
-  path: Assets/章節/第二章/timeline/妹妹上樓.playable
-  artifactKey: Guid(d0b4b19da3956eb41b5ce97d860a1e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/妹妹上樓.playable using Guid(d0b4b19da3956eb41b5ce97d860a1e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4caf879aa5d7d77a36c821845378fc') in 0.017261 seconds 
-  Import took 0.031424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000674 seconds.
-  path: Assets/章節/第二章/timeline/妹妹下樓.playable
-  artifactKey: Guid(363d412fe4a377c498433fd66feee9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第二章/timeline/妹妹下樓.playable using Guid(363d412fe4a377c498433fd66feee9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72797ae9b35e3b00213afeecd17a93cb') in 0.012880 seconds 
-  Import took 0.021439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.262571 seconds.
+  Time since last request: 11.997874 seconds.
   path: Assets/章節/第三章/第三章.unity
   artifactKey: Guid(93585717989591246aa4b84599ca0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/第三章.unity using Guid(93585717989591246aa4b84599ca0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d86936154180b58d83482502a676910') in 0.005527 seconds 
-  Import took 0.016360 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004729 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.50 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  5.539 seconds
-Domain Reload Profiling:
-	ReloadAssembly (5540ms)
-		BeginReloadAssembly (629ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (73ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (347ms)
-		EndReloadAssembly (4794ms)
-			LoadAssemblies (242ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (465ms)
-			ReleaseScriptCaches (16ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (3793ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (138ms)
-				ProcessInitializeOnLoadAttributes (3498ms)
-				ProcessInitializeOnLoadMethodAttributes (132ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.69 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.1 MB.
-System memory in use after: 361.3 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4619.
-Total: 9.597400 ms (FindLiveObjects: 1.327000 ms CreateObjectMapping: 0.530000 ms MarkObjects: 6.769100 ms  DeleteObjects: 0.964600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002502 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  3.871 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3872ms)
-		BeginReloadAssembly (158ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (3637ms)
-			LoadAssemblies (129ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (379ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (2849ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (117ms)
-				ProcessInitializeOnLoadAttributes (2575ms)
-				ProcessInitializeOnLoadMethodAttributes (134ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.82 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.1 MB.
-System memory in use after: 361.4 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4622.
-Total: 6.717400 ms (FindLiveObjects: 0.820500 ms CreateObjectMapping: 0.233100 ms MarkObjects: 5.621800 ms  DeleteObjects: 0.038300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003848 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  3.101 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3102ms)
-		BeginReloadAssembly (158ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (2865ms)
-			LoadAssemblies (135ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (381ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (2107ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (131ms)
-				ProcessInitializeOnLoadAttributes (1865ms)
-				ProcessInitializeOnLoadMethodAttributes (92ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (2ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.94 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.1 MB.
-System memory in use after: 361.4 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4625.
-Total: 6.024100 ms (FindLiveObjects: 0.635400 ms CreateObjectMapping: 0.433800 ms MarkObjects: 4.918700 ms  DeleteObjects: 0.032600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 105.582591 seconds.
-  path: Assets/章節/第三章/Animation
-  artifactKey: Guid(273af46b8afacf74181bd3550206e38e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation using Guid(273af46b8afacf74181bd3550206e38e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aaec2010360cc67fab14e671485a6c7') in 0.011513 seconds 
-  Import took 0.022238 seconds .
+Start importing Assets/章節/第三章/第三章.unity using Guid(93585717989591246aa4b84599ca0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8cd6778816c1161c5c1e9bae72c73b') in 0.005112 seconds 
+  Import took 0.013533 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.144877 seconds.
-  path: Assets/章節/第三章/Animation/曉鶴轉身.anim
-  artifactKey: Guid(d4f02ddc24087f449932cd9df5f4c3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/曉鶴轉身.anim using Guid(d4f02ddc24087f449932cd9df5f4c3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5157def6700c1746d6995febc163e13c') in 0.027794 seconds 
-  Import took 0.039986 seconds .
+  Time since last request: 126.347507 seconds.
+  path: Assets/側背包9.fbx
+  artifactKey: Guid(6f0c72a50900da04cb1f6e551d8bc66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/側背包9.fbx using Guid(6f0c72a50900da04cb1f6e551d8bc66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de62f5a5b826b3a109b6b8c74a35d973') in 0.095287 seconds 
+  Import took 0.104417 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.240963 seconds.
-  path: Assets/章節/第三章/Animation/曉鶴背對揮手.anim
-  artifactKey: Guid(9428d8b8f475a9549a61d7c2ff41f424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/曉鶴背對揮手.anim using Guid(9428d8b8f475a9549a61d7c2ff41f424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051d943889908e7a92af1e30cfebde0b') in 0.013507 seconds 
-  Import took 0.022430 seconds .
+  Time since last request: 0.000290 seconds.
+  path: Assets/字幕底.png
+  artifactKey: Guid(dbd92b2d230c0ad4c947733c3cf78909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/字幕底.png using Guid(dbd92b2d230c0ad4c947733c3cf78909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8143199d10c54542b46a796c21f33c86') in 0.018028 seconds 
+  Import took 0.027486 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 431.940170 seconds.
-  path: Assets/章節/第三章/Animation/曉鶴轉身(反向).fbx
-  artifactKey: Guid(b5fcba35c931d6140babc69f1ca9a4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/曉鶴轉身(反向).fbx using Guid(b5fcba35c931d6140babc69f1ca9a4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab85b559ba8945e454552daa128c9b80') in 1.299918 seconds 
-  Import took 1.547144 seconds .
+  Time since last request: 0.000320 seconds.
+  path: Assets/網路上找的耳機.fbx
+  artifactKey: Guid(4e102b66df4e3414e8da76f3ab1e588b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/網路上找的耳機.fbx using Guid(4e102b66df4e3414e8da76f3ab1e588b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1203fb6239e49054a61137031a589ad') in 0.972175 seconds 
+  Import took 0.995367 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.257434 seconds.
-  path: Assets/章節/第三章/Animation/曉鶴揮手.fbx
-  artifactKey: Guid(24a81ce49cd032641af64f7e9a9fe331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/曉鶴揮手.fbx using Guid(24a81ce49cd032641af64f7e9a9fe331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7facd03ebc1748fda6e35927aa071e80') in 0.210948 seconds 
-  Import took 0.222715 seconds .
+  Time since last request: 0.000860 seconds.
+  path: Assets/字幕底 1.png
+  artifactKey: Guid(e81ff383c564a1348a45f261b99bafd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/字幕底 1.png using Guid(e81ff383c564a1348a45f261b99bafd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6db68259ca435f831c46b57b3b987c5') in 0.020439 seconds 
+  Import took 0.028930 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.997338 seconds.
-  path: Assets/章節/第三章/Animation/Take 001.anim
-  artifactKey: Guid(71b81799e7df0c240ade58c273f2617a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/Take 001.anim using Guid(71b81799e7df0c240ade58c273f2617a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c1fd1c0a1ccb19805287d10e30576b') in 0.007473 seconds 
-  Import took 0.014558 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.913903 seconds.
-  path: Assets/章節/第三章/Animation/曉鶴轉身.anim
-  artifactKey: Guid(71b81799e7df0c240ade58c273f2617a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/曉鶴轉身.anim using Guid(71b81799e7df0c240ade58c273f2617a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2911bfa77604c75473e5047c7a73c9') in 0.007399 seconds 
-  Import took 0.015442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.103609 seconds.
-  path: Assets/章節/第三章/Animation/Take 001.anim
-  artifactKey: Guid(13169d3674eb906458b2da36f4345ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/Take 001.anim using Guid(13169d3674eb906458b2da36f4345ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1462bef200cd10982f19439bb21ae3') in 0.007151 seconds 
-  Import took 0.013741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.924197 seconds.
-  path: Assets/章節/第三章/Animation/揮手.anim
-  artifactKey: Guid(13169d3674eb906458b2da36f4345ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第三章/Animation/揮手.anim using Guid(13169d3674eb906458b2da36f4345ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c008c0ba1b146cf9b969186ceb47b8') in 0.007274 seconds 
-  Import took 0.015700 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004305 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  4.230 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4231ms)
-		BeginReloadAssembly (507ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (20ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (352ms)
-		EndReloadAssembly (3609ms)
-			LoadAssemblies (191ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (493ms)
-			ReleaseScriptCaches (32ms)
-			RebuildScriptCaches (103ms)
-			SetupLoadedEditorAssemblies (2514ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (154ms)
-				ProcessInitializeOnLoadAttributes (2193ms)
-				ProcessInitializeOnLoadMethodAttributes (148ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.3 MB.
-System memory in use after: 361.5 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4664.
-Total: 9.073800 ms (FindLiveObjects: 0.409100 ms CreateObjectMapping: 0.111500 ms MarkObjects: 8.453000 ms  DeleteObjects: 0.098200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 98.074145 seconds.
-  path: Assets/章節/第一章/FirstPerson.prefab
-  artifactKey: Guid(a4fc52df7b9bf8b46b54f13532ddf12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/FirstPerson.prefab using Guid(a4fc52df7b9bf8b46b54f13532ddf12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0809c2d7c27ad4569a1faa6af699525a') in 0.376766 seconds 
-  Import took 0.390618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.487217 seconds.
-  path: Assets/章節/第一章/圍牆.fbx
-  artifactKey: Guid(687f0547415bc984bab6a2471ea294be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/圍牆.fbx using Guid(687f0547415bc984bab6a2471ea294be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9582521ee3889ed3ab2e54528bf190c4') in 0.233817 seconds 
-  Import took 0.242976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000371 seconds.
-  path: Assets/章節/第一章/圍牆2.fbx
-  artifactKey: Guid(0fa0a96f1e3f2c74e9fb804c17855e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/圍牆2.fbx using Guid(0fa0a96f1e3f2c74e9fb804c17855e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678efd3d79e1f306de5a044e1d35e34d') in 0.293250 seconds 
-  Import took 0.302494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/章節/第一章/裝飾建築1.fbx
-  artifactKey: Guid(582504c4c3465ed49808c385ee72d944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/裝飾建築1.fbx using Guid(582504c4c3465ed49808c385ee72d944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177eb9aead29e5fbdc62cc6b6c35efa8') in 0.397538 seconds 
-  Import took 0.405931 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/章節/第一章/裝飾建築4.fbx
-  artifactKey: Guid(117aefb46a884bd4d83d105127404c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/裝飾建築4.fbx using Guid(117aefb46a884bd4d83d105127404c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0d3e635c3d124570e397dece206f9d') in 0.449068 seconds 
-  Import took 0.460136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.760823 seconds.
-  path: Assets/章節/第一章/教室.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/章節/第一章/教室.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1965a8bf4913d6b9ce6e2ad9840f337b') in 0.004440 seconds 
-  Import took 0.013145 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008389 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.18 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  9.721 seconds
-Domain Reload Profiling:
-	ReloadAssembly (9734ms)
-		BeginReloadAssembly (1207ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (178ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (2ms)
-			CreateAndSetChildDomain (612ms)
-		EndReloadAssembly (8246ms)
-			LoadAssemblies (535ms)
-			RebuildTransferFunctionScriptingTraits (4ms)
-			SetupTypeCache (1148ms)
-			ReleaseScriptCaches (51ms)
-			RebuildScriptCaches (213ms)
-			SetupLoadedEditorAssemblies (5768ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (315ms)
-				ProcessInitializeOnLoadAttributes (5068ms)
-				ProcessInitializeOnLoadMethodAttributes (327ms)
-				AfterProcessingInitializeOnLoad (27ms)
-				EditorAssembliesLoaded (3ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (90ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.69 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.5 MB.
-System memory in use after: 361.8 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4703.
-Total: 95.070900 ms (FindLiveObjects: 6.293800 ms CreateObjectMapping: 2.133900 ms MarkObjects: 85.788100 ms  DeleteObjects: 0.847100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1430.456618 seconds.
+  Time since last request: 494.927398 seconds.
   path: Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset
   artifactKey: Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset using Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658e939c1b3634004b28d4d5b7f94c57') in 1.600777 seconds 
-  Import took 2.651899 seconds .
+Start importing Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset using Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be83a45724a521f2fec964b4484c4fe') in 0.176799 seconds 
+  Import took 0.191531 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 70.246411 seconds.
+  Time since last request: 51.330494 seconds.
   path: Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset
   artifactKey: Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset using Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2433a037d607395d911a0a295e62fe') in 0.071605 seconds 
-  Import took 0.088393 seconds .
+Start importing Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset using Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6de74ff1ac6a4d66b440f7b7dc0ed8a') in 0.031733 seconds 
+  Import took 0.041559 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007748 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 46.760327 seconds.
+  path: Assets/章節/第三章/曉鶴拿書包揮手動畫Timeline.playable
+  artifactKey: Guid(01f16df14ddebe64c92fb49af765b1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/章節/第三章/曉鶴拿書包揮手動畫Timeline.playable using Guid(01f16df14ddebe64c92fb49af765b1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7569e028f67dcfa17a0064ffb3eda8') in 0.075380 seconds 
+  Import took 0.089228 seconds .
 
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  6.282 seconds
-Domain Reload Profiling:
-	ReloadAssembly (6292ms)
-		BeginReloadAssembly (1289ms)
-			ExecutionOrderSort (1ms)
-			DisableScriptedObjects (131ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (776ms)
-		EndReloadAssembly (4823ms)
-			LoadAssemblies (340ms)
-			RebuildTransferFunctionScriptingTraits (2ms)
-			SetupTypeCache (568ms)
-			ReleaseScriptCaches (90ms)
-			RebuildScriptCaches (110ms)
-			SetupLoadedEditorAssemblies (3485ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (205ms)
-				ProcessInitializeOnLoadAttributes (2892ms)
-				ProcessInitializeOnLoadMethodAttributes (351ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (3ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (29ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 17.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.5 MB.
-System memory in use after: 361.8 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4706.
-Total: 57.165300 ms (FindLiveObjects: 2.918700 ms CreateObjectMapping: 0.293400 ms MarkObjects: 53.629600 ms  DeleteObjects: 0.076100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006783 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 13.040641 seconds.
+  path: Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset
+  artifactKey: Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DialogueSystem_Database/Breathe_Dialogue Database.asset using Guid(f22fda5cb73f5b540b8aee8a01015d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3250d8dfcd59310ac229cb296d4c5c') in 0.028459 seconds 
+  Import took 0.037811 seconds .
 
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  4.100 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4108ms)
-		BeginReloadAssembly (506ms)
-			ExecutionOrderSort (1ms)
-			DisableScriptedObjects (45ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (2ms)
-			CreateAndSetChildDomain (229ms)
-		EndReloadAssembly (3443ms)
-			LoadAssemblies (236ms)
-			RebuildTransferFunctionScriptingTraits (2ms)
-			SetupTypeCache (462ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (99ms)
-			SetupLoadedEditorAssemblies (2445ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (130ms)
-				ProcessInitializeOnLoadAttributes (2175ms)
-				ProcessInitializeOnLoadMethodAttributes (109ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (2ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.71 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.6 MB.
-System memory in use after: 361.8 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4709.
-Total: 5.460500 ms (FindLiveObjects: 0.318200 ms CreateObjectMapping: 0.105400 ms MarkObjects: 4.985400 ms  DeleteObjects: 0.049800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007397 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.91 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initializing Mesh Terrain Editor v3.8.3f3 on Unity 2020.3.21f1...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[MTE]找不到Amplify Shader Editor，基于ASE的功能可能无法使用。请升级ASE到最新版本重启Unity再试。
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-MTE.MTEDebug:‏‭‎‏‭⁯‌⁫⁪‬⁮‎⁬‫⁮⁮​‮⁯‪⁭⁪⁭⁭‌‏‮‏‌⁪⁬⁮‏‪⁪‭⁪‮‏⁭‮ (object)
-MTE.MTEDebug:LogWarning (string)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Initializing Mesh Terrain Editor...Done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:‎⁭​⁫‮⁫⁯⁯‌⁬‪⁬​⁮‮‪⁫‏​⁫‎⁯⁫‫​‎⁫‎⁪⁪‮​‍‬‏⁮⁫‫⁪‎‮ (object)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_uszO4IMycJrCed7gCcAibymGBYi_ (bool)
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:_QEB9KlaajdYafdGKVY8bk0l8NsDA_ ()
-_FuAa0apOXcBEDUbygoBKJgWdThLA_:.cctor ()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  4.138 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4139ms)
-		BeginReloadAssembly (290ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (121ms)
-		EndReloadAssembly (3719ms)
-			LoadAssemblies (219ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (412ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (2765ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (2493ms)
-				ProcessInitializeOnLoadMethodAttributes (107ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Shader 'MTE/Specialized/Mali 400/Surface/3 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/3 Textures/Diffuse' not found
-Shader 'MTE/Specialized/Mali 400/Surface/2 Textures/Bumped': fallback shader 'MTE/Specialized/Mali 400/Legacy/2 Textures/Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 361.6 MB.
-System memory in use after: 361.8 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4712.
-Total: 7.300300 ms (FindLiveObjects: 0.484200 ms CreateObjectMapping: 0.244900 ms MarkObjects: 6.518300 ms  DeleteObjects: 0.051300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
