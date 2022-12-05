@@ -2448,74 +2448,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1684602949}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &391097550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391097549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: 32
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  setQuestState: 1
-  questName: 
-  questState: 0
-  setQuestEntryState: 0
-  questEntryNumber: 1
-  questEntryState: 0
-  luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
-  sequenceListener: {fileID: 0}
-  waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
-  textTable: {fileID: 0}
-  alertDuration: 0
-  sendMessages: []
-  barkSource: 0
-  barkConversation: 
-  barkText: 
-  barkTextSequence: 
-  barker: {fileID: 0}
-  barkTarget: {fileID: 0}
-  barkOrder: 0
-  allowBarksDuringConversations: 0
-  skipBarkIfNoValidEntries: 0
-  cacheBarkLines: 0
-  conversation: "\u7B2C\u4E8C\u7AE0-\u5409\u4ED6"
-  conversationConversant: {fileID: 391097552}
-  conversationActor: {fileID: 1509735038}
-  startConversationEntryID: -1
-  exclusive: 1
-  replace: 0
-  skipIfNoValidEntries: 1
-  stopConversationOnTriggerExit: 1
-  stopConversationIfTooFar: 1
-  maxConversationDistance: 1
-  monitorConversationDistanceFrequency: 1
-  showCursorDuringConversation: 1
-  pauseGameDuringConversation: 0
-  setActiveActions: []
-  setEnabledActions: []
-  setAnimatorStateActions: []
-  onExecute:
-    m_PersistentCalls:
-      m_Calls: []
-  useConversationTitlePicker: 1
-  useBarkTitlePicker: 1
-  useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: f22fda5cb73f5b540b8aee8a01015d09, type: 2}
 --- !u!114 &391097551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2541,12 +2473,6 @@ MonoBehaviour:
     onUse:
       m_PersistentCalls:
         m_Calls: []
---- !u!4 &391097552 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: abd4c86e1acb98c45b3d67f7b38428ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 1684602949}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &391097553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7979,6 +7905,8 @@ PlayableDirector:
     value: {fileID: 310379439138747312}
   - key: {fileID: -4425231196496373480, guid: d0b4b19da3956eb41b5ce97d860a1e51, type: 2}
     value: {fileID: 1863569748}
+  - key: {fileID: -2893812888270163790, guid: d0b4b19da3956eb41b5ce97d860a1e51, type: 2}
+    value: {fileID: 1890173463}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &900282597
@@ -13746,6 +13674,8 @@ PlayableDirector:
     value: {fileID: 1786343340}
   - key: {fileID: -7758634211466823193, guid: 363d412fe4a377c498433fd66feee9d3, type: 2}
     value: {fileID: 1863569748}
+  - key: {fileID: 8260058879853441415, guid: 363d412fe4a377c498433fd66feee9d3, type: 2}
+    value: {fileID: 1890173463}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1748068038
