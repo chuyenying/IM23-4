@@ -698,6 +698,10 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: f22fda5cb73f5b540b8aee8a01015d09,
         type: 2}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: allowSimultaneousConversations
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.cameraSettings.sequencerCamera
       value: 
       objectReference: {fileID: 0}
@@ -6745,6 +6749,22 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - guid: e46862b2-4dd2-4d2c-a005-39b2e6e68465
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1082710986}
+          m_TargetAssemblyTypeName: ChangeSceneToFinal1, Assembly-CSharp
+          m_MethodName: ChangeSceneFromEP3ToFinal1House
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: ddbb58ca-3a7d-4c92-aec9-cf20b6a61104
     onExecute:
       m_PersistentCalls:
         m_Calls:
