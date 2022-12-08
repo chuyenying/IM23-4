@@ -7,7 +7,7 @@ public class LookAtMail : MonoBehaviour
     private bool Open = false , HintAlready = false;
     public UnityEvent OpenMail, CloseMail , Hint;
 
-    private void AnimOverAndHintMail()
+    public void AnimOverAndHintMail()
     {
         Hint.Invoke();  //´£¥Ü«öE¶}±Òmail
         HintAlready = true;

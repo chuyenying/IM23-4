@@ -24828,7 +24828,7 @@ MonoBehaviour:
       - originConversationID: 38
         originDialogueID: 0
         destinationConversationID: 38
-        destinationDialogueID: 3
+        destinationDialogueID: 1
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -24869,7 +24869,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6211\u6210\u529F\u4E86\u55CE..."
+        value: "[em1]\u6211\u6210\u529F\u4E86\u55CE...[/em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -24888,81 +24888,6 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
-      conversationID: 38
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 38
-        originDialogueID: 1
-        destinationConversationID: 38
-        destinationDialogueID: 2
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 563.94366
-        y: 234.65936
-        width: 160
-        height: 30
-    - id: 2
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: EventGuid
-        value: bea02608-8647-4eca-85d9-2a5ab416f093
-        type: 0
-        typeString: 
       conversationID: 38
       isRoot: 0
       isGroup: 0
@@ -24971,91 +24896,20 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: "Variable[\"\u7D50\u5C40\u4E8C_\u624B\u6A5F\"] == true"
       userScript: "Variable[\"\u7D50\u5C40\u4E8C_\u624B\u6A5F\"] = false"
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 559.4351
-        y: 312.7621
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 38
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 38
-        originDialogueID: 3
-        destinationConversationID: 38
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
-      conditionsString: "Variable[\"\u7D50\u5C40\u4E8C_\u624B\u6A5F\"] == true"
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 563.596
-        y: 130.78569
+        x: 562.6637
+        y: 130.97935
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 51.865185, y: 7.6925426}
-    canvasZoom: 1.1112498
+    canvasScrollPosition: {x: 1.2799683, y: 2.5600128}
+    canvasZoom: 0.7812501
   - id: 39
     fields:
     - title: Title
@@ -25295,7 +25149,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: StopConversation();
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
@@ -25435,7 +25289,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: StopConversation();
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
@@ -25462,8 +25316,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 241.75626, y: 15.789459}
-    canvasZoom: 0.95000064
+    canvasScrollPosition: {x: 372.72104, y: 0}
+    canvasZoom: 0.7700008
   - id: 40
     fields:
     - title: Title
@@ -25629,6 +25483,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 510aff05-2298-4c61-839c-c1c32565642e
+        type: 0
+        typeString: 
       conversationID: 40
       isRoot: 0
       isGroup: 0
@@ -25644,8 +25502,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 369
-        y: 83
+        x: 370.94174
+        y: 93.67961
         width: 160
         height: 30
     entryGroups: []
@@ -26029,6 +25887,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 40118cf0-bd2f-46b0-ac02-2740db5601d9
+        type: 0
+        typeString: 
       conversationID: 41
       isRoot: 0
       isGroup: 0
@@ -26054,7 +25916,7 @@ MonoBehaviour:
   - id: 42
     fields:
     - title: Title
-      value: "\u7D50\u5C40\u4E8C\uFF0D\u5E8A\u4E0A"
+      value: "\u7D50\u5C40\u4E8C-\u5E8A\u4E0A"
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -26291,6 +26153,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 06f10338-fbac-4886-84bb-af94dd399c64
+        type: 0
+        typeString: 
       conversationID: 42
       isRoot: 0
       isGroup: 0
@@ -26306,8 +26172,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 206
-        y: 122
+        x: 204.11322
+        y: 123.88678
         width: 160
         height: 30
     entryGroups: []
@@ -26316,7 +26182,7 @@ MonoBehaviour:
   - id: 43
     fields:
     - title: Title
-      value: "\u7D50\u5C40\u4E8C\uFF0D\u56DE\u61C9\u8CDC\u751F"
+      value: "\u7D50\u5C40\u4E8C-\u56DE\u61C9\u8CDC\u751F"
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -26574,7 +26440,7 @@ MonoBehaviour:
   - id: 44
     fields:
     - title: Title
-      value: "\u7B2C\u4E8C\u7AE0 - \u8033\u6A5F"
+      value: "\u7B2C\u4E8C\u7AE0-\u8033\u6A5F"
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
