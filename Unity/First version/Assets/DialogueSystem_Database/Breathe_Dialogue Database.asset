@@ -584,6 +584,48 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+  - id: 29
+    fields:
+    - title: Name
+      value: Final1_BrotherDoor
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 30
+    fields:
+    - title: Name
+      value: PlayGuitar
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 31
+    fields:
+    - title: Name
+      value: Final1_SisDoor
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -22006,7 +22048,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 5
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -22074,7 +22116,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 5
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -22149,7 +22191,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 5
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -22216,7 +22258,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 5
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -22228,7 +22270,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5ABD\u5ABD...\u5979\u53BB\u627E\u66C9\u9DB4\u4E86(\u8F15\u8072)"
+        value: "...\u5979\u53BB\u627E\u66C9\u9DB4\u4E86(\u8F15\u8072)"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -22282,7 +22324,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 5
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -22358,7 +22400,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 5
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -22406,8 +22448,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 399.07214
-        y: 221.03091
+        x: 396.07214
+        y: 222.03091
         width: 160
         height: 30
     - id: 7
@@ -22425,7 +22467,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 5
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -22459,7 +22501,7 @@ MonoBehaviour:
       - title: EventGuid
         value: 73ce622c-20f0-41b5-a884-d2f17815d19c
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 30
       isRoot: 0
       isGroup: 0
@@ -22475,13 +22517,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 399.07214
-        y: 271.03094
+        x: 390.8247
+        y: 298.866
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 38.85646, y: 138.7746}
-    canvasZoom: 0.7900002
+    canvasScrollPosition: {x: 78.45097, y: 210.36717}
+    canvasZoom: 0.97
   - id: 31
     fields:
     - title: Title
@@ -23253,8 +23295,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 31
+        y: 85
         width: 160
         height: 30
     entryGroups: []
@@ -23368,6 +23410,12 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
+      - originConversationID: 34
+        originDialogueID: 0
+        destinationConversationID: 34
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -23375,8 +23423,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 20
+        x: 287
+        y: 14
         width: 160
         height: 30
     - id: 1
@@ -23394,11 +23442,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -23406,7 +23454,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u64A5\u653E\u65CB\u5F8B"
+        value: "[\u5F48\u5409\u4ED6]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -23425,6 +23473,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: c1f75e03-6557-4b50-9637-a921f42985f8
+        type: 0
+        typeString: 
       conversationID: 34
       isRoot: 0
       isGroup: 0
@@ -23433,27 +23485,84 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["PlayGuitar"] == true
+      userScript: Variable["PlayGuitar"] = false
       onExecute:
         m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
+          m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 144
+        y: 100
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "[\u505C\u6B62\u5F48\u5409\u4ED6]"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: b2dc5b41-e45e-4eb6-a73f-4a039c2b868c
+        type: 0
+        typeString: 
+      conversationID: 34
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["PlayGuitar"] == false
+      userScript: Variable["PlayGuitar"] = true
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 380
+        y: 103
         width: 160
         height: 30
     entryGroups: []
@@ -23631,7 +23740,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: 
+        value: 617a381a-8f5d-4d7a-a952-da2e32333952
         type: 0
         typeString: 
       conversationID: 35
@@ -23645,7 +23754,13 @@ MonoBehaviour:
       - originConversationID: 35
         originDialogueID: 1
         destinationConversationID: 35
-        destinationDialogueID: 2
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      - originConversationID: 35
+        originDialogueID: 1
+        destinationConversationID: 35
+        destinationDialogueID: 6
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -23655,77 +23770,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 268.04544
-        y: 129.81818
-        width: 160
-        height: 30
-    - id: 2
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: EventGuid
-        value: 2ec4cc00-595d-4e74-863c-5db5dad75a5e
-        type: 0
-        typeString: 
-      conversationID: 35
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 268.04544
-        y: 220.63875
+        x: 304.111
+        y: 87.73569
         width: 160
         height: 30
     - id: 3
@@ -23789,13 +23835,153 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 501.59082
-        y: 126.81818
+        x: 490.11542
+        y: 94.03131
+        width: 160
+        height: 30
+    - id: 4
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "[em1]\u300C\u4E0B\u8F29\u5B50\uFF0C\u4F60\u4E0D\u53EF\u4EE5\u518D\u4E1F\u4E0B\u6211\u4E86\u3002\u300D[/em1]"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 'Delay(3)
+
+          StopConversation()'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 1346f02f-8b84-42bc-848f-7ca679490855
+        type: 0
+        typeString: 
+      conversationID: 35
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["Final1_BrotherDoor"] == true
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 475.1475
+        y: 200.65176
+        width: 160
+        height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: StopConversation()
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 35
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 'Variable["Final1_BrotherDoor"] == false and '
+      userScript: Variable["Final1_BrotherDoor"] = true
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 144.11101
+        y: 182.44156
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7600002
+    canvasScrollPosition: {x: 0, y: 45.085964}
+    canvasZoom: 0.85000014
   - id: 36
     fields:
     - title: Title
@@ -24052,7 +24238,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 49.418663, y: 24.1848}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.8800001
   - id: 37
     fields:
@@ -24175,8 +24361,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 177.5409
-        y: 31.475403
+        x: 837.5401
+        y: 58.975388
         width: 160
         height: 30
     - id: 1
@@ -24225,79 +24411,8 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
-      conversationID: 37
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 37
-        originDialogueID: 1
-        destinationConversationID: 37
-        destinationDialogueID: 2
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 35.66037
-        y: 115.283035
-        width: 160
-        height: 30
-    - id: 2
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
       - title: EventGuid
-        value: 622ebaf2-c00d-4328-9a9b-a06d92d191da
+        value: fb9f85f3-c931-4723-9078-01ee69260f1b
         type: 0
         typeString: 
       conversationID: 37
@@ -24309,9 +24424,15 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 37
-        originDialogueID: 2
+        originDialogueID: 1
         destinationConversationID: 37
-        destinationDialogueID: 3
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      - originConversationID: 37
+        originDialogueID: 1
+        destinationConversationID: 37
+        destinationDialogueID: 7
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -24321,73 +24442,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 36.60376
-        y: 189.81134
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 37
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 39.882446
-        y: 269.31952
+        x: 687.3355
+        y: 125.283035
         width: 160
         height: 30
     - id: 4
@@ -24457,8 +24513,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 380.81946
-        y: 114.26227
+        x: 1008.3188
+        y: 124.26227
         width: 160
         height: 30
     - id: 5
@@ -24522,13 +24578,147 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 375.90143
-        y: 182.29504
+        x: 1003.4007
+        y: 192.29504
+        width: 160
+        height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: StopConversation()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["Final1_SisDoor"] == false
+      userScript: Variable["Final1_SisDoor"] = true
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 540.49927
+        y: 198.73357
+        width: 160
+        height: 30
+    - id: 7
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "[em1]\u4E4B\u5F8C\u6709\u7A7A\uFF0C\u6211\u6703\u8A18\u5F97\u53BB\u627E\u59B3\u804A\u804A\u5929\u7684\u3002[/em1]"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: Delay(3);
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: d2d3fde0-7eb5-4d34-9195-e5869a5302f4
+        type: 0
+        typeString: 
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["Final1_SisDoor"] == true
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 793.70905
+        y: 200.15115
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 11.887104, y: 21.769348}
-    canvasZoom: 0.6100004
+    canvasScrollPosition: {x: 383.14948, y: 78.06064}
+    canvasZoom: 1.0000001
   - id: 38
     fields:
     - title: Title
@@ -28937,8 +29127,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 20
+        x: 237
+        y: 11
         width: 160
         height: 30
     - id: 1
@@ -28956,11 +29146,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -28994,77 +29184,6 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 50
-        originDialogueID: 1
-        destinationConversationID: 50
-        destinationDialogueID: 2
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 69
-        width: 160
-        height: 30
-    - id: 2
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 50
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
       userScript: 
@@ -29073,8 +29192,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 119
+        x: 237
+        y: 96
         width: 160
         height: 30
     entryGroups: []
@@ -29214,11 +29333,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -29260,8 +29379,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 21
+        y: 91
         width: 160
         height: 30
     entryGroups: []
@@ -29382,8 +29501,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 20
+        x: 399.51215
+        y: 24.878052
         width: 160
         height: 30
     - id: 1
@@ -29453,8 +29572,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 395.8536
+        y: 94.39024
         width: 160
         height: 30
     - id: 2
@@ -29524,8 +29643,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 120
+        x: 392.19504
+        y: 157.8049
         width: 160
         height: 30
     - id: 3
@@ -29571,9 +29690,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: StopConversation()
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 12bb715b-3fb9-4747-af45-79b9c1ff89fe
+        type: 0
+        typeString: 
       conversationID: 52
       isRoot: 0
       isGroup: 0
@@ -29589,13 +29712,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 170
+        x: 394.6341
+        y: 222.43904
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.94000006
+    canvasScrollPosition: {x: 6.097534, y: 114.63411}
+    canvasZoom: 0.8200002
   syncInfo:
     syncActors: 0
     syncItems: 0
