@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SelectionManager_bro : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class SelectionManager_bro : MonoBehaviour
     [SerializeField] private Material defaultMaterial;
     [SerializeField] private GameObject bg,focus_info,focus_table,F_button, left_click, right_click;
     [SerializeField] private Animator SelectOB_anim;
+    [SerializeField] private UnityEvent ChangeFlower;
     private Transform _selection;
     private bool read_info = false;
     public static bool take_book = false;
     private Ray ray;
+    private bool Do_Once_ChangeFlower = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +65,12 @@ public class SelectionManager_bro : MonoBehaviour
                             PlayerPrefscore += 3;
                             PlayerPrefs.SetInt("score2", PlayerPrefscore);
                             Debug.Log($"score2: {PlayerPrefs.GetInt("score2")}");
+                        }
+                        else if (name == "花瓶" && Do_Once_ChangeFlower)
+                        {
+                            ChangeFlower.Invoke();
+                            name = "";
+                            Do_Once_ChangeFlower = false;
                         }
                         selectob_music.Play();                  //播放音效
                         SelectOB_anim.gameObject.SetActive(true);    //播放動畫
