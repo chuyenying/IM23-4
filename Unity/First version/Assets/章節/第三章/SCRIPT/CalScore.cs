@@ -18,14 +18,14 @@ public class CalScore : MonoBehaviour
             PlayerPrefs.SetInt("Ep3-MinLen", 0);
             PlayerPrefs.SetInt("Final1-MinLen", 1);
             PlayerPrefs.SetInt("Final2-MinLen", 0);
-            SceneManager.LoadScene("結局一");
+            SceneManager.LoadScene("結局二-教室");
         }
-        else if ((PlayerPrefs.GetInt("score1") + PlayerPrefs.GetInt("score2")) > 50)
+        else if ((PlayerPrefs.GetInt("score1") + PlayerPrefs.GetInt("score2")) >= 50)
         {
             PlayerPrefs.SetInt("Ep3-MinLen", 0);
             PlayerPrefs.SetInt("Final1-MinLen", 0);
             PlayerPrefs.SetInt("Final2-MinLen", 1);
-            SceneManager.LoadScene("結局二-教室");
+            SceneManager.LoadScene("結局一");
         }
         else
         {
