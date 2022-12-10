@@ -13,7 +13,7 @@ public class CalScore : MonoBehaviour
     IEnumerator WaitForSevenSec()
     {
         yield return new WaitForSeconds(7f);    //等待Panel動畫跑完
-        if (PlayerPrefs.GetInt("score1") > 30)
+        if (PlayerPrefs.GetInt("score1") >= 15)
         {
             PlayerPrefs.SetInt("Ep3-MinLen", 0);
             PlayerPrefs.SetInt("Final1-MinLen", 1);
