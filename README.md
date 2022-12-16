@@ -1,6 +1,9 @@
 # IM23-4
 國立東華大學 資訊管理學系 IM23 畢專第四組
 
+## 前導片
+[![前導片](https://img.youtube.com/vi/MD6zuGm19Rw/0.jpg)](https://www.youtube.com/watch?v=MD6zuGm19Rw)
+
 ## 為什麼畢專會想做一款遊戲呢?
 手機電腦至今已是非常普及，對於我們而言，課後的休閒遊戲不可或缺，喜歡玩遊戲的我們也想擁有一款自己開發的遊戲。
 
@@ -9,5 +12,16 @@
 
 ## 遊戲操作
 
-![擷取_2022_12_16_13_29_35_66](https://user-images.githubusercontent.com/61683914/208028998-c5f0cf2f-1699-461c-8704-938c060afa0b.png)
+- 基本操作
 
+  ![擷取_2022_12_16_13_29_35_66](https://user-images.githubusercontent.com/61683914/208028998-c5f0cf2f-1699-461c-8704-938c060afa0b.png)
+
+- 按下 E / F 跟環境互動
+
+  ![image](https://user-images.githubusercontent.com/61683914/208035063-f46e589d-d16c-4456-98ba-ee6aa8365912.png)
+
+
+## 遊玩畫面
+### 結局一
+### 結局二
+[![前導片](https://img.youtube.com/vi/YiR3wuOXJX8/0.jpg)](https://www.youtube.com/watch?v=YiR3wuOXJX8)
