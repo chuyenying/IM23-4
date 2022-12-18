@@ -14,14 +14,28 @@
 
 - 基本操作
 
-  ![擷取_2022_12_16_13_29_35_66](https://user-images.githubusercontent.com/61683914/208028998-c5f0cf2f-1699-461c-8704-938c060afa0b.png)
+  ![設定與幫助](https://user-images.githubusercontent.com/61683914/208287243-78596edc-c277-46e3-b4b5-7caf1b79eb72.png)
 
 - 按下 E / F 跟環境互動
 
-  ![image](https://user-images.githubusercontent.com/61683914/208035063-f46e589d-d16c-4456-98ba-ee6aa8365912.png)
+  ![F](https://user-images.githubusercontent.com/61683914/208287207-a9c38f01-8a9e-4dfa-b698-f12ba15a8bca.png)
+  
+  ![查看桌面](https://user-images.githubusercontent.com/61683914/208287211-9c637ffc-824a-4000-b100-79f51e9f504e.png)
+  
+  ![查看物件](https://user-images.githubusercontent.com/61683914/208287229-7a221b2f-7de6-4109-b2d4-d433dae144e0.png)
 
+- 按下 Tab 可以開啟手機
+
+  ![Tab手機](https://user-images.githubusercontent.com/61683914/208287237-719aaca6-1675-4214-a4d0-baf4faece3ca.png)
+
+- 按下 Esc 可以開啟主選單
+
+  ![ESC](https://user-images.githubusercontent.com/61683914/208287203-06b5c0fb-0539-4b7e-9e73-2fed0e3ba205.png)
 
 ## 遊玩畫面
+### 完整遊玩 + 結局二
+[![完整遊玩 + 結局二](https://img.youtube.com/vi/YiR3wuOXJX8/0.jpg)](https://www.youtube.com/watch?v=YiR3wuOXJX8)
+
 ### 結局一
-### 結局二
-[![前導片](https://img.youtube.com/vi/YiR3wuOXJX8/0.jpg)](https://www.youtube.com/watch?v=YiR3wuOXJX8)
+[![結局一](https://img.youtube.com/vi/TQKJIq9bUyE/0.jpg)](https://www.youtube.com/watch?v=TQKJIq9bUyE)
+
